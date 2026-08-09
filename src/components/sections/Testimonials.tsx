@@ -1,0 +1,162 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+
+const testimonials = [
+  {
+    id: 1,
+    name: "James Anderson",
+    text: "Absolutely amazing experience. The artist understood exactly what I wanted and created something even better. The studio is pristine.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Emma Johnson",
+    text: "The studio is clean, professional, and the attention to detail is incredible. My fine line piece healed perfectly thanks to their aftercare.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Daniel Smith",
+    text: "Best tattoo experience I've ever had. Highly recommended! The consultation was thorough and the final Japanese sleeve is a masterpiece.",
+    rating: 5,
+  },
+];
+
+export function Testimonials() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
+
+  // Auto-play
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextTestimonial();
+    }, 8000);
+    return () => clearInterval(timer);
+  }, [currentIndex]);
+
+  const nextTestimonial = () => {
+    setDirection(1);
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setDirection(-1);
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const variants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? 200 : -200,
+      opacity: 0,
+      scale: 0.9,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, type: "spring", bounce: 0.2 }
+    },
+    exit: (direction: number) => ({
+      x: direction > 0 ? -200 : 200,
+      opacity: 0,
+      scale: 0.9,
+      transition: { duration: 0.5 }
+    })
+  };
+
+  return (
+    <section className="py-24 bg-black relative overflow-hidden">
+      
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-gold/5 rounded-full blur-[100px] pointer-events-none" />
+
+      <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
+        
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-accent-gold text-sm font-bold tracking-[0.3em] uppercase mb-4"
+        >
+          Client Stories
+        </motion.h2>
+        <motion.h3 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-4xl md:text-5xl font-bold text-white mb-16"
+        >
+          What People Say
+        </motion.h3>
+
+        <div className="relative h-[300px] md:h-[250px] flex items-center justify-center">
+          <AnimatePresence custom={direction} mode="wait">
+            <motion.div
+              key={currentIndex}
+              custom={direction}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              className="absolute w-full px-4"
+            >
+              <Quote size={48} className="text-white/10 mx-auto mb-6" />
+              <p className="text-xl md:text-2xl text-gray-300 italic mb-8 font-light leading-relaxed">
+                "{testimonials[currentIndex].text}"
+              </p>
+              
+              <div className="flex justify-center space-x-1 mb-4">
+                {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
+                  <Star key={i} size={18} className="text-accent-gold fill-accent-gold" />
+                ))}
+              </div>
+              
+              <h4 className="text-white font-bold tracking-wider uppercase text-sm">
+                — {testimonials[currentIndex].name}
+              </h4>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* Controls */}
+        <div className="flex justify-center items-center space-x-6 mt-8">
+          <button 
+            onClick={prevTestimonial}
+            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black hover:border-white transition-all duration-300"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          
+          <div className="flex space-x-2">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  setDirection(i > currentIndex ? 1 : -1);
+                  setCurrentIndex(i);
+                }}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  i === currentIndex ? "bg-accent-gold w-6" : "bg-white/20 hover:bg-white/50"
+                }`}
+                aria-label={`Go to testimonial ${i + 1}`}
+              />
+            ))}
+          </div>
+
+          <button 
+            onClick={nextTestimonial}
+            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black hover:border-white transition-all duration-300"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
+
+      </div>
+    </section>
+  );
+}
