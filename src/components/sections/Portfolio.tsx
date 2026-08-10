@@ -10,14 +10,14 @@ const categories = ["All", "Realism", "Black & Grey", "Minimal", "Traditional", 
 
 const artists = ["Alex Carter", "Michael Stone", "Sophia Williams", "Daniel Cruz"];
 
-const portfolioItems = Array.from({ length: 500 }).map((_, i) => {
+const portfolioItems = Array.from({ length: 10 }).map((_, i) => {
   const catIndex = (i % (categories.length - 1)) + 1;
   const cat = categories[catIndex];
   const artist = artists[i % artists.length];
   return {
     id: i + 1,
     category: cat,
-    image: `https://loremflickr.com/800/1000/tattoo?lock=${i + 1}`,
+    image: `/images/portfolio/${i + 1}.jpg`,
     artist: artist,
     style: cat,
     description: `A stunning custom ${cat.toLowerCase()} tattoo designed by ${artist}.`
