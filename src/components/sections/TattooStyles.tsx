@@ -9,37 +9,37 @@ const styles = [
     id: "realism",
     name: "Realism",
     description: "Photorealistic tattoos mimicking photographs with incredible detail.",
-    image: "/images/styles/realism.jpg"
+    image: "https://d1kq2dqeox7x40.cloudfront.net/images/posts/97da65f2-0c11-4934-a4c8-ffc9c5c47b30.jpg"
   },
   {
     id: "black-grey",
     name: "Black & Grey",
     description: "Classic styling using varying shades of black ink for depth and contrast.",
-    image: "/images/styles/black-grey.jpg"
+    image: "https://d1kq2dqeox7x40.cloudfront.net/images/posts/52fa7053-0bc4-4046-be99-f48fa5ce7a37.jpg"
   },
   {
     id: "traditional",
     name: "Traditional",
     description: "Bold lines, bright colors, and iconic classic Americana imagery.",
-    image: "/images/styles/traditional.jpg"
+    image: "https://d1kq2dqeox7x40.cloudfront.net/images/posts/176f7b96-5726-4bfa-a639-d8704bf7bf7c.jpeg"
   },
   {
     id: "japanese",
     name: "Japanese",
     description: "Traditional Irezumi featuring dragons, koi fish, and mythology.",
-    image: "/images/styles/japanese.jpg"
+    image: "https://d1kq2dqeox7x40.cloudfront.net/images/posts/9b6f8a16-fed2-4835-8f31-2220aa648033.jpeg"
   },
   {
     id: "fine-line",
     name: "Fine Line",
     description: "Delicate, thin lines creating elegant and intricate minimalist designs.",
-    image: "/images/styles/fine-line.jpg"
+    image: "https://d1kq2dqeox7x40.cloudfront.net/images/posts/3f79274b-6374-482e-9a4e-f8793ed9231f.jpg"
   },
   {
     id: "geometric",
     name: "Geometric",
     description: "Precise lines and shapes forming complex symmetrical patterns.",
-    image: "/images/styles/geometric.jpg"
+    image: "https://d1kq2dqeox7x40.cloudfront.net/images/posts/e9003602-71bc-45d6-8110-065534253c19.jpg"
   },
 ];
 

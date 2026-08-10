@@ -47,7 +47,7 @@ export function Testimonials() {
     setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
-  const variants = {
+  const variants: any = {
     enter: (direction: number) => ({
       x: direction > 0 ? 200 : -200,
       opacity: 0,
