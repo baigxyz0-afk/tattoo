@@ -10,7 +10,7 @@ const categories = ["All", "Realism", "Black & Grey", "Minimal", "Traditional", 
 
 const artists = ["Alex Carter", "Michael Stone", "Sophia Williams", "Daniel Cruz"];
 
-const portfolioItems = Array.from({ length: 10 }).map((_, i) => {
+const portfolioItems = Array.from({ length: 200 }).map((_, i) => {
   const catIndex = (i % (categories.length - 1)) + 1;
   const cat = categories[catIndex];
   const artist = artists[i % artists.length];
