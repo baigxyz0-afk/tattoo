@@ -10,12 +10,45 @@ const categories = ["All", "Realism", "Black & Grey", "Minimal", "Traditional", 
 
 const artists = ["Alex Carter", "Michael Stone", "Sophia Williams", "Daniel Cruz"];
 
-const portfolioItems = Array.from({ length: 200 }).map((_, i) => {
+const customFiles = Array.from({ length: 48 }).map((_, i) => {
+  const num = i + 1;
+  let ext = ".jpg";
+  if (num === 38) ext = ".png";
+  if (num === 48) ext = ".avif";
+  return { num, ext };
+});
+
+const customTattoos = customFiles.map((item, idx) => {
+  const catIndex = (idx % (categories.length - 1)) + 1;
+  const cat = categories[catIndex];
+  const artist = artists[idx % artists.length];
+  return {
+    id: idx + 2,
+    category: cat,
+    image: `/images/portfolio/custom-${item.num}${item.ext}`,
+    artist: artist,
+    style: cat,
+    description: `A unique custom ${cat.toLowerCase()} tattoo designed by ${artist}.`
+  };
+});
+
+const firstCustomItem = {
+  id: 1,
+  category: "Minimal",
+  image: "/images/portfolio/floral-leg-tattoo.jpg",
+  artist: "Sophia Williams",
+  style: "Minimal",
+  description: "A delicate and elegant floral vine tattoo tracing along the leg, featuring fine-line leaves."
+};
+
+const customItems = [firstCustomItem, ...customTattoos];
+
+const generatedItems = Array.from({ length: 200 }).map((_, i) => {
   const catIndex = (i % (categories.length - 1)) + 1;
   const cat = categories[catIndex];
   const artist = artists[i % artists.length];
   return {
-    id: i + 1,
+    id: i + customItems.length + 1,
     category: cat,
     image: `/images/portfolio/${i + 1}.jpg`,
     artist: artist,
@@ -23,6 +56,8 @@ const portfolioItems = Array.from({ length: 200 }).map((_, i) => {
     description: `A stunning custom ${cat.toLowerCase()} tattoo designed by ${artist}.`
   };
 });
+
+const portfolioItems = [...customItems, ...generatedItems];
 
 export function Portfolio() {
   const [filter, setFilter] = useState("All");
