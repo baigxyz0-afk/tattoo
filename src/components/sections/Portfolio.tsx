@@ -6,7 +6,7 @@ import { X, ZoomIn } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const categories = ["All", "Realism", "Black & Grey", "Minimal", "Traditional", "Portrait", "Japanese"];
+const categories = ["All", "Realism", "Black & Grey", "Minimal", "Traditional", "Portrait", "Japanese", "Lower Back Tattoo Designs"];
 
 const artists = ["Alex Carter", "Michael Stone", "Sophia Williams", "Daniel Cruz"];
 
@@ -19,7 +19,7 @@ const customFiles = Array.from({ length: 48 }).map((_, i) => {
 });
 
 const customTattoos = customFiles.map((item, idx) => {
-  const catIndex = (idx % (categories.length - 1)) + 1;
+  const catIndex = (idx % (categories.length - 2)) + 1;
   const cat = categories[catIndex];
   const artist = artists[idx % artists.length];
   return {
@@ -43,12 +43,52 @@ const firstCustomItem = {
 
 const customItems = [firstCustomItem, ...customTattoos];
 
+const lowerBackFiles = [
+  { num: 1, ext: ".webp" }, { num: 2, ext: ".jpg" }, { num: 3, ext: ".jpg" }, { num: 4, ext: ".jpg" },
+  { num: 5, ext: ".jpg" }, { num: 6, ext: ".jpg" }, { num: 7, ext: ".webp" }, { num: 8, ext: ".webp" },
+  { num: 9, ext: ".jpg" }, { num: 10, ext: ".jpg" }, { num: 11, ext: ".jpg" }, { num: 12, ext: ".webp" },
+  { num: 13, ext: ".jpg" }, { num: 14, ext: ".webp" }, { num: 15, ext: ".webp" }, { num: 16, ext: ".webp" },
+  { num: 17, ext: ".jpg" }, { num: 18, ext: ".jpg" }, { num: 19, ext: ".jpg" }, { num: 20, ext: ".webp" },
+  { num: 21, ext: ".png" }, { num: 22, ext: ".jpg" }, { num: 23, ext: ".jpg" }, { num: 24, ext: ".jpg" },
+  { num: 25, ext: ".jpg" }, { num: 26, ext: ".jpg" }, { num: 27, ext: ".webp" }, { num: 28, ext: ".webp" },
+  { num: 29, ext: ".jpg" }, { num: 30, ext: ".webp" }, { num: 31, ext: ".jpg" }, { num: 32, ext: ".jpg" },
+  { num: 33, ext: ".jpg" }, { num: 34, ext: ".webp" }, { num: 35, ext: ".webp" }, { num: 36, ext: ".jpg" },
+  { num: 37, ext: ".jpg" }, { num: 38, ext: ".jpg" }, { num: 39, ext: ".webp" }, { num: 40, ext: ".webp" },
+  { num: 41, ext: ".webp" }, { num: 42, ext: ".webp" }, { num: 43, ext: ".webp" }, { num: 44, ext: ".jpg" },
+  { num: 45, ext: ".jpg" }, { num: 46, ext: ".jpg" }, { num: 47, ext: ".jpg" }, { num: 48, ext: ".jpg" },
+  { num: 49, ext: ".jpg" }, { num: 50, ext: ".jpg" }, { num: 51, ext: ".webp" }, { num: 52, ext: ".webp" },
+  { num: 53, ext: ".jpg" }, { num: 54, ext: ".webp" }, { num: 55, ext: ".webp" }, { num: 56, ext: ".webp" },
+  { num: 57, ext: ".webp" }, { num: 58, ext: ".jpg" }, { num: 59, ext: ".jpg" }, { num: 60, ext: ".jpg" },
+  { num: 61, ext: ".webp" }, { num: 62, ext: ".webp" }, { num: 63, ext: ".webp" }, { num: 64, ext: ".jpg" },
+  { num: 65, ext: ".jpg" }, { num: 66, ext: ".jpg" }, { num: 67, ext: ".jpg" }, { num: 68, ext: ".webp" },
+  { num: 69, ext: ".jpg" }, { num: 70, ext: ".webp" }, { num: 71, ext: ".webp" }, { num: 72, ext: ".jpg" },
+  { num: 73, ext: ".jpg" }, { num: 74, ext: ".jpg" }, { num: 75, ext: ".jpg" }, { num: 76, ext: ".webp" },
+  { num: 77, ext: ".webp" }, { num: 78, ext: ".webp" }, { num: 79, ext: ".jpg" }, { num: 80, ext: ".jpg" },
+  { num: 81, ext: ".jpg" }, { num: 82, ext: ".jpg" }, { num: 83, ext: ".jpg" }, { num: 84, ext: ".jpg" },
+  { num: 85, ext: ".jpg" }, { num: 86, ext: ".jpg" }, { num: 87, ext: ".jpg" }, { num: 88, ext: ".jpg" },
+  { num: 89, ext: ".jpg" }, { num: 90, ext: ".jpg" }, { num: 91, ext: ".jpg" }, { num: 92, ext: ".jpg" },
+  { num: 93, ext: ".jpg" }, { num: 94, ext: ".png" }, { num: 95, ext: ".jpg" }, { num: 96, ext: ".jpg" },
+  { num: 97, ext: ".jpg" }, { num: 98, ext: ".jpg" }
+];
+
+const lowerBackTattoos = lowerBackFiles.map((item, idx) => {
+  const artist = artists[idx % artists.length];
+  return {
+    id: idx + customItems.length + 1,
+    category: "Lower Back Tattoo Designs",
+    image: `/images/portfolio/lower-back-tattoo-designs/lower-back-${item.num}${item.ext}`,
+    artist: artist,
+    style: "Lower Back",
+    description: `A stunning custom lower back tattoo design by ${artist}.`
+  };
+});
+
 const generatedItems = Array.from({ length: 200 }).map((_, i) => {
-  const catIndex = (i % (categories.length - 1)) + 1;
+  const catIndex = (i % (categories.length - 2)) + 1;
   const cat = categories[catIndex];
   const artist = artists[i % artists.length];
   return {
-    id: i + customItems.length + 1,
+    id: i + customItems.length + lowerBackTattoos.length + 1,
     category: cat,
     image: `/images/portfolio/${i + 1}.jpg`,
     artist: artist,
@@ -57,7 +97,7 @@ const generatedItems = Array.from({ length: 200 }).map((_, i) => {
   };
 });
 
-const portfolioItems = [...customItems, ...generatedItems];
+const portfolioItems = [...customItems, ...lowerBackTattoos, ...generatedItems];
 
 export function Portfolio() {
   const [filter, setFilter] = useState("All");
