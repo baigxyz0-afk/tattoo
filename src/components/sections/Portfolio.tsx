@@ -291,29 +291,19 @@ export function Portfolio() {
               initial={{ scale: 0.9, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
-              className="relative max-w-5xl w-full flex flex-col md:flex-row bg-charcoal rounded-sm overflow-hidden border border-accent-gold/25 shadow-[0_0_50px_rgba(0,0,0,0.9)]"
+              className="relative max-h-[85vh] max-w-[90vw] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Image Side */}
-              <div className="w-full md:w-2/3 h-[50vh] md:h-[70vh] bg-charcoal-light relative">
-                 <div 
-                  className="absolute inset-0 bg-contain bg-no-repeat bg-center"
-                  style={{ backgroundImage: `url(${selectedImage.image})` }}
-                />
-              </div>
+              <img 
+                src={selectedImage.image} 
+                alt={selectedImage.style} 
+                className="max-h-[85vh] max-w-full object-contain rounded-sm border border-accent-gold/20 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
+              />
               
-              {/* Info Side */}
-              <div className="w-full md:w-1/3 p-8 flex flex-col justify-center border-l border-accent-gold/15 bg-charcoal-light">
-                <p className="text-accent-gold text-sm font-bold tracking-[0.2em] uppercase mb-2">
-                  {selectedImage.style}
-                </p>
-                <h4 className="text-2xl font-bold text-white mb-6 font-heading">
-                  Artist: {selectedImage.artist}
-                </h4>
-                <p className="text-gray-400 text-base leading-relaxed mb-8">
-                  {selectedImage.description}
-                </p>
-                
+              {/* Small elegant caption overlay */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/75 backdrop-blur-sm border border-accent-gold/15 px-6 py-2.5 rounded-sm text-center min-w-[200px] shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+                <p className="text-accent-gold text-xs uppercase tracking-[0.2em] font-bold mb-0.5">{selectedImage.style}</p>
+                <p className="text-gray-300 text-xs font-light">Artist: {selectedImage.artist}</p>
               </div>
             </motion.div>
           </motion.div>
