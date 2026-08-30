@@ -199,7 +199,6 @@ export function Portfolio() {
                 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                  <ZoomIn size={32} className="text-white mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" />
                   <p className="text-accent-gold text-xs uppercase tracking-widest font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">{item.style}</p>
                   <p className="text-white font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">By {item.artist}</p>
                 </div>
@@ -264,13 +263,6 @@ export function Portfolio() {
                   {selectedImage.description}
                 </p>
                 
-                <Link 
-                  href="#booking"
-                  onClick={() => setSelectedImage(null)}
-                  className="w-full text-center bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-6 py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm shadow-[0_0_15px_rgba(201,154,46,0.2)] hover:shadow-[0_0_25px_rgba(201,154,46,0.4)]"
-                >
-                  Book Similar Tattoo
-                </Link>
               </div>
             </motion.div>
           </motion.div>
