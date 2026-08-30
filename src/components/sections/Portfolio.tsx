@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ZoomIn } from "lucide-react";
+import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -133,6 +133,39 @@ export function Portfolio() {
     setVisibleCount(15);
   };
 
+  const handlePrevImage = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    if (!selectedImage) return;
+    const currentIndex = filteredItems.findIndex(item => item.id === selectedImage.id);
+    if (currentIndex > 0) {
+      setSelectedImage(filteredItems[currentIndex - 1]);
+    } else {
+      setSelectedImage(filteredItems[filteredItems.length - 1]);
+    }
+  };
+
+  const handleNextImage = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    if (!selectedImage) return;
+    const currentIndex = filteredItems.findIndex(item => item.id === selectedImage.id);
+    if (currentIndex < filteredItems.length - 1) {
+      setSelectedImage(filteredItems[currentIndex + 1]);
+    } else {
+      setSelectedImage(filteredItems[0]);
+    }
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!selectedImage) return;
+      if (e.key === "ArrowLeft") handlePrevImage();
+      if (e.key === "ArrowRight") handleNextImage();
+      if (e.key === "Escape") setSelectedImage(null);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImage, filteredItems]);
+
   return (
     <section id="portfolio" className="py-24 bg-charcoal-light">
       <div className="max-w-7xl mx-auto px-6">
@@ -234,6 +267,24 @@ export function Portfolio() {
               onClick={() => setSelectedImage(null)}
             >
               <X size={32} />
+            </button>
+
+            {/* Prev Image Arrow */}
+            <button 
+              className="absolute left-4 md:left-8 text-white/70 hover:text-accent-gold transition-all duration-300 z-10 w-12 h-12 bg-black/40 hover:bg-black/80 rounded-full flex items-center justify-center border border-white/10 hover:border-accent-gold/40 hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+              onClick={handlePrevImage}
+              aria-label="Previous image"
+            >
+              <ChevronLeft size={32} />
+            </button>
+
+            {/* Next Image Arrow */}
+            <button 
+              className="absolute right-4 md:right-8 text-white/70 hover:text-accent-gold transition-all duration-300 z-10 w-12 h-12 bg-black/40 hover:bg-black/80 rounded-full flex items-center justify-center border border-white/10 hover:border-accent-gold/40 hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+              onClick={handleNextImage}
+              aria-label="Next image"
+            >
+              <ChevronRight size={32} />
             </button>
             
             <motion.div 
