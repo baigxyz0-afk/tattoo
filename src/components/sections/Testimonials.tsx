@@ -68,7 +68,7 @@ export function Testimonials() {
   };
 
   return (
-    <section className="py-24 bg-black relative overflow-hidden">
+    <section className="py-24 bg-charcoal relative overflow-hidden">
       
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-gold/5 rounded-full blur-[100px] pointer-events-none" />
 
@@ -125,7 +125,7 @@ export function Testimonials() {
         <div className="flex justify-center items-center space-x-6 mt-8">
           <button 
             onClick={prevTestimonial}
-            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black hover:border-white transition-all duration-300"
+            className="w-12 h-12 rounded-full border border-accent-gold/15 flex items-center justify-center text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300 shadow-[0_0_10px_rgba(201,154,46,0.1)]"
             aria-label="Previous testimonial"
           >
             <ChevronLeft size={24} />
@@ -149,7 +149,7 @@ export function Testimonials() {
 
           <button 
             onClick={nextTestimonial}
-            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black hover:border-white transition-all duration-300"
+            className="w-12 h-12 rounded-full border border-accent-gold/15 flex items-center justify-center text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300 shadow-[0_0_10px_rgba(201,154,46,0.1)]"
             aria-label="Next testimonial"
           >
             <ChevronRight size={24} />

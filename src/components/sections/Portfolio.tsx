@@ -134,7 +134,7 @@ export function Portfolio() {
   };
 
   return (
-    <section id="portfolio" className="py-24 bg-black">
+    <section id="portfolio" className="py-24 bg-charcoal-light">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-12">
@@ -165,8 +165,8 @@ export function Portfolio() {
               onClick={() => handleFilterChange(cat)}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 filter === cat 
-                  ? "bg-white text-black" 
-                  : "bg-charcoal text-gray-400 hover:text-white hover:bg-white/10 border border-white/5"
+                  ? "bg-accent-gold text-black shadow-[0_0_15px_rgba(201,154,46,0.25)]" 
+                  : "bg-charcoal text-gray-400 hover:text-white hover:bg-charcoal/50 border border-accent-gold/10"
               }`}
             >
               {cat}
@@ -188,7 +188,7 @@ export function Portfolio() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
                 key={item.id}
-                className="group relative cursor-pointer overflow-hidden rounded-sm bg-charcoal aspect-[4/5]"
+                className="group relative cursor-pointer overflow-hidden rounded-sm bg-charcoal aspect-[4/5] border border-accent-gold/10 hover:border-accent-gold/30 hover:shadow-[0_0_20px_rgba(201,154,46,0.1)] transition-all duration-300"
                 onClick={() => setSelectedImage(item)}
               >
                 {/* Image Placeholder */}
@@ -212,7 +212,7 @@ export function Portfolio() {
           <div className="mt-12 text-center">
             <button
               onClick={() => setVisibleCount(prev => prev + 15)}
-              className="inline-block border border-white/20 text-white px-8 py-4 rounded-sm font-bold hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-widest text-sm"
+              className="inline-block bg-transparent border border-white/20 hover:border-accent-gold text-white hover:text-accent-gold px-8 py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/5"
             >
               Load More
             </button>
@@ -241,7 +241,7 @@ export function Portfolio() {
               initial={{ scale: 0.9, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
-              className="relative max-w-5xl w-full flex flex-col md:flex-row bg-charcoal rounded-sm overflow-hidden shadow-2xl"
+              className="relative max-w-5xl w-full flex flex-col md:flex-row bg-charcoal rounded-sm overflow-hidden border border-accent-gold/25 shadow-[0_0_50px_rgba(0,0,0,0.9)]"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Image Side */}
@@ -253,7 +253,7 @@ export function Portfolio() {
               </div>
               
               {/* Info Side */}
-              <div className="w-full md:w-1/3 p-8 flex flex-col justify-center border-l border-white/10">
+              <div className="w-full md:w-1/3 p-8 flex flex-col justify-center border-l border-accent-gold/15 bg-charcoal-light">
                 <p className="text-accent-gold text-sm font-bold tracking-[0.2em] uppercase mb-2">
                   {selectedImage.style}
                 </p>
@@ -267,7 +267,7 @@ export function Portfolio() {
                 <Link 
                   href="#booking"
                   onClick={() => setSelectedImage(null)}
-                  className="w-full text-center bg-white text-black px-6 py-4 rounded-sm font-bold hover:bg-accent-gold transition-colors uppercase tracking-widest text-sm"
+                  className="w-full text-center bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-6 py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm shadow-[0_0_15px_rgba(201,154,46,0.2)] hover:shadow-[0_0_25px_rgba(201,154,46,0.4)]"
                 >
                   Book Similar Tattoo
                 </Link>

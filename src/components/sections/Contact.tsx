@@ -6,7 +6,7 @@ import { InstagramIcon as Instagram, FacebookIcon as Facebook, TikTokIcon as Gho
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 bg-black">
+    <section id="contact" className="py-24 bg-charcoal">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
@@ -37,7 +37,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="bg-charcoal p-8 md:p-12 rounded-sm border border-white/5 flex flex-col justify-between"
+            className="bg-charcoal-light p-8 md:p-12 rounded-sm border border-accent-gold/15 shadow-[0_10px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between"
           >
             <div>
               <h4 className="text-2xl font-bold text-white mb-8 font-heading">InkCraft Tattoo Studio</h4>
@@ -88,17 +88,17 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="pt-8 border-t border-white/10">
+            <div className="pt-8 border-t border-accent-gold/15">
               <p className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Follow Our Work</p>
               <div className="flex space-x-4">
-                <a href="#" className="flex items-center space-x-2 bg-white/5 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black transition-colors">
+                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300">
                   <Instagram size={18} /> <span>Instagram</span>
                 </a>
-                <a href="#" className="flex items-center space-x-2 bg-white/5 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black transition-colors">
+                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300">
                   <Facebook size={18} /> <span>Facebook</span>
                 </a>
-                <a href="#" className="flex items-center space-x-2 bg-white/5 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black transition-colors">
-                  <Ghost size={18} /> <span>TikTok</span> {/* Using Ghost as a placeholder icon for TikTok */}
+                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300">
+                  <Ghost size={18} /> <span>TikTok</span>
                 </a>
               </div>
             </div>
@@ -110,7 +110,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="h-[500px] lg:h-auto w-full bg-charcoal rounded-sm overflow-hidden relative border border-white/5 group"
+            className="h-[500px] lg:h-auto w-full bg-charcoal-light rounded-sm overflow-hidden relative border border-accent-gold/15 shadow-[0_10px_40px_rgba(0,0,0,0.6)] group"
           >
             {/* Fake Google Map implementation for demo */}
             <div className="absolute inset-0 bg-[#222] flex items-center justify-center">
@@ -124,7 +124,7 @@ export function Contact() {
                     <MapPin size={24} />
                   </div>
                 </div>
-                <div className="bg-charcoal px-6 py-3 rounded-sm border border-white/10 shadow-2xl">
+                <div className="bg-charcoal-light px-6 py-3 rounded-sm border border-accent-gold/15 shadow-2xl">
                   <p className="text-white font-bold text-sm">InkCraft Tattoo Studio</p>
                   <p className="text-gray-400 text-xs">Get Directions</p>
                 </div>

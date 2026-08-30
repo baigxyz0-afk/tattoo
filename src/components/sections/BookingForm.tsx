@@ -48,7 +48,7 @@ export function BookingForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-charcoal p-8 md:p-12 rounded-sm border border-white/5 relative"
+          className="bg-charcoal p-8 md:p-12 rounded-sm border border-accent-gold/15 shadow-[0_10px_40px_rgba(0,0,0,0.6)] relative"
         >
           {/* Notifications */}
           <AnimatePresence>
@@ -135,7 +135,7 @@ export function BookingForm() {
 
             <div className="space-y-2">
               <label className="text-xs uppercase tracking-wider text-gray-400 font-bold">Upload Reference Image (Optional)</label>
-              <div className="border-2 border-dashed border-white/20 rounded-sm p-8 text-center hover:border-accent-gold transition-colors cursor-pointer group">
+              <div className="border-2 border-dashed border-accent-gold/20 hover:border-accent-gold/60 rounded-sm p-8 text-center hover:bg-accent-gold/5 transition-all duration-300 cursor-pointer group">
                 <Upload size={24} className="text-gray-500 group-hover:text-accent-gold mx-auto mb-3 transition-colors" />
                 <p className="text-sm text-gray-400 group-hover:text-white transition-colors">Click to upload or drag and drop</p>
                 <p className="text-xs text-gray-500 mt-1">JPG, PNG or PDF (Max 5MB)</p>
@@ -146,7 +146,7 @@ export function BookingForm() {
             <button 
               type="submit" 
               disabled={status === "submitting"}
-              className="w-full bg-accent-gold text-black py-4 rounded-sm font-bold hover:bg-white transition-colors uppercase tracking-widest text-sm flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_15px_rgba(201,154,46,0.2)] hover:shadow-[0_0_25px_rgba(201,154,46,0.5)]"
             >
               {status === "submitting" ? (
                 <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin" />

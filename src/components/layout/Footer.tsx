@@ -4,7 +4,7 @@ import { InstagramIcon as Instagram, FacebookIcon as Facebook, TwitterIcon as Tw
 
 export function Footer() {
   return (
-    <footer className="bg-charcoal-light border-t border-white/10 pt-20 pb-10">
+    <footer className="bg-charcoal-light border-t border-accent-gold/15 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
@@ -86,7 +86,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-accent-gold/15 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-xs">
             © 2026 InkCraft Tattoo Studio. All Rights Reserved.
           </p>

@@ -89,7 +89,7 @@ export function FAQ() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className={`border border-white/10 rounded-sm overflow-hidden transition-colors duration-300 ${isOpen ? 'bg-black border-accent-gold/50' : 'bg-charcoal hover:bg-black'}`}
+                className={`border rounded-sm overflow-hidden transition-all duration-300 ${isOpen ? 'bg-charcoal border-accent-gold/40 shadow-[0_4px_25px_rgba(0,0,0,0.5)]' : 'bg-charcoal-light border-accent-gold/10 hover:border-accent-gold/25'}`}
               >
                 <button
                   onClick={() => toggleFAQ(index)}
@@ -111,7 +111,7 @@ export function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-6 pb-6 pt-2 text-gray-400 leading-relaxed text-sm md:text-base border-t border-white/5">
+                      <div className="px-6 pb-6 pt-2 text-gray-400 leading-relaxed text-sm md:text-base border-t border-accent-gold/10">
                         {faq.answer}
                       </div>
                     </motion.div>

@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable} h-full antialiased dark`}>
-      <body suppressHydrationWarning className="min-h-full flex flex-col bg-black text-white selection:bg-accent-gold selection:text-black">
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-charcoal text-white selection:bg-accent-gold selection:text-black">
         {children}
       </body>
     </html>

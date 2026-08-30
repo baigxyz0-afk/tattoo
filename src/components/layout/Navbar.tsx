@@ -32,46 +32,49 @@ export function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-charcoal/80 backdrop-blur-md border-b border-white/10 py-4"
+          ? "bg-charcoal/90 backdrop-blur-md border-b border-accent-gold/15 py-4 shadow-[0_4px_30px_rgba(0,0,0,0.8)]"
           : "bg-transparent py-6"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link href="#home" className="text-2xl font-bold tracking-widest text-white uppercase flex flex-col">
-          <span>InkCraft</span>
-          <span className="text-[10px] text-accent-gold tracking-[0.2em] -mt-1">Tattoo Studio</span>
-        </Link>
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between lg:grid lg:grid-cols-3">
+        <div className="flex items-center justify-between w-full lg:w-auto lg:col-span-1">
+          <Link href="#home" className="text-2xl font-bold tracking-widest text-white uppercase flex flex-col">
+            <span>InkCraft</span>
+            <span className="text-[10px] text-accent-gold tracking-[0.2em] -mt-1">Tattoo Studio</span>
+          </Link>
+
+          {/* Mobile Toggle */}
+          <button
+            className="lg:hidden text-white focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center justify-center space-x-8 lg:col-span-1">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              className="relative py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors group"
             >
               {link.name}
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-accent-gold transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </div>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex justify-end lg:col-span-1">
           <Link
             href="#booking"
-            className="bg-accent-gold text-black px-6 py-2.5 rounded-sm font-semibold hover:bg-white transition-colors duration-300 uppercase tracking-wide text-sm"
+            className="bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-6 py-2.5 rounded-sm font-semibold transition-all duration-300 uppercase tracking-wide text-sm shadow-[0_0_15px_rgba(201,154,46,0.2)] hover:shadow-[0_0_25px_rgba(201,154,46,0.4)]"
           >
             Book Now
           </Link>
         </div>
-
-        {/* Mobile Toggle */}
-        <button
-          className="lg:hidden text-white"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
       </div>
 
       {/* Mobile Nav */}
@@ -81,14 +84,14 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg-charcoal border-b border-white/10 flex flex-col items-center py-8 space-y-6 lg:hidden"
+            className="absolute top-full left-0 w-full bg-charcoal/95 backdrop-blur-md border-b border-accent-gold/15 flex flex-col items-center py-8 space-y-6 lg:hidden shadow-[0_10px_30px_rgba(0,0,0,0.9)]"
           >
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
+                className="text-lg font-medium text-gray-300 hover:text-accent-gold transition-colors"
               >
                 {link.name}
               </Link>
@@ -96,7 +99,7 @@ export function Navbar() {
             <Link
               href="#booking"
               onClick={() => setIsOpen(false)}
-              className="bg-accent-gold text-black px-8 py-3 rounded-sm font-bold hover:bg-white transition-colors uppercase tracking-widest text-sm w-11/12 text-center mt-4"
+              className="bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-8 py-3 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm w-11/12 text-center mt-4 shadow-[0_0_15px_rgba(201,154,46,0.2)]"
             >
               Book Now
             </Link>

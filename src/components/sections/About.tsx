@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Award, ShieldCheck, Gem, Palette } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
@@ -18,6 +18,29 @@ const features = [
   "Custom tattoo designs",
   "Professional consultation",
   "Safe and comfortable environment",
+];
+
+const featureCards = [
+  {
+    icon: Award,
+    title: "Expert Artists",
+    description: "Our roster features award-winning, highly certified artists specialized in a wide range of tattoo styles."
+  },
+  {
+    icon: ShieldCheck,
+    title: "Safe & Hygienic",
+    description: "We strictly adhere to hospital-grade sterilization protocols. Your safety and health are our absolute priority."
+  },
+  {
+    icon: Gem,
+    title: "Premium Quality",
+    description: "We use only state-of-the-art tattoo machinery, vegan-friendly premium inks, and advanced healing solutions."
+  },
+  {
+    icon: Palette,
+    title: "Custom Designs",
+    description: "We collaborate closely with you to transform your personal stories into stunning, custom-drawn masterpieces."
+  }
 ];
 
 export function About() {
@@ -85,6 +108,33 @@ export function About() {
             </div>
 
           </motion.div>
+        </div>
+
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-24">
+          {featureCards.map((card, idx) => {
+            const Icon = card.icon;
+            return (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="bg-charcoal-light p-8 rounded-sm border border-accent-gold/10 hover:border-accent-gold/40 hover:shadow-[0_0_25px_rgba(201,154,46,0.1)] transition-all duration-500 group flex flex-col items-center text-center"
+              >
+                <div className="w-16 h-16 rounded-full bg-accent-gold/5 flex items-center justify-center mb-6 border border-accent-gold/15 group-hover:bg-accent-gold group-hover:text-black transition-all duration-500 text-accent-gold">
+                  <Icon size={28} className="stroke-[1.5]" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-3 font-heading group-hover:text-accent-gold transition-colors duration-300">
+                  {card.title}
+                </h4>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {card.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

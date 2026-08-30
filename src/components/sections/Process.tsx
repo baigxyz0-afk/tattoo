@@ -38,7 +38,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="py-24 bg-charcoal-light relative overflow-hidden">
+    <section className="py-24 bg-charcoal relative overflow-hidden">
       
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
@@ -90,7 +90,7 @@ export function Process() {
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ delay: 0.2, type: "spring" }}
-                    className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal border-2 border-accent-gold items-center justify-center z-10"
+                    className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-light border-2 border-accent-gold items-center justify-center z-10 shadow-[0_0_10px_rgba(201,154,46,0.2)]"
                   >
                     <Icon size={20} className="text-accent-gold" />
                   </motion.div>
@@ -107,7 +107,7 @@ export function Process() {
                       <span className="text-5xl font-bold text-white/5 font-heading">
                         Step {step.num}
                       </span>
-                      <div className="md:hidden w-10 h-10 rounded-full bg-charcoal border border-accent-gold flex items-center justify-center shrink-0">
+                      <div className="md:hidden w-10 h-10 rounded-full bg-charcoal-light border border-accent-gold flex items-center justify-center shrink-0 shadow-[0_0_10px_rgba(201,154,46,0.15)]">
                         <Icon size={16} className="text-accent-gold" />
                       </div>
                     </div>

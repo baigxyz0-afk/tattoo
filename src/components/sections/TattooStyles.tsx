@@ -45,7 +45,7 @@ const styles = [
 
 export function TattooStyles() {
   return (
-    <section id="styles" className="py-24 bg-black">
+    <section id="styles" className="py-24 bg-charcoal-light">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
@@ -76,7 +76,7 @@ export function TattooStyles() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative bg-charcoal rounded-sm overflow-hidden border border-white/5 hover:border-accent-gold/30 transition-colors"
+              className="group relative bg-charcoal rounded-sm overflow-hidden border border-accent-gold/10 hover:border-accent-gold/40 hover:shadow-[0_0_25px_rgba(201,154,46,0.1)] transition-all duration-500"
             >
               <div className="relative h-64 overflow-hidden">
                 <div 
@@ -105,7 +105,7 @@ export function TattooStyles() {
         <div className="mt-16 text-center">
           <Link 
             href="#portfolio"
-            className="inline-block border border-white/20 text-white px-8 py-4 rounded-sm font-bold hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-widest text-sm"
+            className="inline-block bg-transparent border border-white/20 hover:border-accent-gold text-white hover:text-accent-gold px-8 py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/5"
           >
             View Full Portfolio
           </Link>

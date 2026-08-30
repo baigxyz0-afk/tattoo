@@ -33,7 +33,7 @@ const pricingPlans = [
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-24 bg-black">
+    <section id="pricing" className="py-24 bg-charcoal">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
@@ -59,7 +59,7 @@ export function Pricing() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center space-x-2 bg-charcoal-light px-4 py-2 rounded-sm border border-white/10 text-gray-300 text-sm"
+            className="inline-flex items-center space-x-2 bg-charcoal-light px-4 py-2 rounded-sm border border-accent-gold/10 text-gray-300 text-sm"
           >
             <Info size={16} className="text-accent-gold" />
             <span>Final pricing depends on size, placement, complexity, and artist.</span>
@@ -74,7 +74,7 @@ export function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-charcoal border border-white/5 hover:border-accent-gold/50 transition-colors duration-300 p-8 flex flex-col relative overflow-hidden group"
+              className="bg-charcoal-light border border-accent-gold/10 hover:border-accent-gold/40 hover:shadow-[0_0_25px_rgba(201,154,46,0.1)] transition-all duration-300 p-8 flex flex-col relative overflow-hidden group rounded-sm"
             >
               {/* Subtle hover gradient */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent-gold/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 group-hover:bg-accent-gold/10 transition-colors duration-500" />

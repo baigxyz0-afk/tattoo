@@ -41,7 +41,7 @@ const artists = [
 
 export function Artists() {
   return (
-    <section id="artists" className="py-24 bg-charcoal-light">
+    <section id="artists" className="py-24 bg-charcoal">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
@@ -72,7 +72,7 @@ export function Artists() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative bg-charcoal rounded-sm overflow-hidden"
+              className="group relative bg-charcoal-light rounded-sm overflow-hidden border border-accent-gold/10 hover:border-accent-gold/40 hover:shadow-[0_0_25px_rgba(201,154,46,0.1)] transition-all duration-500"
             >
               {/* Image Container */}
               <div className="relative h-[400px] overflow-hidden">
@@ -101,7 +101,7 @@ export function Artists() {
               </div>
               
               {/* Info Container */}
-              <div className="p-6 text-center border-t border-white/5 relative z-10 bg-charcoal">
+              <div className="p-6 text-center border-t border-accent-gold/10 relative z-10 bg-charcoal-light">
                 <h4 className="text-xl font-bold text-white mb-1 font-heading">{artist.name}</h4>
                 <p className="text-accent-gold text-xs uppercase tracking-wider mb-3">
                   {artist.specialty}
