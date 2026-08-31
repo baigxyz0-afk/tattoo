@@ -41,6 +41,12 @@ const styles = [
     description: "Precise lines and shapes forming complex symmetrical patterns.",
     image: "https://d1kq2dqeox7x40.cloudfront.net/images/posts/e9003602-71bc-45d6-8110-065534253c19.jpg"
   },
+  {
+    id: "Tattoo Man",
+    name: "Tattoo Man",
+    description: "Bold, masculine, and powerful custom tattoo designs curated specifically for men.",
+    image: "/images/portfolio/tattoo-man/man-1.jpg"
+  },
 ];
 
 export function TattooStyles() {

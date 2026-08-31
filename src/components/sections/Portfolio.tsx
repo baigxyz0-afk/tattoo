@@ -6,7 +6,7 @@ import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const categories = ["All", "Realism", "Black & Grey", "Minimal", "Traditional", "Portrait", "Japanese", "Lower Back Tattoo Designs", "Women Tattoo"];
+const categories = ["All", "Realism", "Black & Grey", "Minimal", "Traditional", "Portrait", "Japanese", "Lower Back Tattoo Designs", "Women Tattoo", "Tattoo Man"];
 
 const artists = ["Alex Carter", "Michael Stone", "Sophia Williams", "Daniel Cruz"];
 
@@ -101,12 +101,31 @@ const womenTattoos = womenFiles.map((item, idx) => {
   };
 });
 
+const tattooManPngNums = new Set([8, 28, 92, 145, 154]);
+const tattooManFiles = Array.from({ length: 268 }).map((_, i) => {
+  const num = i + 1;
+  const ext = tattooManPngNums.has(num) ? ".png" : ".jpg";
+  return { num, ext };
+});
+
+const tattooManTattoos = tattooManFiles.map((item, idx) => {
+  const artist = artists[idx % artists.length];
+  return {
+    id: idx + customItems.length + lowerBackTattoos.length + womenTattoos.length + 1,
+    category: "Tattoo Man",
+    image: `/images/portfolio/tattoo-man/man-${item.num}${item.ext}`,
+    artist: artist,
+    style: "Tattoo Man",
+    description: `A bold and masculine custom tattoo design by ${artist}.`
+  };
+});
+
 const generatedItems = Array.from({ length: 200 }).map((_, i) => {
-  const catIndex = (i % (categories.length - 3)) + 1;
+  const catIndex = (i % (categories.length - 4)) + 1;
   const cat = categories[catIndex];
   const artist = artists[i % artists.length];
   return {
-    id: i + customItems.length + lowerBackTattoos.length + womenTattoos.length + 1,
+    id: i + customItems.length + lowerBackTattoos.length + womenTattoos.length + tattooManTattoos.length + 1,
     category: cat,
     image: `/images/portfolio/${i + 1}.jpg`,
     artist: artist,
@@ -115,7 +134,7 @@ const generatedItems = Array.from({ length: 200 }).map((_, i) => {
   };
 });
 
-const portfolioItems = [...customItems, ...lowerBackTattoos, ...womenTattoos, ...generatedItems];
+const portfolioItems = [...customItems, ...lowerBackTattoos, ...womenTattoos, ...tattooManTattoos, ...generatedItems];
 
 export function Portfolio() {
   const [filter, setFilter] = useState("All");
