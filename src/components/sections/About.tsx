@@ -57,10 +57,12 @@ export function About() {
             transition={{ duration: 0.8 }}
             className="relative h-[600px] w-full rounded-sm overflow-hidden"
           >
-            {/* Using a placeholder for now, will generate AI image later */}
-            <div 
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/about-image.jpg')" }}
+            <img 
+              src="/images/about-image.jpg"
+              alt="Inside TattooWorlds Studio New York - Professional Tattoo Artists at Work"
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover"
             />
             {/* Subtle overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent" />

@@ -224,10 +224,13 @@ export function Portfolio() {
                 className="group relative cursor-pointer overflow-hidden rounded-sm bg-charcoal aspect-[4/5] border border-accent-gold/10 hover:border-accent-gold/30 hover:shadow-[0_0_20px_rgba(201,154,46,0.1)] transition-all duration-300"
                 onClick={() => setSelectedImage(item)}
               >
-                {/* Image Placeholder */}
-                <div 
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{ backgroundImage: `url(${item.image})` }}
+                {/* Indexable Image Tag for Googlebot-Image, AI Multimodal Search & A11y */}
+                <img 
+                  src={item.image} 
+                  alt={`Custom ${item.style} tattoo design by ${item.artist} at TattooWorlds NYC`}
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 
                 {/* Hover Overlay */}
@@ -296,7 +299,7 @@ export function Portfolio() {
             >
               <img 
                 src={selectedImage.image} 
-                alt={selectedImage.style} 
+                alt={`Custom ${selectedImage.style} tattoo artwork by ${selectedImage.artist} at TattooWorlds NYC`} 
                 className="max-h-[85vh] max-w-full object-contain rounded-sm border border-accent-gold/20 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
               />
               

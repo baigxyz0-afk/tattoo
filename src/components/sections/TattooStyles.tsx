@@ -137,9 +137,12 @@ export function TattooStyles() {
               }}
             >
               <div className="relative h-64 overflow-hidden">
-                <div 
-                  className="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 group-hover:scale-110"
-                  style={{ backgroundImage: `url(${style.image})` }}
+                <img 
+                  src={style.image} 
+                  alt={`Custom ${style.name} Tattoo Style at TattooWorlds NYC`}
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
               </div>

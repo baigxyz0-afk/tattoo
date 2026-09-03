@@ -55,7 +55,13 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 bg-charcoal-light">
+    <section 
+      id="faq" 
+      itemScope 
+      itemType="https://schema.org/FAQPage" 
+      className="py-24 bg-charcoal-light"
+      aria-label="Frequently Asked Questions"
+    >
       <div className="max-w-4xl mx-auto px-6">
         
         <div className="text-center mb-16">
@@ -85,6 +91,9 @@ export function FAQ() {
             return (
               <motion.div
                 key={index}
+                itemScope
+                itemProp="mainEntity"
+                itemType="https://schema.org/Question"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -92,10 +101,16 @@ export function FAQ() {
                 className={`border rounded-sm overflow-hidden transition-all duration-300 ${isOpen ? 'bg-charcoal border-accent-gold/40 shadow-[0_4px_25px_rgba(0,0,0,0.5)]' : 'bg-charcoal-light border-accent-gold/10 hover:border-accent-gold/25'}`}
               >
                 <button
+                  type="button"
                   onClick={() => toggleFAQ(index)}
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${index}`}
                   className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
                 >
-                  <span className={`font-bold pr-8 transition-colors ${isOpen ? 'text-accent-gold' : 'text-white'}`}>
+                  <span 
+                    itemProp="name" 
+                    className={`font-bold pr-8 transition-colors ${isOpen ? 'text-accent-gold' : 'text-white'}`}
+                  >
                     {faq.question}
                   </span>
                   <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isOpen ? 'bg-accent-gold text-black' : 'bg-white/5 text-gray-400'}`}>
@@ -106,12 +121,21 @@ export function FAQ() {
                 <AnimatePresence>
                   {isOpen && (
                     <motion.div
+                      id={`faq-answer-${index}`}
+                      role="region"
+                      aria-labelledby={`faq-question-${index}`}
+                      itemScope
+                      itemProp="acceptedAnswer"
+                      itemType="https://schema.org/Answer"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-6 pb-6 pt-2 text-gray-400 leading-relaxed text-sm md:text-base border-t border-accent-gold/10">
+                      <div 
+                        itemProp="text"
+                        className="px-6 pb-6 pt-2 text-gray-400 leading-relaxed text-sm md:text-base border-t border-accent-gold/10"
+                      >
                         {faq.answer}
                       </div>
                     </motion.div>

@@ -76,9 +76,12 @@ export function Artists() {
             >
               {/* Image Container */}
               <div className="relative h-[400px] overflow-hidden">
-                <div 
-                  className="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
-                  style={{ backgroundImage: `url(${artist.image})` }}
+                <img 
+                  src={artist.image} 
+                  alt={`${artist.name} - ${artist.specialty} at TattooWorlds NYC`}
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                 />
                 
                 {/* Overlay that appears on hover with buttons */}
