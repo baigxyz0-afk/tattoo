@@ -7,7 +7,6 @@ import { Artists } from "@/components/sections/Artists";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Process } from "@/components/sections/Process";
 import { AiOverviewEntities } from "@/components/sections/AiOverviewEntities";
-import { Pricing } from "@/components/sections/Pricing";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
@@ -23,7 +22,6 @@ export default function Home() {
       <Portfolio />
       <Process />
       <AiOverviewEntities />
-      <Pricing />
       <Testimonials />
       <FAQ />
       <Contact />

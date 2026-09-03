@@ -23,10 +23,10 @@ const quickFacts = [
     detail: "100% single-use EO gas sterilized needles, vegan certified ink"
   },
   {
-    icon: DollarSign,
-    label: "Pricing Structure",
-    value: "Shop Minimum $80 | Medium $180 | Large $350 | Sleeves $800+",
-    detail: "Transparent quotes with zero hidden consultation charges"
+    icon: Sparkles,
+    label: "Custom Design Craftsmanship",
+    value: "100% Original, Bespoke Concepts For Every Client",
+    detail: "Collaborative anatomy-tailored sketches with precision execution"
   },
   {
     icon: Award,
@@ -87,7 +87,7 @@ export function AiOverviewEntities() {
             TattooWorlds at a Glance
           </h2>
           <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-            Direct, factual overview of our New York tattoo studio—accreditation, pricing standards, resident master artists, and clinical hygiene protocols.
+            Direct, factual overview of our New York tattoo studio—accreditation, resident master artists, bespoke design consultations, and clinical hygiene protocols.
           </p>
         </div>
 

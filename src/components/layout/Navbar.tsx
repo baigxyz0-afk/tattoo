@@ -12,9 +12,7 @@ const navLinks = [
   { name: "Artists", href: "#artists" },
   { name: "Styles", href: "#styles" },
   { name: "Portfolio", href: "#portfolio" },
-  { name: "Pricing", href: "#pricing" },
   { name: "FAQ", href: "#faq" },
-  { name: "Contact", href: "#contact" },
 ];
 
 export function Navbar() {

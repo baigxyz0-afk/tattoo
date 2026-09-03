@@ -67,8 +67,6 @@ export function StructuredData() {
         "description": "TattooWorlds is an elite, hygienic custom tattoo studio in New York. Our award-winning resident artists specialize in photorealistic portraits, black & grey, Japanese Irezumi, traditional Americana, and fine line tattoos.",
         "telephone": "+1-234-567-890",
         "email": "hello@tattooworlds.com",
-        "priceRange": "$$ - $$$$",
-        "currenciesAccepted": "USD",
         "paymentAccepted": "Cash, Credit Card, Debit Card, Apple Pay, Google Pay",
         "address": {
           "@type": "PostalAddress",
@@ -134,47 +132,39 @@ export function StructuredData() {
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Tattoo Services & Pricing",
+          "name": "Bespoke Custom Tattoo Services",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Small Tattoo",
-                "description": "Minimalist designs, lettering, and tiny symbols up to 2x2 inches."
-              },
-              "price": "80",
-              "priceCurrency": "USD"
+                "name": "Fine Line & Minimalist Tattoo",
+                "description": "Custom fine-line designs, delicate lettering, and precision botanical art."
+              }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Medium Tattoo",
-                "description": "Palm-sized custom pieces with detailed shading and up to 3 colors."
-              },
-              "price": "180",
-              "priceCurrency": "USD"
+                "name": "Realism & Portrait Tattoo",
+                "description": "Photorealistic portraits, wildlife, and hyper-detailed greyscale artwork."
+              }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Large Tattoo",
-                "description": "Half sleeves, calves, or intricate chest pieces with complex details."
-              },
-              "price": "350",
-              "priceCurrency": "USD"
+                "name": "Japanese Irezumi & Traditional",
+                "description": "Full traditional motifs including dragons, koi, florals, and bold dynamic lines."
+              }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Custom Sleeve Tattoo",
+                "name": "Custom Sleeve Tattoo Project",
                 "description": "Full arm or leg sleeve with cohesive bespoke storytelling artwork."
-              },
-              "price": "800",
-              "priceCurrency": "USD"
+              }
             }
           ]
         }
@@ -270,10 +260,10 @@ export function StructuredData() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "How much does a tattoo cost at TattooWorlds?",
+            "name": "How do custom tattoo consultations work at TattooWorlds?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Our studio minimum is $80 for small minimalist pieces. Medium palm-sized tattoos start at $180, large pieces and half-sleeves start at $350, and full custom sleeves start at $800. Final pricing depends on size, placement, and design complexity."
+              "text": "We provide one-on-one custom consultations where you collaborate with our resident master artists on sizing, anatomical placement, and bespoke concept sketches."
             }
           },
           {
@@ -367,12 +357,6 @@ export function StructuredData() {
           {
             "@type": "ListItem",
             "position": 5,
-            "name": "Pricing",
-            "item": "https://tattooworlds.com#pricing"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
             "name": "Contact Studio",
             "item": "https://tattooworlds.com#contact"
           }

@@ -6,8 +6,8 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "How much does a tattoo cost?",
-    answer: "Our minimum is $80. Final pricing depends on the size, placement, complexity of the design, and the artist you choose. We recommend booking a consultation or submitting a quote request for an accurate estimate."
+    question: "How do custom tattoo consultations work?",
+    answer: "We offer personalized consultations with our resident master artists. You can explore creative concepts, anatomical placement, and styling details to develop a 100% custom piece tailored to your vision."
   },
   {
     question: "Do I need an appointment?",
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "Do you offer tattoo consultations?",
-    answer: "Yes, we offer free consultations. It's the perfect time to discuss your ideas, placement, size, and get a price estimate before committing."
+    answer: "Yes, we offer consultations. It's the perfect time to discuss your ideas, placement, and size, and refine your custom artwork concept before beginning."
   }
 ];
 
