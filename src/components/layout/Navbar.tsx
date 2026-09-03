@@ -52,7 +52,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden lg:flex items-center justify-center space-x-6 xl:space-x-8">
+        <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -63,16 +63,6 @@ export function Navbar() {
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-accent-gold transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
-        </div>
-
-        {/* Desktop Right Action */}
-        <div className="hidden lg:flex items-center">
-          <Link
-            href="#contact"
-            className="bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-5 py-2 rounded-sm font-semibold transition-all duration-300 uppercase tracking-wide text-xs shadow-[0_0_15px_rgba(201,154,46,0.2)] hover:shadow-[0_0_25px_rgba(201,154,46,0.4)] whitespace-nowrap"
-          >
-            Contact Us
-          </Link>
         </div>
 
         {/* Mobile Toggle Button */}
@@ -106,13 +96,6 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              href="#contact"
-              onClick={() => setIsOpen(false)}
-              className="bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-8 py-3 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs w-full max-w-xs text-center mt-2 shadow-[0_0_15px_rgba(201,154,46,0.2)]"
-            >
-              Contact Us
-            </Link>
           </motion.div>
         )}
       </AnimatePresence>

@@ -99,10 +99,10 @@ export function Pricing() {
               </ul>
               
               <Link 
-                href="#contact"
+                href="#portfolio"
                 className="w-full text-center border border-white/20 text-white px-6 py-3 rounded-sm font-bold group-hover:bg-accent-gold group-hover:text-black group-hover:border-accent-gold transition-all duration-300 uppercase tracking-widest text-xs relative z-10"
               >
-                Inquire With Studio
+                Explore Portfolio
               </Link>
             </motion.div>
           ))}

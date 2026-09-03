@@ -43,22 +43,16 @@ export function Hero() {
         </motion.p>
 
         <motion.div 
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-md mx-auto sm:max-w-none"
+          className="flex items-center justify-center w-full"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Link 
             href="#portfolio"
-            className="w-full sm:w-auto bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-8 py-3.5 sm:py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs sm:text-sm hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(201,154,46,0.3)] hover:shadow-[0_0_25px_rgba(201,154,46,0.6)] text-center"
+            className="w-full sm:w-auto bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-10 py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs sm:text-sm hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(201,154,46,0.3)] hover:shadow-[0_0_25px_rgba(201,154,46,0.6)] text-center"
           >
             Explore Our Work
-          </Link>
-          <Link 
-            href="#contact"
-            className="w-full sm:w-auto bg-transparent border border-white/20 hover:border-accent-gold text-white hover:text-accent-gold px-8 py-3.5 sm:py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs sm:text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/5 text-center"
-          >
-            Contact Studio
           </Link>
         </motion.div>
 
