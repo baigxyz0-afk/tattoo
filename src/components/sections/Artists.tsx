@@ -41,15 +41,15 @@ const artists = [
 
 export function Artists() {
   return (
-    <section id="artists" className="py-24 bg-charcoal">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="artists" className="py-20 sm:py-24 bg-charcoal overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-accent-gold text-sm font-bold tracking-[0.3em] uppercase mb-4"
+            className="text-accent-gold text-xs sm:text-sm font-bold tracking-[0.3em] uppercase mb-3 sm:mb-4"
           >
             The Masters
           </motion.h2>
@@ -58,13 +58,13 @@ export function Artists() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-white"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-heading"
           >
             Meet Our Artists
           </motion.h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {artists.map((artist, index) => (
             <motion.div
               key={artist.id}
@@ -75,7 +75,7 @@ export function Artists() {
               className="group relative bg-charcoal-light rounded-sm overflow-hidden border border-accent-gold/10 hover:border-accent-gold/40 hover:shadow-[0_0_25px_rgba(201,154,46,0.1)] transition-all duration-500"
             >
               {/* Image Container */}
-              <div className="relative h-[400px] overflow-hidden">
+              <div className="relative h-[340px] sm:h-[380px] md:h-[400px] overflow-hidden">
                 <img 
                   src={artist.image} 
                   alt={`${artist.name} - ${artist.specialty} at TattooWorlds NYC`}

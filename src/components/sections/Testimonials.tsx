@@ -68,17 +68,17 @@ export function Testimonials() {
   };
 
   return (
-    <section className="py-24 bg-charcoal relative overflow-hidden">
+    <section className="py-20 sm:py-24 bg-charcoal relative overflow-hidden">
       
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-gold/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 text-center">
         
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-accent-gold text-sm font-bold tracking-[0.3em] uppercase mb-4"
+          className="text-accent-gold text-xs sm:text-sm font-bold tracking-[0.3em] uppercase mb-3 sm:mb-4"
         >
           Client Stories
         </motion.h2>
@@ -87,12 +87,12 @@ export function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="text-4xl md:text-5xl font-bold text-white mb-16"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-10 sm:mb-16 font-heading"
         >
           What People Say
         </motion.h3>
 
-        <div className="relative h-[300px] md:h-[250px] flex items-center justify-center">
+        <div className="relative h-[340px] sm:h-[280px] md:h-[250px] flex items-center justify-center">
           <AnimatePresence custom={direction} mode="wait">
             <motion.div
               key={currentIndex}
@@ -101,16 +101,16 @@ export function Testimonials() {
               initial="enter"
               animate="center"
               exit="exit"
-              className="absolute w-full px-4"
+              className="absolute w-full px-2 sm:px-4"
             >
-              <Quote size={48} className="text-white/10 mx-auto mb-6" />
-              <p className="text-xl md:text-2xl text-gray-300 italic mb-8 font-light leading-relaxed">
+              <Quote size={40} className="text-white/10 mx-auto mb-4 sm:mb-6 sm:w-12 sm:h-12" />
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 italic mb-6 sm:mb-8 font-light leading-relaxed max-w-2xl mx-auto">
                 "{testimonials[currentIndex].text}"
               </p>
               
-              <div className="flex justify-center space-x-1 mb-4">
+              <div className="flex justify-center space-x-1 mb-3 sm:mb-4">
                 {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                  <Star key={i} size={18} className="text-accent-gold fill-accent-gold" />
+                  <Star key={i} size={16} className="text-accent-gold fill-accent-gold sm:w-[18px] sm:h-[18px]" />
                 ))}
               </div>
               

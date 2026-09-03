@@ -59,17 +59,17 @@ export function FAQ() {
       id="faq" 
       itemScope 
       itemType="https://schema.org/FAQPage" 
-      className="py-24 bg-charcoal-light"
+      className="py-20 sm:py-24 bg-charcoal-light overflow-hidden"
       aria-label="Frequently Asked Questions"
     >
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-accent-gold text-sm font-bold tracking-[0.3em] uppercase mb-4"
+            className="text-accent-gold text-xs sm:text-sm font-bold tracking-[0.3em] uppercase mb-3 sm:mb-4"
           >
             Got Questions?
           </motion.h2>
@@ -78,13 +78,13 @@ export function FAQ() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-white"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-heading"
           >
             Frequently Asked
           </motion.h3>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
@@ -105,16 +105,16 @@ export function FAQ() {
                   onClick={() => toggleFAQ(index)}
                   aria-expanded={isOpen}
                   aria-controls={`faq-answer-${index}`}
-                  className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                  className="w-full flex items-center justify-between p-4 sm:p-6 text-left focus:outline-none"
                 >
                   <span 
                     itemProp="name" 
-                    className={`font-bold pr-8 transition-colors ${isOpen ? 'text-accent-gold' : 'text-white'}`}
+                    className={`font-bold pr-4 sm:pr-8 text-sm sm:text-base transition-colors ${isOpen ? 'text-accent-gold' : 'text-white'}`}
                   >
                     {faq.question}
                   </span>
-                  <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isOpen ? 'bg-accent-gold text-black' : 'bg-white/5 text-gray-400'}`}>
-                    {isOpen ? <Minus size={16} /> : <Plus size={16} />}
+                  <div className={`shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-colors ${isOpen ? 'bg-accent-gold text-black' : 'bg-white/5 text-gray-400'}`}>
+                    {isOpen ? <Minus size={15} /> : <Plus size={15} />}
                   </div>
                 </button>
 
@@ -134,7 +134,7 @@ export function FAQ() {
                     >
                       <div 
                         itemProp="text"
-                        className="px-6 pb-6 pt-2 text-gray-400 leading-relaxed text-sm md:text-base border-t border-accent-gold/10"
+                        className="px-4 pb-4 sm:px-6 sm:pb-6 pt-2 text-gray-400 leading-relaxed text-xs sm:text-sm md:text-base border-t border-accent-gold/10"
                       >
                         {faq.answer}
                       </div>

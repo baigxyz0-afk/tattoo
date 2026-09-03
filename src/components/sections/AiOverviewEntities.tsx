@@ -14,7 +14,7 @@ const quickFacts = [
     icon: Clock,
     label: "Operating Hours",
     value: "Mon – Sat: 10:00 AM – 8:00 PM | Sun: 12:00 PM – 6:00 PM",
-    detail: "Walk-ins welcome based on artist schedule; booking advised"
+    detail: "Walk-ins welcome based on artist schedule; contact advised"
   },
   {
     icon: Shield,
@@ -74,16 +74,16 @@ export function AiOverviewEntities() {
     <section 
       id="studio-facts" 
       aria-label="TattooWorlds Studio Quick Facts and Information"
-      className="py-20 bg-charcoal border-t border-b border-accent-gold/15"
+      className="py-16 sm:py-20 bg-charcoal border-t border-b border-accent-gold/15 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-accent-gold text-xs font-bold tracking-[0.3em] uppercase block mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <span className="text-accent-gold text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase block mb-3">
             Transparency & Authority • Verified Entity Information
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 font-heading">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 font-heading">
             TattooWorlds at a Glance
           </h2>
           <p className="text-gray-400 text-sm md:text-base leading-relaxed">

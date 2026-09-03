@@ -6,30 +6,30 @@ import { InstagramIcon as Instagram, FacebookIcon as Facebook, TikTokIcon as Gho
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 bg-charcoal">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="contact" className="py-20 sm:py-24 bg-charcoal overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-accent-gold text-sm font-bold tracking-[0.3em] uppercase mb-4"
+            className="text-accent-gold text-xs sm:text-sm font-bold tracking-[0.3em] uppercase mb-3 sm:mb-4"
           >
-            Visit Us
+            Find Us
           </motion.h2>
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-white"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-heading"
           >
-            Contact Studio
+            Studio & Location
           </motion.h3>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           
           {/* Info Side */}
           <motion.div
@@ -37,68 +37,68 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="bg-charcoal-light p-8 md:p-12 rounded-sm border border-accent-gold/15 shadow-[0_10px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between"
+            className="bg-charcoal-light p-6 sm:p-8 md:p-12 rounded-sm border border-accent-gold/15 shadow-[0_10px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between"
           >
             <div>
-              <h4 className="text-2xl font-bold text-white mb-8 font-heading">TattooWorlds Studio</h4>
+              <h4 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8 font-heading">TattooWorlds Studio</h4>
               
-              <div className="space-y-8 mb-12">
+              <div className="space-y-6 sm:space-y-8 mb-8 sm:mb-12">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 mr-4 text-accent-gold border border-white/10">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 mr-4 text-accent-gold border border-white/10">
                     <MapPin size={20} />
                   </div>
                   <div>
-                    <p className="text-white font-bold mb-1 uppercase tracking-wider text-sm">Location</p>
-                    <p className="text-gray-400">123 Art Street, Downtown<br />New York, NY 10001</p>
+                    <p className="text-white font-bold mb-1 uppercase tracking-wider text-xs sm:text-sm">Location</p>
+                    <p className="text-gray-400 text-sm">123 Art Street, Downtown<br />New York, NY 10001</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 mr-4 text-accent-gold border border-white/10">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 mr-4 text-accent-gold border border-white/10">
                     <Phone size={20} />
                   </div>
                   <div>
-                    <p className="text-white font-bold mb-1 uppercase tracking-wider text-sm">Phone</p>
-                    <a href="tel:+1234567890" className="text-gray-400 hover:text-accent-gold transition-colors">+1 234 567 890</a>
+                    <p className="text-white font-bold mb-1 uppercase tracking-wider text-xs sm:text-sm">Phone</p>
+                    <a href="tel:+1234567890" className="text-gray-400 hover:text-accent-gold transition-colors text-sm">+1 234 567 890</a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 mr-4 text-accent-gold border border-white/10">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 mr-4 text-accent-gold border border-white/10">
                     <Mail size={20} />
                   </div>
                   <div>
-                    <p className="text-white font-bold mb-1 uppercase tracking-wider text-sm">Email</p>
-                    <a href="mailto:hello@tattooworlds.com" className="text-gray-400 hover:text-accent-gold transition-colors">hello@tattooworlds.com</a>
+                    <p className="text-white font-bold mb-1 uppercase tracking-wider text-xs sm:text-sm">Email</p>
+                    <a href="mailto:hello@tattooworlds.com" className="text-gray-400 hover:text-accent-gold transition-colors text-sm break-all">hello@tattooworlds.com</a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 mr-4 text-accent-gold border border-white/10">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 mr-4 text-accent-gold border border-white/10">
                     <Clock size={20} />
                   </div>
                   <div>
-                    <p className="text-white font-bold mb-1 uppercase tracking-wider text-sm">Opening Hours</p>
-                    <div className="text-gray-400">
-                      <p className="flex justify-between w-48 mb-1"><span>Mon – Sat</span> <span>10 AM – 8 PM</span></p>
-                      <p className="flex justify-between w-48"><span>Sunday</span> <span>12 PM – 6 PM</span></p>
+                    <p className="text-white font-bold mb-1 uppercase tracking-wider text-xs sm:text-sm">Opening Hours</p>
+                    <div className="text-gray-400 text-xs sm:text-sm">
+                      <p className="flex justify-between w-44 sm:w-48 mb-1"><span>Mon – Sat</span> <span>10 AM – 8 PM</span></p>
+                      <p className="flex justify-between w-44 sm:w-48"><span>Sunday</span> <span>12 PM – 6 PM</span></p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="pt-8 border-t border-accent-gold/15">
-              <p className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Follow Our Work</p>
-              <div className="flex space-x-4">
-                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300">
-                  <Instagram size={18} /> <span>Instagram</span>
+            <div className="pt-6 sm:pt-8 border-t border-accent-gold/15">
+              <p className="text-white font-bold mb-3 sm:mb-4 uppercase tracking-wider text-xs sm:text-sm">Follow Our Work</p>
+              <div className="flex flex-wrap gap-2.5 sm:gap-3">
+                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-3.5 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300 text-xs sm:text-sm">
+                  <Instagram size={16} /> <span>Instagram</span>
                 </a>
-                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300">
-                  <Facebook size={18} /> <span>Facebook</span>
+                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-3.5 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300 text-xs sm:text-sm">
+                  <Facebook size={16} /> <span>Facebook</span>
                 </a>
-                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300">
-                  <Ghost size={18} /> <span>TikTok</span>
+                <a href="#" className="flex items-center space-x-2 bg-white/5 border border-white/10 px-3.5 py-2 rounded-sm text-white hover:bg-accent-gold hover:text-black hover:border-accent-gold transition-all duration-300 text-xs sm:text-sm">
+                  <Ghost size={16} /> <span>TikTok</span>
                 </a>
               </div>
             </div>
@@ -110,7 +110,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="h-[500px] lg:h-auto w-full bg-charcoal-light rounded-sm overflow-hidden relative border border-accent-gold/15 shadow-[0_10px_40px_rgba(0,0,0,0.6)] group"
+            className="h-[320px] sm:h-[400px] lg:h-auto min-h-[300px] w-full bg-charcoal-light rounded-sm overflow-hidden relative border border-accent-gold/15 shadow-[0_10px_40px_rgba(0,0,0,0.6)] group"
           >
             {/* Fake Google Map implementation for demo */}
             <div className="absolute inset-0 bg-[#222] flex items-center justify-center">

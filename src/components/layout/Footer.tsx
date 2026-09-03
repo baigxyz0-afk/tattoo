@@ -5,9 +5,9 @@ import { TattooWorldsLogo } from "@/components/ui/TattooWorldsLogo";
 
 export function Footer() {
   return (
-    <footer className="bg-charcoal-light border-t border-accent-gold/15 pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+    <footer className="bg-charcoal-light border-t border-accent-gold/15 pt-16 sm:pt-20 pb-10 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 sm:mb-16">
           {/* Brand */}
           <div className="space-y-6">
             <Link href="#home" className="flex items-center gap-3 group">

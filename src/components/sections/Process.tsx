@@ -50,14 +50,14 @@ export function Process() {
         </svg>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-accent-gold text-sm font-bold tracking-[0.3em] uppercase mb-4"
+            className="text-accent-gold text-xs sm:text-sm font-bold tracking-[0.3em] uppercase mb-3 sm:mb-4"
           >
             How It Works
           </motion.h2>
@@ -66,7 +66,7 @@ export function Process() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-white"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-heading"
           >
             The Tattoo Process
           </motion.h3>
@@ -76,7 +76,7 @@ export function Process() {
           {/* Connecting Line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2" />
           
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-10 sm:space-y-14 md:space-y-24">
             {steps.map((step, index) => {
               const isEven = index % 2 === 0;
               const Icon = step.icon;
@@ -103,17 +103,17 @@ export function Process() {
                     transition={{ duration: 0.6 }}
                     className={`w-full md:w-1/2 ${isEven ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}
                   >
-                    <div className={`flex items-center gap-4 mb-4 ${isEven ? 'md:justify-end' : 'justify-start'}`}>
-                      <span className="text-5xl font-bold text-white/5 font-heading">
+                    <div className={`flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4 ${isEven ? 'md:justify-end' : 'justify-start'}`}>
+                      <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-white/10 font-heading">
                         Step {step.num}
                       </span>
-                      <div className="md:hidden w-10 h-10 rounded-full bg-charcoal-light border border-accent-gold flex items-center justify-center shrink-0 shadow-[0_0_10px_rgba(201,154,46,0.15)]">
+                      <div className="md:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-charcoal-light border border-accent-gold flex items-center justify-center shrink-0 shadow-[0_0_10px_rgba(201,154,46,0.15)]">
                         <Icon size={16} className="text-accent-gold" />
                       </div>
                     </div>
                     
-                    <h4 className="text-2xl font-bold text-white mb-4">{step.title}</h4>
-                    <p className="text-gray-400 leading-relaxed text-lg">
+                    <h4 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3 font-heading">{step.title}</h4>
+                    <p className="text-gray-400 leading-relaxed text-sm sm:text-base md:text-lg">
                       {step.description}
                     </p>
                   </motion.div>

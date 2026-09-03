@@ -167,15 +167,15 @@ export function Portfolio() {
   }, [selectedImage, filteredItems]);
 
   return (
-    <section id="portfolio" className="py-24 bg-charcoal-light">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="portfolio" className="py-20 sm:py-24 bg-charcoal-light overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 sm:mb-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-accent-gold text-sm font-bold tracking-[0.3em] uppercase mb-4"
+            className="text-accent-gold text-xs sm:text-sm font-bold tracking-[0.3em] uppercase mb-3 sm:mb-4"
           >
             Our Work
           </motion.h2>
@@ -184,19 +184,19 @@ export function Portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-white"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-heading"
           >
             Tattoo Gallery
           </motion.h3>
         </div>
 
         {/* Categories */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2.5 mb-8 sm:mb-12">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => handleFilterChange(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+              className={`px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 ${
                 filter === cat 
                   ? "bg-accent-gold text-black shadow-[0_0_15px_rgba(201,154,46,0.25)]" 
                   : "bg-charcoal text-gray-400 hover:text-white hover:bg-charcoal/50 border border-accent-gold/10"
@@ -207,10 +207,10 @@ export function Portfolio() {
           ))}
         </div>
 
-        {/* Masonry Gallery Grid */}
+        {/* Responsive Gallery Grid */}
         <motion.div 
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6"
         >
           <AnimatePresence>
             {visibleItems.map((item) => (
@@ -234,9 +234,9 @@ export function Portfolio() {
                 />
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                  <p className="text-accent-gold text-xs uppercase tracking-widest font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">{item.style}</p>
-                  <p className="text-white font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">By {item.artist}</p>
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 sm:p-6 text-center">
+                  <p className="text-accent-gold text-[10px] sm:text-xs uppercase tracking-widest font-bold mb-1 sm:mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">{item.style}</p>
+                  <p className="text-white text-xs sm:text-sm font-medium transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">By {item.artist}</p>
                 </div>
               </motion.div>
             ))}
@@ -244,69 +244,71 @@ export function Portfolio() {
         </motion.div>
 
         {visibleCount < filteredItems.length && (
-          <div className="mt-12 text-center">
+          <div className="mt-10 sm:mt-12 text-center">
             <button
-              onClick={() => setVisibleCount(prev => prev + 15)}
-              className="inline-block bg-transparent border border-white/20 hover:border-accent-gold text-white hover:text-accent-gold px-8 py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/5"
+              onClick={() => setVisibleCount(prev => prev + 16)}
+              className="inline-block bg-transparent border border-white/20 hover:border-accent-gold text-white hover:text-accent-gold px-7 py-3 sm:px-8 sm:py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs sm:text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/5"
             >
-              Load More
+              Load More Designs
             </button>
           </div>
         )}
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Responsive Lightbox Modal */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 md:p-10 backdrop-blur-sm"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-2 sm:p-4 md:p-10 backdrop-blur-sm"
             onClick={() => setSelectedImage(null)}
           >
+            {/* Close Button */}
             <button 
-              className="absolute top-6 right-6 text-white hover:text-accent-gold transition-colors z-10"
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/80 hover:text-accent-gold transition-colors z-30 p-2"
               onClick={() => setSelectedImage(null)}
+              aria-label="Close image modal"
             >
-              <X size={32} />
+              <X size={28} className="sm:w-8 sm:h-8" />
             </button>
 
             {/* Prev Image Arrow */}
             <button 
-              className="absolute left-4 md:left-8 text-white/70 hover:text-accent-gold transition-all duration-300 z-10 w-12 h-12 bg-black/40 hover:bg-black/80 rounded-full flex items-center justify-center border border-white/10 hover:border-accent-gold/40 hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+              className="absolute left-2 sm:left-4 md:left-8 text-white/70 hover:text-accent-gold transition-all duration-300 z-30 w-10 h-10 sm:w-12 sm:h-12 bg-black/60 hover:bg-black/90 rounded-full flex items-center justify-center border border-white/10 hover:border-accent-gold/40 shadow-lg active:scale-90"
               onClick={handlePrevImage}
               aria-label="Previous image"
             >
-              <ChevronLeft size={32} />
+              <ChevronLeft size={24} className="sm:w-8 sm:h-8" />
             </button>
 
             {/* Next Image Arrow */}
             <button 
-              className="absolute right-4 md:right-8 text-white/70 hover:text-accent-gold transition-all duration-300 z-10 w-12 h-12 bg-black/40 hover:bg-black/80 rounded-full flex items-center justify-center border border-white/10 hover:border-accent-gold/40 hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+              className="absolute right-2 sm:right-4 md:right-8 text-white/70 hover:text-accent-gold transition-all duration-300 z-30 w-10 h-10 sm:w-12 sm:h-12 bg-black/60 hover:bg-black/90 rounded-full flex items-center justify-center border border-white/10 hover:border-accent-gold/40 shadow-lg active:scale-90"
               onClick={handleNextImage}
               aria-label="Next image"
             >
-              <ChevronRight size={32} />
+              <ChevronRight size={24} className="sm:w-8 sm:h-8" />
             </button>
             
             <motion.div 
               initial={{ scale: 0.9, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
-              className="relative max-h-[85vh] max-w-[90vw] flex items-center justify-center"
+              className="relative max-h-[78vh] sm:max-h-[85vh] max-w-[94vw] sm:max-w-[90vw] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <img 
                 src={selectedImage.image} 
                 alt={`Custom ${selectedImage.style} tattoo artwork by ${selectedImage.artist} at TattooWorlds NYC`} 
-                className="max-h-[85vh] max-w-full object-contain rounded-sm border border-accent-gold/20 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
+                className="max-h-[78vh] sm:max-h-[85vh] max-w-full object-contain rounded-sm border border-accent-gold/20 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
               />
               
               {/* Small elegant caption overlay */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/75 backdrop-blur-sm border border-accent-gold/15 px-6 py-2.5 rounded-sm text-center min-w-[200px] shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
-                <p className="text-accent-gold text-xs uppercase tracking-[0.2em] font-bold mb-0.5">{selectedImage.style}</p>
-                <p className="text-gray-300 text-xs font-light">Artist: {selectedImage.artist}</p>
+              <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 bg-black/85 backdrop-blur-sm border border-accent-gold/15 px-4 py-2 sm:px-6 sm:py-2.5 rounded-sm text-center min-w-[160px] sm:min-w-[200px] shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+                <p className="text-accent-gold text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold mb-0.5">{selectedImage.style}</p>
+                <p className="text-gray-300 text-[10px] sm:text-xs font-light">Artist: {selectedImage.artist}</p>
               </div>
             </motion.div>
           </motion.div>

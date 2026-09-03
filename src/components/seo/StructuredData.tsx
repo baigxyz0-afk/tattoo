@@ -373,8 +373,8 @@ export function StructuredData() {
           {
             "@type": "ListItem",
             "position": 6,
-            "name": "Booking Consultation",
-            "item": "https://tattooworlds.com#booking"
+            "name": "Contact Studio",
+            "item": "https://tattooworlds.com#contact"
           }
         ]
       }

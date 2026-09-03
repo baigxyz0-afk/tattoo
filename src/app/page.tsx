@@ -8,7 +8,6 @@ import { Portfolio } from "@/components/sections/Portfolio";
 import { Process } from "@/components/sections/Process";
 import { AiOverviewEntities } from "@/components/sections/AiOverviewEntities";
 import { Pricing } from "@/components/sections/Pricing";
-import { BookingForm } from "@/components/sections/BookingForm";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
@@ -25,7 +24,6 @@ export default function Home() {
       <Process />
       <AiOverviewEntities />
       <Pricing />
-      <BookingForm />
       <Testimonials />
       <FAQ />
       <Contact />

@@ -22,9 +22,9 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/75 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/50 to-black/30" />
       </motion.div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center mt-20">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center mt-16 sm:mt-20">
         <motion.h1 
-          className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight leading-tight font-heading"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight leading-tight font-heading"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -34,7 +34,7 @@ export function Hero() {
         </motion.h1>
 
         <motion.p 
-          className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto font-light leading-relaxed px-2"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -43,22 +43,22 @@ export function Hero() {
         </motion.p>
 
         <motion.div 
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-md mx-auto sm:max-w-none"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Link 
-            href="#booking"
-            className="w-full sm:w-auto bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-8 py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(201,154,46,0.3)] hover:shadow-[0_0_25px_rgba(201,154,46,0.6)]"
-          >
-            Book an Appointment
-          </Link>
-          <Link 
             href="#portfolio"
-            className="w-full sm:w-auto bg-transparent border border-white/20 hover:border-accent-gold text-white hover:text-accent-gold px-8 py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/5"
+            className="w-full sm:w-auto bg-accent-gold text-black border border-accent-gold hover:bg-transparent hover:text-accent-gold px-8 py-3.5 sm:py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs sm:text-sm hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(201,154,46,0.3)] hover:shadow-[0_0_25px_rgba(201,154,46,0.6)] text-center"
           >
             Explore Our Work
+          </Link>
+          <Link 
+            href="#contact"
+            className="w-full sm:w-auto bg-transparent border border-white/20 hover:border-accent-gold text-white hover:text-accent-gold px-8 py-3.5 sm:py-4 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs sm:text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/5 text-center"
+          >
+            Contact Studio
           </Link>
         </motion.div>
 

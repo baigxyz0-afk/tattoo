@@ -66,7 +66,7 @@ export function Pricing() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -74,7 +74,7 @@ export function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-charcoal-light border border-accent-gold/10 hover:border-accent-gold/40 hover:shadow-[0_0_25px_rgba(201,154,46,0.1)] transition-all duration-300 p-8 flex flex-col relative overflow-hidden group rounded-sm"
+              className="bg-charcoal-light border border-accent-gold/10 hover:border-accent-gold/40 hover:shadow-[0_0_25px_rgba(201,154,46,0.1)] transition-all duration-300 p-6 sm:p-8 flex flex-col relative overflow-hidden group rounded-sm"
             >
               {/* Subtle hover gradient */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent-gold/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 group-hover:bg-accent-gold/10 transition-colors duration-500" />
@@ -99,10 +99,10 @@ export function Pricing() {
               </ul>
               
               <Link 
-                href="#booking"
+                href="#contact"
                 className="w-full text-center border border-white/20 text-white px-6 py-3 rounded-sm font-bold group-hover:bg-accent-gold group-hover:text-black group-hover:border-accent-gold transition-all duration-300 uppercase tracking-widest text-xs relative z-10"
               >
-                Request a Quote
+                Inquire With Studio
               </Link>
             </motion.div>
           ))}

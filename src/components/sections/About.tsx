@@ -45,9 +45,9 @@ const featureCards = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-charcoal">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-20 sm:py-24 bg-charcoal overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           
           {/* Image Side */}
           <motion.div
@@ -55,7 +55,7 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="relative h-[600px] w-full rounded-sm overflow-hidden"
+            className="relative h-[340px] sm:h-[450px] lg:h-[580px] w-full rounded-sm overflow-hidden"
           >
             <img 
               src="/images/about-image.jpg"
@@ -68,9 +68,9 @@ export function About() {
             <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent" />
             
             {/* Experience Badge */}
-            <div className="absolute bottom-6 left-6 bg-charcoal/90 backdrop-blur-md p-6 border-l-4 border-accent-gold">
-              <p className="text-4xl font-bold text-white mb-1">10+</p>
-              <p className="text-sm text-gray-400 uppercase tracking-wider">Years of<br />Excellence</p>
+            <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-charcoal/90 backdrop-blur-md p-4 sm:p-6 border-l-4 border-accent-gold">
+              <p className="text-3xl sm:text-4xl font-bold text-white mb-1">10+</p>
+              <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Years of<br />Excellence</p>
             </div>
           </motion.div>
 
@@ -81,8 +81,8 @@ export function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-accent-gold text-sm font-bold tracking-[0.3em] uppercase mb-4">About Our Studio</h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-accent-gold text-xs sm:text-sm font-bold tracking-[0.3em] uppercase mb-3 sm:mb-4">About Our Studio</h2>
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight font-heading">
               More Than Ink — <br className="hidden md:block" />
               <span className="italic text-gray-400 font-light">It's Your Story</span>
             </h3>
