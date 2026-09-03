@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { TattooWorldsLogo } from "@/components/ui/TattooWorldsLogo";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -38,9 +39,16 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between lg:grid lg:grid-cols-3">
         <div className="flex items-center justify-between w-full lg:w-auto lg:col-span-1">
-          <Link href="#home" className="text-2xl font-bold tracking-widest text-white uppercase flex flex-col">
-            <span>InkCraft</span>
-            <span className="text-[10px] text-accent-gold tracking-[0.2em] -mt-1">Tattoo Studio</span>
+          <Link href="#home" className="flex items-center gap-3 group">
+            <TattooWorldsLogo className="w-10 h-10 group-hover:scale-105 transition-transform duration-300" />
+            <div className="flex flex-col">
+              <span className="text-xl md:text-2xl font-bold tracking-wider text-white uppercase flex items-center font-heading">
+                Tattoo<span className="text-accent-gold">Worlds</span>
+              </span>
+              <span className="text-[10px] text-gray-400 tracking-[0.2em] -mt-1 font-mono">
+                tattooworlds.com
+              </span>
+            </div>
           </Link>
 
           {/* Mobile Toggle */}

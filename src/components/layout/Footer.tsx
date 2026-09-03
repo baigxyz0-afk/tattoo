@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { InstagramIcon as Instagram, FacebookIcon as Facebook, TwitterIcon as Twitter } from "@/components/ui/Icons";
+import { TattooWorldsLogo } from "@/components/ui/TattooWorldsLogo";
 
 export function Footer() {
   return (
@@ -9,9 +10,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="space-y-6">
-            <Link href="#home" className="text-2xl font-bold tracking-widest text-white uppercase flex flex-col">
-              <span>InkCraft</span>
-              <span className="text-[10px] text-accent-gold tracking-[0.2em]">Tattoo Studio</span>
+            <Link href="#home" className="flex items-center gap-3 group">
+              <TattooWorldsLogo className="w-10 h-10 group-hover:scale-105 transition-transform duration-300" />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold tracking-wider text-white uppercase font-heading">
+                  Tattoo<span className="text-accent-gold">Worlds</span>
+                </span>
+                <span className="text-[10px] text-gray-400 tracking-[0.2em] font-mono">
+                  tattooworlds.com
+                </span>
+              </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed italic">
               "Your Story. Your Ink. Your Art."
@@ -57,8 +65,8 @@ export function Footer() {
               </li>
               <li className="flex items-center text-sm text-gray-400">
                 <Mail size={18} className="mr-3 text-accent-gold shrink-0" />
-                <a href="mailto:hello@inkcraftstudio.com" className="hover:text-accent-gold transition-colors">
-                  hello@inkcraftstudio.com
+                <a href="mailto:hello@tattooworlds.com" className="hover:text-accent-gold transition-colors">
+                  hello@tattooworlds.com
                 </a>
               </li>
             </ul>
@@ -88,7 +96,7 @@ export function Footer() {
 
         <div className="border-t border-accent-gold/15 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-xs">
-            © 2026 InkCraft Tattoo Studio. All Rights Reserved.
+            © 2026 tattooworlds.com. All Rights Reserved.
           </p>
           <div className="flex space-x-6">
             <Link href="#" className="text-gray-500 hover:text-white text-xs transition-colors">Privacy Policy</Link>

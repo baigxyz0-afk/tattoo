@@ -40,7 +40,7 @@ export function Contact() {
             className="bg-charcoal-light p-8 md:p-12 rounded-sm border border-accent-gold/15 shadow-[0_10px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between"
           >
             <div>
-              <h4 className="text-2xl font-bold text-white mb-8 font-heading">InkCraft Tattoo Studio</h4>
+              <h4 className="text-2xl font-bold text-white mb-8 font-heading">TattooWorlds Studio</h4>
               
               <div className="space-y-8 mb-12">
                 <div className="flex items-start">
@@ -69,7 +69,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-white font-bold mb-1 uppercase tracking-wider text-sm">Email</p>
-                    <a href="mailto:hello@inkcraftstudio.com" className="text-gray-400 hover:text-accent-gold transition-colors">hello@inkcraftstudio.com</a>
+                    <a href="mailto:hello@tattooworlds.com" className="text-gray-400 hover:text-accent-gold transition-colors">hello@tattooworlds.com</a>
                   </div>
                 </div>
 
@@ -125,7 +125,7 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="bg-charcoal-light px-6 py-3 rounded-sm border border-accent-gold/15 shadow-2xl">
-                  <p className="text-white font-bold text-sm">InkCraft Tattoo Studio</p>
+                  <p className="text-white font-bold text-sm">TattooWorlds Studio</p>
                   <p className="text-gray-400 text-xs">Get Directions</p>
                 </div>
               </div>

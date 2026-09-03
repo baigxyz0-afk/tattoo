@@ -1,0 +1,69 @@
+import React from "react";
+
+interface TattooWorldsLogoProps {
+  className?: string;
+  size?: number;
+}
+
+export function TattooWorldsLogo({ className = "w-10 h-10", size }: TattooWorldsLogoProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 120 120"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`shrink-0 ${className}`}
+      aria-label="TattooWorlds Logo"
+    >
+      <defs>
+        <linearGradient id="twGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#FCE588" />
+          <stop offset="35%" stopColor="#C99A2E" />
+          <stop offset="70%" stopColor="#E5B842" />
+          <stop offset="100%" stopColor="#8A6714" />
+        </linearGradient>
+        <radialGradient id="twBadgeBg" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#222222" />
+          <stop offset="70%" stopColor="#0E0E0E" />
+          <stop offset="100%" stopColor="#050505" />
+        </radialGradient>
+        <filter id="twGoldGlow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="0" stdDeviation="2.5" floodColor="#C99A2E" floodOpacity="0.6" />
+        </filter>
+      </defs>
+
+      {/* Outer Dark Badge Background with Gold Rim */}
+      <circle cx="60" cy="60" r="56" fill="url(#twBadgeBg)" stroke="url(#twGoldGrad)" strokeWidth="2.5" />
+      <circle cx="60" cy="60" r="51" stroke="url(#twGoldGrad)" strokeWidth="0.8" strokeDasharray="2.5 2.5" opacity="0.6" />
+
+      {/* World Globe Grid (Latitude & Longitude) */}
+      <circle cx="60" cy="60" r="42" stroke="url(#twGoldGrad)" strokeWidth="1" opacity="0.4" />
+      <line x1="18" y1="60" x2="102" y2="60" stroke="url(#twGoldGrad)" strokeWidth="0.8" opacity="0.3" />
+      <ellipse cx="60" cy="60" rx="42" ry="18" stroke="url(#twGoldGrad)" strokeWidth="0.8" opacity="0.25" />
+      <ellipse cx="60" cy="60" rx="20" ry="42" stroke="url(#twGoldGrad)" strokeWidth="0.8" opacity="0.3" />
+
+      {/* Cardinal Star Accents */}
+      <polygon points="60,11 62.5,17 60,19.5 57.5,17" fill="url(#twGoldGrad)" />
+      <polygon points="60,109 62.5,103 60,100.5 57.5,103" fill="url(#twGoldGrad)" />
+      <polygon points="11,60 17,62.5 19.5,60 17,57.5" fill="url(#twGoldGrad)" />
+      <polygon points="109,60 103,62.5 100.5,60 103,57.5" fill="url(#twGoldGrad)" />
+
+      {/* Stylized Tattoo Wings / Flourishes */}
+      <path d="M40 45 C45 41 53 44 56 49 C54 52 48 53 44 57 C41 61 42 67 38 71 C35 65 35 51 40 45 Z" fill="url(#twGoldGrad)" opacity="0.95" />
+      <path d="M80 45 C75 41 67 44 64 49 C66 52 72 53 76 57 C79 61 78 67 82 71 C85 65 85 51 80 45 Z" fill="url(#twGoldGrad)" opacity="0.95" />
+
+      {/* Central Tattoo Machine Needle Pen */}
+      <path d="M57 23 H63 V37 H57 Z" fill="url(#twGoldGrad)" />
+      <path d="M55 37 H65 L63 74 L60 88 L57 74 Z" fill="url(#twGoldGrad)" filter="url(#twGoldGlow)" />
+      <line x1="60" y1="35" x2="60" y2="85" stroke="#0D0D0D" strokeWidth="1.2" strokeLinecap="round" />
+
+      {/* Ink Droplet at needle tip */}
+      <path d="M60 91.5 C58.5 91.5 57 93 57 94.5 C57 96.5 60 100 60 100 C60 100 63 96.5 63 94.5 C63 93 61.5 91.5 60 91.5 Z" fill="url(#twGoldGrad)" />
+
+      {/* Sparkling Art Stars */}
+      <path d="M29 35 L30.5 38 L33.5 39.5 L30.5 41 L29 44 L27.5 41 L24.5 39.5 L27.5 38 Z" fill="url(#twGoldGrad)" opacity="0.85" />
+      <path d="M91 35 L92.5 38 L95.5 39.5 L92.5 41 L91 44 L89.5 41 L86.5 39.5 L89.5 38 Z" fill="url(#twGoldGrad)" opacity="0.85" />
+    </svg>
+  );
+}

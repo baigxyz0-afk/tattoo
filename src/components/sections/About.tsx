@@ -86,7 +86,7 @@ export function About() {
             </h3>
             
             <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              At InkCraft Tattoo Studio, we specialize in custom tattoo designs crafted in a professional, hygienic, and comfortable environment. We believe that every tattoo tells a unique story, and our mission is to bring your vision to life with precision and passion.
+              At TattooWorlds Studio (tattooworlds.com), we specialize in custom tattoo designs crafted in a professional, hygienic, and comfortable environment. We believe that every tattoo tells a unique story, and our mission is to bring your vision to life with precision and passion.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">

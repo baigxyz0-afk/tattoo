@@ -62,7 +62,7 @@ export function BookingForm() {
                 <CheckCircle2 size={64} className="text-green-500 mb-6" />
                 <h4 className="text-2xl font-bold text-white mb-2">Request Submitted!</h4>
                 <p className="text-gray-400 text-center max-w-sm">
-                  Thank you for choosing InkCraft. Our team will review your request and contact you within 24-48 hours.
+                  Thank you for choosing TattooWorlds (tattooworlds.com). Our team will review your request and contact you within 24-48 hours.
                 </p>
               </motion.div>
             )}

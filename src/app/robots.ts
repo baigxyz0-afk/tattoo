@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://inkcraftstudio.com/sitemap.xml',
+    sitemap: 'https://tattooworlds.com/sitemap.xml',
   };
 }
