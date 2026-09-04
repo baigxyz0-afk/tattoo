@@ -5,6 +5,7 @@ import { About } from "@/components/sections/About";
 import { TattooStyles } from "@/components/sections/TattooStyles";
 import { Artists } from "@/components/sections/Artists";
 import { Portfolio } from "@/components/sections/Portfolio";
+import { TattooInspirationHub } from "@/components/sections/TattooInspirationHub";
 import { Process } from "@/components/sections/Process";
 import { AiOverviewEntities } from "@/components/sections/AiOverviewEntities";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -20,6 +21,7 @@ export default function Home() {
       <TattooStyles />
       <Artists />
       <Portfolio />
+      <TattooInspirationHub />
       <Process />
       <AiOverviewEntities />
       <Testimonials />

@@ -9,7 +9,20 @@ const tattooManImages = Array.from({ length: 94 }).map(
   (_, i) => `/images/tattoo-styles/tattoo-man/man-${i + 1}.jpg`
 );
 
+const handTattoosForWomanImages = Array.from({ length: 151 }).map((_, i) => {
+  const num = i + 1;
+  const ext = num === 57 || num === 118 ? "png" : "jpg";
+  return `/images/tattoo-styles/hand-tattoos-for-woman/hand-woman-${num}.${ext}`;
+});
+
 const styles = [
+  {
+    id: "hand-tattoos-for-woman",
+    name: "Hand Tattoos for Woman",
+    description: "Delicate, ornamental, and fine-line hand and finger tattoos curated specifically for women (151 Unique Designs).",
+    image: "/images/tattoo-styles/hand-tattoos-for-woman/hand-woman-1.jpg",
+    images: handTattoosForWomanImages,
+  },
   {
     id: "tattoo-man",
     name: "Tattoo Man",

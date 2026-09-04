@@ -52,7 +52,18 @@ export function StructuredData() {
           "contactType": "reservations & customer service",
           "email": "hello@tattooworlds.com",
           "availableLanguage": ["English", "Spanish"]
-        }
+        },
+        "knowsAbout": [
+          "Tattoo ideas and designs",
+          "Tattoo ideas for men and women",
+          "Small and minimalist tattoo designs",
+          "Fine line tattoos and black & grey realism",
+          "Japanese Irezumi and American traditional tattoos",
+          "Sleeve, forearm, wrist, and spine tattoo placements",
+          "Floral, lion, wolf, snake, and dragon tattoo motifs",
+          "Tattoo aftercare tips and healing process",
+          "Tattoo trends 2026"
+        ]
       },
 
       // 3. TattooParlor / LocalBusiness Schema
