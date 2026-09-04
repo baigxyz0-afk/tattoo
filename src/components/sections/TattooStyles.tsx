@@ -15,7 +15,18 @@ const handTattoosForWomanImages = Array.from({ length: 151 }).map((_, i) => {
   return `/images/tattoo-styles/hand-tattoos-for-woman/hand-woman-${num}.${ext}`;
 });
 
+const shoulderTattoosImages = Array.from({ length: 135 }).map(
+  (_, i) => `/images/tattoo-styles/shoulder-tattoos/shoulder-${i + 1}.jpg`
+);
+
 const styles = [
+  {
+    id: "shoulder-tattoos",
+    name: "Shoulder Tattoos",
+    description: "Elegant, flowing, and captivating shoulder and collarbone tattoo designs tailored for all aesthetics (135 Unique Designs).",
+    image: "/images/tattoo-styles/shoulder-tattoos/shoulder-1.jpg",
+    images: shoulderTattoosImages,
+  },
   {
     id: "hand-tattoos-for-woman",
     name: "Hand Tattoos for Woman",
