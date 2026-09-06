@@ -60,7 +60,7 @@ export function StructuredData() {
           "Fine line tattoos and black & grey realism",
           "Japanese Irezumi and American traditional tattoos",
           "Sleeve, forearm, wrist, and spine tattoo placements",
-          "Floral, lion, wolf, snake, and dragon tattoo motifs",
+          "Floral, rose, butterfly, lion, wolf, tiger, snake, dragon, skull, angel, and mandala tattoo motifs",
           "Tattoo aftercare tips and healing process",
           "Tattoo trends 2026"
         ]
