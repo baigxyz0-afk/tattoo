@@ -19,7 +19,18 @@ const shoulderTattoosImages = Array.from({ length: 135 }).map(
   (_, i) => `/images/tattoo-styles/shoulder-tattoos/shoulder-${i + 1}.jpg`
 );
 
+const watercolorTattoosImages = Array.from({ length: 22 }).map(
+  (_, i) => `/images/tattoo-styles/watercolor-tattoos/watercolor-${i + 1}.jpg`
+);
+
 const styles = [
+  {
+    id: "watercolor-tattoos",
+    name: "Watercolor Tattoos",
+    description: "Vibrant, paint-splash inspired tattoo designs that blend color and fluid brushstroke aesthetics (22 Unique Designs).",
+    image: "/images/tattoo-styles/watercolor-tattoos/watercolor-1.jpg",
+    images: watercolorTattoosImages,
+  },
   {
     id: "shoulder-tattoos",
     name: "Shoulder Tattoos",
