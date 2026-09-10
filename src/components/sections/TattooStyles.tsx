@@ -23,7 +23,18 @@ const watercolorTattoosImages = Array.from({ length: 22 }).map(
   (_, i) => `/images/tattoo-styles/watercolor-tattoos/watercolor-${i + 1}.jpg`
 );
 
+const sleeveTattoosImages = Array.from({ length: 24 }).map(
+  (_, i) => `/images/tattoo-styles/sleeve-tattoos/sleeve-${i + 1}.jpg`
+);
+
 const styles = [
+  {
+    id: "sleeve-tattoos",
+    name: "Sleeve Tattoos",
+    description: "Bold, full-arm sleeve tattoo compositions blending detailed linework with striking imagery (24 Unique Designs).",
+    image: "/images/tattoo-styles/sleeve-tattoos/sleeve-1.jpg",
+    images: sleeveTattoosImages,
+  },
   {
     id: "watercolor-tattoos",
     name: "Watercolor Tattoos",
