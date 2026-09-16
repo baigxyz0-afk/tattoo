@@ -7,12 +7,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TattooWorldsLogo } from "@/components/ui/TattooWorldsLogo";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Artists", href: "#artists" },
-  { name: "Styles", href: "#styles" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "FAQ", href: "#faq" },
+  { name: "Home", href: "/#home" },
+  { name: "About", href: "/#about" },
+  { name: "Styles", href: "/#styles" },
+  { name: "Portfolio", href: "/#portfolio" },
+  { name: "Tattoo Ideas", href: "/tattoo-ideas" },
+  { name: "Blog", href: "/blog" },
+  { name: "Artists", href: "/#artists" },
+  { name: "FAQ", href: "/#faq" },
 ];
 
 export function Navbar() {

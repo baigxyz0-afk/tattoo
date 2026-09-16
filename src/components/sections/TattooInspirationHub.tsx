@@ -275,10 +275,10 @@ export function TattooInspirationHub() {
         {/* Gallery CTA */}
         <div className="text-center mt-8">
           <Link
-            href="#portfolio"
-            className="inline-flex items-center gap-2 bg-transparent border border-white/20 hover:border-accent-gold text-white hover:text-accent-gold px-8 py-3.5 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs sm:text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/5"
+            href="/tattoo-ideas"
+            className="inline-flex items-center gap-2 bg-transparent border border-accent-gold/40 hover:border-accent-gold text-white hover:text-accent-gold px-8 py-3.5 rounded-sm font-bold transition-all duration-300 uppercase tracking-widest text-xs sm:text-sm hover:scale-105 active:scale-95 hover:bg-accent-gold/10 shadow-lg"
           >
-            <span>Browse Full Gallery For These Designs</span>
+            <span>Explore All 200+ Tattoo Design Guides</span>
             <ArrowRight size={16} />
           </Link>
         </div>

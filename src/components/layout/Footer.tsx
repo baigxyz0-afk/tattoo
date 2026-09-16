@@ -41,10 +41,20 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
             <ul className="space-y-3">
-              {["Home", "About", "Artists", "Portfolio", "FAQ", "Contact"].map((item) => (
-                <li key={item}>
-                  <Link href={`#${item.toLowerCase()}`} className="text-gray-400 hover:text-accent-gold text-sm transition-colors">
-                    {item}
+              {[
+                { name: "Home", href: "/#home" },
+                { name: "About", href: "/#about" },
+                { name: "Tattoo Styles", href: "/#styles" },
+                { name: "Portfolio", href: "/#portfolio" },
+                { name: "200+ Tattoo Ideas", href: "/tattoo-ideas" },
+                { name: "Tattoo Guides & Blog", href: "/blog" },
+                { name: "Artists", href: "/#artists" },
+                { name: "FAQ", href: "/#faq" },
+                { name: "Contact & Booking", href: "/#contact" }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-gray-400 hover:text-accent-gold text-sm transition-colors">
+                    {item.name}
                   </Link>
                 </li>
               ))}
