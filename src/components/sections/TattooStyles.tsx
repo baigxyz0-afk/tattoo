@@ -27,7 +27,18 @@ const sleeveTattoosImages = Array.from({ length: 24 }).map(
   (_, i) => `/images/tattoo-styles/sleeve-tattoos/sleeve-${i + 1}.jpg`
 );
 
+const mandalaTattoosImages = Array.from({ length: 200 }).map(
+  (_, i) => `/images/tattoo-styles/mandala-tattoos/mandala-${i + 1}.jpg`
+);
+
 const styles = [
+  {
+    id: "mandala-tattoos",
+    name: "Mandala Tattoos",
+    description: "Intricate, symmetrical mandala flash designs blending sacred geometry with fine radial linework (200 Unique Designs).",
+    image: "/images/tattoo-styles/mandala-tattoos/mandala-1.jpg",
+    images: mandalaTattoosImages,
+  },
   {
     id: "sleeve-tattoos",
     name: "Sleeve Tattoos",
