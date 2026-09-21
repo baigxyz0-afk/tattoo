@@ -31,7 +31,18 @@ const mandalaTattoosImages = Array.from({ length: 200 }).map(
   (_, i) => `/images/tattoo-styles/mandala-tattoos/mandala-${i + 1}.jpg`
 );
 
+const tattooPhotographyImages = Array.from({ length: 44 }).map(
+  (_, i) => `/images/tattoo-styles/tattoo-photography/photo-${i + 1}.jpg`
+);
+
 const styles = [
+  {
+    id: "tattoo-photography",
+    name: "Tattoo Photography",
+    description: "Real tattoo artistry captured in studio and lifestyle photography, showcasing craft, detail, and finished work (44 Photos).",
+    image: "/images/tattoo-styles/tattoo-photography/photo-1.jpg",
+    images: tattooPhotographyImages,
+  },
   {
     id: "mandala-tattoos",
     name: "Mandala Tattoos",
