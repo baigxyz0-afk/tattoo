@@ -9,6 +9,9 @@ import { Sparkles, Compass, ShieldCheck, ArrowRight, Heart, Flame } from "lucide
 export const metadata: Metadata = {
   title: "200+ Tattoo Ideas, Designs & Meanings (2026 Guide) | TattooWorlds",
   description: "Browse 200+ curated tattoo design ideas, symbolic meanings, pain ratings, and placement guides created by master artists at TattooWorlds.",
+  alternates: {
+    canonical: "https://tattooworlds.com/tattoo-ideas",
+  },
   openGraph: {
     title: "200+ Tattoo Ideas & Aesthetic Designs | TattooWorlds",
     description: "Find your next tattoo from our directory of 200+ curated design ideas, placement tips, and meanings.",

@@ -42,6 +42,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} | TattooWorlds Guides`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://tattooworlds.com/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,

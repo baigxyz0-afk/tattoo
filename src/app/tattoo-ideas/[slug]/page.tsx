@@ -43,6 +43,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${idea.title}: Meanings, Placements & 2026 Ideas | TattooWorlds`,
     description: `${idea.shortDescription} Explore symbolic meaning, best body placements, pain ratings, and custom design tips.`,
     keywords: [idea.keyword, `${idea.title} ideas`, "tattoo designs", "tattoo placement", "tattooworlds"],
+    alternates: {
+      canonical: `https://tattooworlds.com/tattoo-ideas/${idea.slug}`,
+    },
     openGraph: {
       title: `${idea.title} - Complete Design & Placement Guide`,
       description: idea.shortDescription,

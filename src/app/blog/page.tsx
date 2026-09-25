@@ -9,6 +9,9 @@ import { Calendar, Clock, User, ArrowRight, Sparkles, Tag, BookOpen, Flame } fro
 export const metadata: Metadata = {
   title: "Tattoo Guides, Trends & Inspiration Blog | TattooWorlds",
   description: "Read expert tattoo guides, 2026 trending styles, aftercare routines, pain charts, and artist advice curated by the TattooWorlds team.",
+  alternates: {
+    canonical: "https://tattooworlds.com/blog",
+  },
   openGraph: {
     title: "Tattoo Inspiration & Education Blog | TattooWorlds",
     description: "Explore in-depth tattoo styles, aftercare guides, and 2026 design trends.",
