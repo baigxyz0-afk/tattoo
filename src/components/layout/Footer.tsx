@@ -50,7 +50,7 @@ export function Footer() {
                 { name: "Tattoo Guides & Blog", href: "/blog" },
                 { name: "Artists", href: "/#artists" },
                 { name: "FAQ", href: "/#faq" },
-                { name: "Contact & Booking", href: "/#contact" }
+                { name: "Contact & Booking", href: "mailto:hello@tattooworlds.com" }
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-gray-400 hover:text-accent-gold text-sm transition-colors">

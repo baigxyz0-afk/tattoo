@@ -11,7 +11,6 @@ import { BlogSection } from "@/components/sections/BlogSection";
 import { AiOverviewEntities } from "@/components/sections/AiOverviewEntities";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
-import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -28,7 +27,6 @@ export default function Home() {
       <AiOverviewEntities />
       <Testimonials />
       <FAQ />
-      <Contact />
       <Footer />
     </main>
   );

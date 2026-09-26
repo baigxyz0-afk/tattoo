@@ -299,7 +299,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
                 Our award-winning tattoo artists specialize in custom flash and fine-line adaptations. Bring this reference to our studio for your custom consultation.
               </p>
               <Link
-                href="/#contact"
+                href="mailto:hello@tattooworlds.com"
                 className="block w-full py-3 rounded-lg bg-accent-gold text-charcoal font-bold text-center text-sm hover:bg-white transition-colors duration-300 shadow-md"
               >
                 Book Your Consultation

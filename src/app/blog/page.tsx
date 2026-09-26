@@ -223,7 +223,7 @@ export default function BlogListingPage() {
             </p>
           </div>
           <Link
-            href="/#contact"
+            href="mailto:hello@tattooworlds.com"
             className="shrink-0 px-6 py-3.5 rounded-lg bg-accent-gold text-charcoal font-bold hover:bg-white transition-colors duration-300 shadow-lg text-sm sm:text-base flex items-center gap-2"
           >
             <span>Book Your Consultation</span>

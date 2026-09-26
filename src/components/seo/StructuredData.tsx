@@ -364,12 +364,6 @@ export function StructuredData() {
             "position": 4,
             "name": "Portfolio Gallery",
             "item": "https://tattooworlds.com#portfolio"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Contact Studio",
-            "item": "https://tattooworlds.com#contact"
           }
         ]
       }

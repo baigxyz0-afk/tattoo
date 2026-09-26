@@ -314,7 +314,7 @@ export default async function BlogPostPage({ params }: Props) {
                 Connect with our expert artists at TattooWorlds for custom flash art, cover-ups, or single-needle fine line tattoos.
               </p>
               <Link
-                href="/#contact"
+                href="mailto:hello@tattooworlds.com"
                 className="block w-full py-3 rounded-lg bg-accent-gold text-charcoal font-bold text-center text-sm hover:bg-white transition-colors duration-300 shadow-md"
               >
                 Schedule Free Consultation
