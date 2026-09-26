@@ -35,7 +35,18 @@ const tattooPhotographyImages = Array.from({ length: 44 }).map(
   (_, i) => `/images/tattoo-styles/tattoo-photography/photo-${i + 1}.jpg`
 );
 
+const eagleTattooImages = Array.from({ length: 4 }).map(
+  (_, i) => `/images/tattoo-styles/eagle-tattoo/eagle-tattoo-${i + 1}.jpg`
+);
+
 const styles = [
+  {
+    id: "eagle-tattoo",
+    name: "Eagle Tattoo",
+    description: "Bold eagle tattoo photography capturing powerful wingspans, chest pieces, and sleeve artistry (4 Photos).",
+    image: "/images/tattoo-styles/eagle-tattoo/eagle-tattoo-1.jpg",
+    images: eagleTattooImages,
+  },
   {
     id: "tattoo-photography",
     name: "Tattoo Photography",
