@@ -46,7 +46,7 @@ export function Footer() {
                 { name: "About", href: "/#about" },
                 { name: "Tattoo Styles", href: "/#styles" },
                 { name: "Portfolio", href: "/#portfolio" },
-                { name: "200+ Tattoo Ideas", href: "/tattoo-ideas" },
+                { name: "145+ Tattoo Ideas", href: "/tattoo-ideas" },
                 { name: "Tattoo Guides & Blog", href: "/blog" },
                 { name: "Artists", href: "/#artists" },
                 { name: "FAQ", href: "/#faq" },

@@ -143,7 +143,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
             className="inline-flex items-center gap-2 text-xs font-mono text-accent-gold hover:text-white transition-colors"
           >
             <ArrowLeft size={14} />
-            <span>Back to all 200 designs</span>
+            <span>Back to all {tattooIdeas.length} designs</span>
           </Link>
         </div>
 
@@ -154,7 +154,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
               {idea.category}
             </span>
             <span className="text-xs font-mono text-gray-400">
-              Guide #{idea.id} of 200
+              Guide #{idea.id} of {tattooIdeas.length}
             </span>
           </div>
 
@@ -318,7 +318,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
               href="/tattoo-ideas"
               className="text-xs font-mono text-accent-gold hover:underline flex items-center gap-1"
             >
-              <span>View all 200 designs</span>
+              <span>View all {tattooIdeas.length} designs</span>
               <ChevronRight size={13} />
             </Link>
           </div>

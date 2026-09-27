@@ -7,14 +7,14 @@ import { Footer } from "@/components/layout/Footer";
 import { Sparkles, Compass, ShieldCheck, ArrowRight, Heart, Flame } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "200+ Tattoo Ideas, Designs & Meanings (2026 Guide) | TattooWorlds",
-  description: "Browse 200+ curated tattoo design ideas, symbolic meanings, pain ratings, and placement guides created by master artists at TattooWorlds.",
+  title: `${tattooIdeas.length}+ Tattoo Ideas, Designs & Meanings (2026 Guide) | TattooWorlds`,
+  description: `Browse ${tattooIdeas.length}+ curated tattoo design ideas, symbolic meanings, pain ratings, and placement guides created by master artists at TattooWorlds.`,
   alternates: {
     canonical: "https://tattooworlds.com/tattoo-ideas",
   },
   openGraph: {
-    title: "200+ Tattoo Ideas & Aesthetic Designs | TattooWorlds",
-    description: "Find your next tattoo from our directory of 200+ curated design ideas, placement tips, and meanings.",
+    title: `${tattooIdeas.length}+ Tattoo Ideas & Aesthetic Designs | TattooWorlds`,
+    description: `Find your next tattoo from our directory of ${tattooIdeas.length}+ curated design ideas, placement tips, and meanings.`,
     url: "https://tattooworlds.com/tattoo-ideas",
     siteName: "TattooWorlds",
     type: "website",
@@ -26,9 +26,7 @@ export default function TattooIdeasDirectory() {
     "All",
     "Motifs & Animals",
     "Body Placements",
-    "Styles & Techniques",
-    "Meanings & Memorials",
-    "Trending & Modern"
+    "Meanings & Memorials"
   ];
 
   return (
@@ -43,10 +41,10 @@ export default function TattooIdeasDirectory() {
             <span>Curated Design Directory</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight">
-            200+ Tattoo <span className="text-accent-gold">Design Ideas</span> & Meanings
+            {tattooIdeas.length}+ Tattoo <span className="text-accent-gold">Design Ideas</span> & Meanings
           </h1>
           <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
-            Find your next piece of ink. Explore over 200 comprehensive tattoo guides covering animal symbolism, anatomical placements, pain levels, and master artist advice.
+            Find your next piece of ink. Explore over {tattooIdeas.length} comprehensive tattoo guides covering animal symbolism, anatomical placements, pain levels, and master artist advice.
           </p>
         </header>
 
@@ -62,14 +60,14 @@ export default function TattooIdeasDirectory() {
           ))}
         </div>
 
-        {/* 200 Tattoo Ideas Grid */}
+        {/* Tattoo Ideas Grid */}
         <section>
           <div className="flex items-center justify-between mb-8 border-b border-white/10 pb-4">
             <h2 className="text-2xl font-heading font-bold text-white flex items-center gap-2.5">
               <Compass size={22} className="text-accent-gold" />
-              <span>All 200 Tattoo Design Inspirations</span>
+              <span>All {tattooIdeas.length} Tattoo Design Inspirations</span>
             </h2>
-            <span className="text-xs font-mono text-accent-gold">200 Pages Available</span>
+            <span className="text-xs font-mono text-accent-gold">{tattooIdeas.length} Pages Available</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -135,7 +133,7 @@ export default function TattooIdeasDirectory() {
               Found a Design You Love?
             </h3>
             <p className="text-gray-300 text-sm sm:text-base">
-              Bring any of our 200 design ideas to our studio. Our master tattoo artists will custom-draw an original piece tailored specifically for you.
+              Bring any of our {tattooIdeas.length} design ideas to our studio. Our master tattoo artists will custom-draw an original piece tailored specifically for you.
             </p>
           </div>
           <Link

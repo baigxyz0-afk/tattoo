@@ -39,7 +39,18 @@ const eagleTattooImages = Array.from({ length: 4 }).map(
   (_, i) => `/images/tattoo-styles/eagle-tattoo/eagle-tattoo-${i + 1}.jpg`
 );
 
+const feminineShoulderTattooImages = Array.from({ length: 11 }).map(
+  (_, i) => `/images/tattoo-styles/shoulder-tattoo-feminine/feminine-shoulder-tattoo-${i + 1}.jpg`
+);
+
 const styles = [
+  {
+    id: "shoulder-tattoo-feminine",
+    name: "Feminine Shoulder Tattoos",
+    description: "Delicate, elegant shoulder tattoo photography with floral, celestial, and fine-line designs (11 Photos).",
+    image: "/images/tattoo-styles/shoulder-tattoo-feminine/feminine-shoulder-tattoo-1.jpg",
+    images: feminineShoulderTattooImages,
+  },
   {
     id: "eagle-tattoo",
     name: "Eagle Tattoo",
