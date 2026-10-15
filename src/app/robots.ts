@@ -23,7 +23,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       }
     ],
-    sitemap: 'https://tattooworlds.com/sitemap.xml',
-    host: 'https://tattooworlds.com',
+    sitemap: 'https://www.tattooworlds.com/sitemap.xml',
+    host: 'https://www.tattooworlds.com',
   };
 }

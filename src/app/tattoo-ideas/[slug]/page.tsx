@@ -44,12 +44,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: `${idea.shortDescription} Explore symbolic meaning, best body placements, pain ratings, and custom design tips.`,
     keywords: [idea.keyword, `${idea.title} ideas`, "tattoo designs", "tattoo placement", "tattooworlds"],
     alternates: {
-      canonical: `https://tattooworlds.com/tattoo-ideas/${idea.slug}`,
+      canonical: `https://www.tattooworlds.com/tattoo-ideas/${idea.slug}`,
     },
     openGraph: {
       title: `${idea.title} - Complete Design & Placement Guide`,
       description: idea.shortDescription,
-      url: `https://tattooworlds.com/tattoo-ideas/${idea.slug}`,
+      url: `https://www.tattooworlds.com/tattoo-ideas/${idea.slug}`,
       siteName: "TattooWorlds",
       images: [
         {
@@ -91,7 +91,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
         "@type": "Article",
         "headline": `${idea.title}: Meanings, Placements & Design Ideas`,
         "description": idea.shortDescription,
-        "image": `https://tattooworlds.com${idea.image}`,
+        "image": `https://www.tattooworlds.com${idea.image}`,
         "author": {
           "@type": "Organization",
           "name": "TattooWorlds Master Artists",
@@ -99,9 +99,9 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
         "publisher": {
           "@type": "Organization",
           "name": "TattooWorlds",
-          "url": "https://tattooworlds.com",
+          "url": "https://www.tattooworlds.com",
         },
-        "mainEntityOfPage": `https://tattooworlds.com/tattoo-ideas/${idea.slug}`,
+        "mainEntityOfPage": `https://www.tattooworlds.com/tattoo-ideas/${idea.slug}`,
       },
       {
         "@type": "FAQPage",

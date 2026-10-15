@@ -3,7 +3,7 @@ import { blogPosts } from '@/data/blogPosts';
 import { tattooIdeas } from '@/data/tattooIdeas';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://tattooworlds.com';
+  const baseUrl = 'https://www.tattooworlds.com';
   const currentDate = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [

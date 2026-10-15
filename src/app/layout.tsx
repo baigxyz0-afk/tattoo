@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tattooworlds.com"),
+  metadataBase: new URL("https://www.tattooworlds.com"),
   title: {
     default: "TattooWorlds | Custom Tattoo Studio & Fine Art NYC (tattooworlds.com)",
     template: "%s | TattooWorlds",
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     "tattoo pain chart",
     "tattoo trends 2026"
   ],
-  authors: [{ name: "TattooWorlds Studio", url: "https://tattooworlds.com" }],
+  authors: [{ name: "TattooWorlds Studio", url: "https://www.tattooworlds.com" }],
   creator: "TattooWorlds",
   publisher: "TattooWorlds",
   formatDetection: {
@@ -103,9 +103,9 @@ export const metadata: Metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: "https://tattooworlds.com",
+    canonical: "https://www.tattooworlds.com",
     languages: {
-      "en-US": "https://tattooworlds.com",
+      "en-US": "https://www.tattooworlds.com",
     },
   },
   icons: {
@@ -135,13 +135,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TattooWorlds | Custom Tattoo Studio & Fine Art NYC (tattooworlds.com)",
     description: "New York's premier custom tattoo studio. Resident masters specializing in Realism, Black & Grey, Japanese Irezumi, and Fine Line. Book your free consultation.",
-    url: "https://tattooworlds.com",
+    url: "https://www.tattooworlds.com",
     siteName: "TattooWorlds",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://tattooworlds.com/images/hero-bg.jpg",
+        url: "https://www.tattooworlds.com/images/hero-bg.jpg",
         width: 1200,
         height: 630,
         alt: "TattooWorlds Professional Tattoo Studio NYC",
@@ -152,7 +152,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TattooWorlds | Custom Tattoo Studio & Fine Art NYC (tattooworlds.com)",
     description: "Premier custom tattoo studio in New York. Expert resident artists, clinical sterilization, and award-winning artwork.",
-    images: ["https://tattooworlds.com/images/hero-bg.jpg"],
+    images: ["https://www.tattooworlds.com/images/hero-bg.jpg"],
   },
   category: "Art & Design",
 };

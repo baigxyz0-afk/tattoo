@@ -43,12 +43,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${post.title} | TattooWorlds Guides`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://tattooworlds.com/blog/${post.slug}`,
+      canonical: `https://www.tattooworlds.com/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://tattooworlds.com/blog/${post.slug}`,
+      url: `https://www.tattooworlds.com/blog/${post.slug}`,
       siteName: "TattooWorlds",
       images: [
         {
@@ -86,7 +86,7 @@ export default async function BlogPostPage({ params }: Props) {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
-    "image": `https://tattooworlds.com${post.image}`,
+    "image": `https://www.tattooworlds.com${post.image}`,
     "datePublished": post.publishDate,
     "author": {
       "@type": "Person",
@@ -96,11 +96,11 @@ export default async function BlogPostPage({ params }: Props) {
     "publisher": {
       "@type": "Organization",
       "name": "TattooWorlds",
-      "url": "https://tattooworlds.com",
+      "url": "https://www.tattooworlds.com",
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://tattooworlds.com/blog/${post.slug}`,
+      "@id": `https://www.tattooworlds.com/blog/${post.slug}`,
     },
   };
 

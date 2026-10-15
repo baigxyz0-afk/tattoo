@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: `${tattooIdeas.length}+ Tattoo Ideas, Designs & Meanings (2026 Guide) | TattooWorlds`,
   description: `Browse ${tattooIdeas.length}+ curated tattoo design ideas, symbolic meanings, pain ratings, and placement guides created by master artists at TattooWorlds.`,
   alternates: {
-    canonical: "https://tattooworlds.com/tattoo-ideas",
+    canonical: "https://www.tattooworlds.com/tattoo-ideas",
   },
   openGraph: {
     title: `${tattooIdeas.length}+ Tattoo Ideas & Aesthetic Designs | TattooWorlds`,
     description: `Find your next tattoo from our directory of ${tattooIdeas.length}+ curated design ideas, placement tips, and meanings.`,
-    url: "https://tattooworlds.com/tattoo-ideas",
+    url: "https://www.tattooworlds.com/tattoo-ideas",
     siteName: "TattooWorlds",
     type: "website",
   },

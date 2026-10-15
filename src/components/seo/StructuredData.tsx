@@ -5,20 +5,20 @@ export function StructuredData() {
       // 1. WebSite Schema with SearchAction
       {
         "@type": "WebSite",
-        "@id": "https://tattooworlds.com/#website",
-        "url": "https://tattooworlds.com",
+        "@id": "https://www.tattooworlds.com/#website",
+        "url": "https://www.tattooworlds.com",
         "name": "TattooWorlds",
         "alternateName": ["tattooworlds.com", "Tattoo Worlds Studio", "TattooWorlds NYC"],
         "description": "Premium custom tattoo studio specializing in Realism, Black & Grey, Japanese Irezumi, Fine Line, and custom sleeve tattoos.",
         "inLanguage": "en-US",
         "publisher": {
-          "@id": "https://tattooworlds.com/#organization"
+          "@id": "https://www.tattooworlds.com/#organization"
         },
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://tattooworlds.com/#portfolio?filter={search_term_string}"
+            "urlTemplate": "https://www.tattooworlds.com/#portfolio?filter={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
@@ -27,18 +27,18 @@ export function StructuredData() {
       // 2. Organization Schema
       {
         "@type": "Organization",
-        "@id": "https://tattooworlds.com/#organization",
+        "@id": "https://www.tattooworlds.com/#organization",
         "name": "TattooWorlds",
-        "url": "https://tattooworlds.com",
+        "url": "https://www.tattooworlds.com",
         "logo": {
           "@type": "ImageObject",
-          "@id": "https://tattooworlds.com/#logo",
-          "url": "https://tattooworlds.com/icon.svg",
+          "@id": "https://www.tattooworlds.com/#logo",
+          "url": "https://www.tattooworlds.com/icon.svg",
           "caption": "TattooWorlds Studio Official Logo",
           "width": 512,
           "height": 512
         },
-        "image": "https://tattooworlds.com/images/hero-bg.jpg",
+        "image": "https://www.tattooworlds.com/images/hero-bg.jpg",
         "email": "hello@tattooworlds.com",
         "telephone": "+1-234-567-890",
         "sameAs": [
@@ -69,12 +69,12 @@ export function StructuredData() {
       // 3. TattooParlor / LocalBusiness Schema
       {
         "@type": ["TattooParlor", "HealthAndBeautyBusiness", "LocalBusiness"],
-        "@id": "https://tattooworlds.com/#tattooparlor",
+        "@id": "https://www.tattooworlds.com/#tattooparlor",
         "name": "TattooWorlds",
         "alternateName": "TattooWorlds Studio",
-        "url": "https://tattooworlds.com",
-        "logo": "https://tattooworlds.com/icon.svg",
-        "image": "https://tattooworlds.com/images/hero-bg.jpg",
+        "url": "https://www.tattooworlds.com",
+        "logo": "https://www.tattooworlds.com/icon.svg",
+        "image": "https://www.tattooworlds.com/images/hero-bg.jpg",
         "description": "TattooWorlds is an elite, hygienic custom tattoo studio in New York. Our award-winning resident artists specialize in photorealistic portraits, black & grey, Japanese Irezumi, traditional Americana, and fine line tattoos.",
         "telephone": "+1-234-567-890",
         "email": "hello@tattooworlds.com",
@@ -184,49 +184,49 @@ export function StructuredData() {
       // 4. Resident Artists (Person Schemas)
       {
         "@type": "Person",
-        "@id": "https://tattooworlds.com/#alex-carter",
+        "@id": "https://www.tattooworlds.com/#alex-carter",
         "name": "Alex Carter",
         "jobTitle": "Lead Realism & Portrait Specialist",
-        "worksFor": { "@id": "https://tattooworlds.com/#tattooparlor" },
+        "worksFor": { "@id": "https://www.tattooworlds.com/#tattooparlor" },
         "description": "Expert tattoo artist with 12 years of experience specializing in photorealism and detailed portraits.",
-        "image": "https://tattooworlds.com/images/artists/alex.jpg",
+        "image": "https://www.tattooworlds.com/images/artists/alex.jpg",
         "knowsAbout": ["Realism Tattoos", "Portrait Tattoos", "Micro-realism"]
       },
       {
         "@type": "Person",
-        "@id": "https://tattooworlds.com/#michael-stone",
+        "@id": "https://www.tattooworlds.com/#michael-stone",
         "name": "Michael Stone",
         "jobTitle": "Master Black & Grey Artist",
-        "worksFor": { "@id": "https://tattooworlds.com/#tattooparlor" },
+        "worksFor": { "@id": "https://www.tattooworlds.com/#tattooparlor" },
         "description": "Specialist in smooth gradients, high-contrast monochrome depth, and gothic black and grey illustration with 8 years of experience.",
-        "image": "https://tattooworlds.com/images/artists/michael.jpg",
+        "image": "https://www.tattooworlds.com/images/artists/michael.jpg",
         "knowsAbout": ["Black and Grey Tattoos", "Shading", "Chicano Style"]
       },
       {
         "@type": "Person",
-        "@id": "https://tattooworlds.com/#sophia-williams",
+        "@id": "https://www.tattooworlds.com/#sophia-williams",
         "name": "Sophia Williams",
         "jobTitle": "Fine Line & Minimalist Specialist",
-        "worksFor": { "@id": "https://tattooworlds.com/#tattooparlor" },
+        "worksFor": { "@id": "https://www.tattooworlds.com/#tattooparlor" },
         "description": "Acclaimed fine line artist creating delicate single-needle floral and micro-geometric tattoos with 5 years experience.",
-        "image": "https://tattooworlds.com/images/artists/sophia.jpg",
+        "image": "https://www.tattooworlds.com/images/artists/sophia.jpg",
         "knowsAbout": ["Fine Line Tattoos", "Single Needle", "Botanical Tattoos"]
       },
       {
         "@type": "Person",
-        "@id": "https://tattooworlds.com/#daniel-cruz",
+        "@id": "https://www.tattooworlds.com/#daniel-cruz",
         "name": "Daniel Cruz",
         "jobTitle": "Traditional Americana & Japanese Irezumi Master",
-        "worksFor": { "@id": "https://tattooworlds.com/#tattooparlor" },
+        "worksFor": { "@id": "https://www.tattooworlds.com/#tattooparlor" },
         "description": "Veteran tattoo artist with 15 years mastering bold lines, classic Americana flash, and Japanese dragon & koi mythology.",
-        "image": "https://tattooworlds.com/images/artists/daniel.jpg",
+        "image": "https://www.tattooworlds.com/images/artists/daniel.jpg",
         "knowsAbout": ["Japanese Irezumi", "Traditional Americana", "Large Body Suits"]
       },
 
       // 5. HowTo Schema (The Tattoo Process)
       {
         "@type": "HowTo",
-        "@id": "https://tattooworlds.com/#process",
+        "@id": "https://www.tattooworlds.com/#process",
         "name": "How to Get a Custom Tattoo at TattooWorlds",
         "description": "The step-by-step professional process for getting a custom tattoo from initial consultation to complete healing.",
         "totalTime": "P1D",
@@ -267,7 +267,7 @@ export function StructuredData() {
       // 6. FAQPage Schema for AI Overviews & Rich Snippets
       {
         "@type": "FAQPage",
-        "@id": "https://tattooworlds.com/#faq",
+        "@id": "https://www.tattooworlds.com/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -339,31 +339,31 @@ export function StructuredData() {
       // 7. BreadcrumbList Schema
       {
         "@type": "BreadcrumbList",
-        "@id": "https://tattooworlds.com/#breadcrumbs",
+        "@id": "https://www.tattooworlds.com/#breadcrumbs",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://tattooworlds.com"
+            "item": "https://www.tattooworlds.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Tattoo Styles",
-            "item": "https://tattooworlds.com#styles"
+            "item": "https://www.tattooworlds.com#styles"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Artists",
-            "item": "https://tattooworlds.com#artists"
+            "item": "https://www.tattooworlds.com#artists"
           },
           {
             "@type": "ListItem",
             "position": 4,
             "name": "Portfolio Gallery",
-            "item": "https://tattooworlds.com#portfolio"
+            "item": "https://www.tattooworlds.com#portfolio"
           }
         ]
       }
