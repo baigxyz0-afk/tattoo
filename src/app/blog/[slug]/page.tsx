@@ -1,4 +1,4 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -39,15 +39,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const cleanTitle = post.title.includes(":") 
+    ? post.title.split(":")[0].trim() 
+    : post.title;
+
+  const conciseTitle = cleanTitle.length > 45 ? `${cleanTitle.slice(0, 42)}...` : cleanTitle;
+
+  const conciseDesc = post.excerpt.length > 155 
+    ? `${post.excerpt.slice(0, 152)}...` 
+    : post.excerpt;
+
   return {
-    title: `${post.title} | TattooWorlds Guides`,
-    description: post.excerpt,
+    title: {
+      absolute: `${conciseTitle} | TattooWorlds`,
+    },
+    description: conciseDesc,
     alternates: {
       canonical: `https://www.tattooworlds.com/blog/${post.slug}`,
     },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: `${conciseTitle} | TattooWorlds`,
+      description: conciseDesc,
       url: `https://www.tattooworlds.com/blog/${post.slug}`,
       siteName: "TattooWorlds",
       images: [
@@ -64,8 +76,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
+      title: `${conciseTitle} | TattooWorlds`,
+      description: conciseDesc,
       images: [post.image],
     },
   };
@@ -230,6 +242,21 @@ export default async function BlogPostPage({ params }: Props) {
                     {p}
                   </p>
                 ))}
+
+                {sec.subsections && sec.subsections.length > 0 && (
+                  <div className="space-y-4 pt-2">
+                    {sec.subsections.map((sub, sIdx) => (
+                      <div key={sIdx} className="space-y-2">
+                        <h3 className="text-xl font-heading font-semibold text-white">
+                          {sub.subHeading}
+                        </h3>
+                        <p className="text-gray-300 text-base leading-relaxed">
+                          {sub.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {sec.callout && (
                   <div className={`p-5 rounded-xl border flex items-start gap-4 ${

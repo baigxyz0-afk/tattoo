@@ -23,23 +23,32 @@ export function Hero() {
       </motion.div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center mt-16 sm:mt-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-gold/10 border border-accent-gold/30 text-accent-gold text-xs sm:text-sm uppercase tracking-widest font-mono mb-4"
+        >
+          <span>Turn Your Ideas Into Permanent Art</span>
+        </motion.div>
+
         <motion.h1 
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight leading-tight font-heading"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight font-heading max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Turn Your Ideas Into <br className="hidden md:block" />
-          <span className="text-accent-gold italic font-light">Permanent Art</span>
+          Tattoo Ideas, Designs & Styles <br className="hidden md:block" />
+          <span className="text-accent-gold italic font-light">for Your Next Tattoo</span>
         </motion.h1>
 
         <motion.p 
-          className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto font-light leading-relaxed px-2"
+          className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto font-light leading-relaxed px-2"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Professional custom tattoos crafted with precision, creativity, and passion by experienced tattoo artists.
+          Explore tattoo ideas, tattoo designs, popular tattoo styles, and inspiration for your next tattoo. Discover minimalist, fine-line, realism, black and grey, floral, traditional, geometric, and other tattoo styles.
         </motion.p>
 
         <motion.div 

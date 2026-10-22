@@ -90,12 +90,14 @@ export function Artists() {
                     href={`https://instagram.com`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Follow ${artist.name} on Instagram`}
                     className="flex items-center space-x-2 bg-white text-black px-6 py-2 rounded-sm font-bold hover:bg-accent-gold transition-colors text-sm"
                   >
                     <Instagram size={16} /> <span>Follow</span>
                   </a>
                   <Link 
                     href={`#portfolio?artist=${artist.id}`}
+                    aria-label={`View ${artist.name} tattoo portfolio`}
                     className="flex items-center space-x-2 border border-white text-white px-6 py-2 rounded-sm font-bold hover:bg-white/20 transition-colors text-sm"
                   >
                     View Portfolio

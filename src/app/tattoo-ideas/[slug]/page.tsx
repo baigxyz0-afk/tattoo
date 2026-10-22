@@ -39,16 +39,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const conciseTitle = idea.title.length > 25 ? `${idea.title} Ideas` : `${idea.title} Ideas & Meanings`;
+  const placements = idea.bestPlacements.slice(0, 2).join(', ');
+  const painRating = idea.painLevel.split('(')[1]?.replace(')', '') || idea.painLevel;
+  const description = `Discover ${idea.title} symbolic meanings, pain rating (${painRating}), popular styles, and top placements including ${placements}.`.slice(0, 155);
+
   return {
-    title: `${idea.title}: Meanings, Placements & 2026 Ideas | TattooWorlds`,
-    description: `${idea.shortDescription} Explore symbolic meaning, best body placements, pain ratings, and custom design tips.`,
+    title: conciseTitle,
+    description: description,
     keywords: [idea.keyword, `${idea.title} ideas`, "tattoo designs", "tattoo placement", "tattooworlds"],
     alternates: {
       canonical: `https://www.tattooworlds.com/tattoo-ideas/${idea.slug}`,
     },
     openGraph: {
-      title: `${idea.title} - Complete Design & Placement Guide`,
-      description: idea.shortDescription,
+      title: `${conciseTitle} | TattooWorlds`,
+      description: description,
       url: `https://www.tattooworlds.com/tattoo-ideas/${idea.slug}`,
       siteName: "TattooWorlds",
       images: [
@@ -63,8 +68,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: idea.title,
-      description: idea.shortDescription,
+      title: `${conciseTitle} | TattooWorlds`,
+      description: description,
       images: [idea.image],
     },
   };
@@ -236,7 +241,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
             {/* Section 2: Best Placements & Pain Guide */}
             <section className="space-y-4">
               <h2 className="text-2xl font-heading font-bold text-white border-b border-white/10 pb-2">
-                Best Body Placements & Sizing
+                Best Placements for {idea.title}
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                 Anatomical positioning determines how your tattoo looks in motion and how comfortably it heals. Recommended placements for this concept include:
@@ -257,7 +262,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
             {/* Section 3: Master Artist Advice */}
             <section className="space-y-4">
               <h2 className="text-2xl font-heading font-bold text-white border-b border-white/10 pb-2">
-                Master Artist Design Tips
+                Artist Design Tips for {idea.title}
               </h2>
               <div className="space-y-3">
                 {idea.designTips.map((tip, idx) => (
@@ -273,7 +278,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
             <section className="space-y-4 pt-4 border-t border-white/10">
               <h2 className="text-2xl font-heading font-bold text-white flex items-center gap-2">
                 <HelpCircle size={22} className="text-accent-gold" />
-                <span>Frequently Asked Questions</span>
+                <span>Frequently Asked Questions: {idea.title}</span>
               </h2>
               <div className="space-y-4">
                 {idea.faqs.map((faq, idx) => (
@@ -312,7 +317,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
         <section className="mt-20 pt-12 border-t border-white/10">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-heading font-bold text-white">
-              Related Tattoo Ideas You Might Love
+              Related {idea.category} Design Ideas
             </h2>
             <Link
               href="/tattoo-ideas"
@@ -328,6 +333,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
               <Link
                 key={rel.slug}
                 href={`/tattoo-ideas/${rel.slug}`}
+                aria-label={`View ${rel.title} design ideas and placement guide`}
                 className="group bg-charcoal-light/30 border border-white/10 rounded-xl overflow-hidden hover:border-accent-gold/40 transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="relative aspect-[4/3] w-full bg-black/40 overflow-hidden">

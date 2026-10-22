@@ -1,4 +1,4 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { blogPosts } from "@/data/blogPosts";
@@ -7,13 +7,13 @@ import { Footer } from "@/components/layout/Footer";
 import { Calendar, Clock, User, ArrowRight, Sparkles, Tag, BookOpen, Flame } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tattoo Guides, Trends & Inspiration Blog | TattooWorlds",
-  description: "Read expert tattoo guides, 2026 trending styles, aftercare routines, pain charts, and artist advice curated by the TattooWorlds team.",
+  title: "Tattoo Blog | Tattoo Ideas & Inspiration",
+  description: "Read expert tattoo guides, trending styles, aftercare routines, pain charts, and artist advice curated by the TattooWorlds team.",
   alternates: {
     canonical: "https://www.tattooworlds.com/blog",
   },
   openGraph: {
-    title: "Tattoo Inspiration & Education Blog | TattooWorlds",
+    title: "Tattoo Blog | Tattoo Ideas & Inspiration | TattooWorlds",
     description: "Explore in-depth tattoo styles, aftercare guides, and 2026 design trends.",
     url: "https://www.tattooworlds.com/blog",
     siteName: "TattooWorlds",
@@ -121,6 +121,7 @@ export default function BlogListingPage() {
 
                     <Link
                       href={`/blog/${featuredPost.slug}`}
+                      aria-label={`Read guide: ${featuredPost.title}`}
                       className="inline-flex items-center gap-2 text-sm font-semibold text-accent-gold hover:text-white transition-colors group/btn"
                     >
                       <span>Read Guide</span>
@@ -150,7 +151,11 @@ export default function BlogListingPage() {
                 className="group flex flex-col bg-charcoal-light/40 border border-white/10 rounded-xl overflow-hidden hover:border-accent-gold/40 hover:bg-charcoal-light/70 transition-all duration-300 shadow-lg hover:-translate-y-1"
               >
                 {/* Card Image */}
-                <Link href={`/blog/${post.slug}`} className="relative aspect-[16/10] w-full overflow-hidden bg-black/40">
+                <Link 
+                  href={`/blog/${post.slug}`} 
+                  aria-label={`Read full article: ${post.title}`}
+                  className="relative aspect-[16/10] w-full overflow-hidden bg-black/40"
+                >
                   <Image
                     src={post.image}
                     alt={post.title}
@@ -177,7 +182,7 @@ export default function BlogListingPage() {
                     </div>
 
                     <h3 className="text-xl font-heading font-bold text-white group-hover:text-accent-gold transition-colors line-clamp-2">
-                      <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                      <Link href={`/blog/${post.slug}`} aria-label={`Read ${post.title}`}>{post.title}</Link>
                     </h3>
 
                     <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
@@ -200,9 +205,10 @@ export default function BlogListingPage() {
 
                     <Link
                       href={`/blog/${post.slug}`}
+                      aria-label={`Read full article: ${post.title}`}
                       className="text-xs font-semibold text-accent-gold flex items-center gap-1 hover:underline"
                     >
-                      <span>Read More</span>
+                      <span>Read Article</span>
                       <ArrowRight size={13} />
                     </Link>
                   </div>

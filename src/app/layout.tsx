@@ -26,10 +26,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tattooworlds.com"),
   title: {
-    default: "TattooWorlds | Custom Tattoo Studio & Fine Art NYC (tattooworlds.com)",
+    default: "Tattoo Ideas, Designs & Styles | TattooWorlds",
     template: "%s | TattooWorlds",
   },
-  description: "TattooWorlds (tattooworlds.com) is New York's premier custom tattoo studio. Award-winning artists specializing in Realism, Black & Grey, Japanese Irezumi, Traditional Americana, and Fine Line tattoos in a clinical hygienic environment.",
+  description: "Explore tattoo ideas, tattoo designs, popular tattoo styles, inspiration, portfolios, and tattoo guides to find the perfect design for your next tattoo.",
   keywords: [
     "tattooworlds.com",
     "TattooWorlds",
@@ -133,8 +133,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "TattooWorlds | Custom Tattoo Studio & Fine Art NYC (tattooworlds.com)",
-    description: "New York's premier custom tattoo studio. Resident masters specializing in Realism, Black & Grey, Japanese Irezumi, and Fine Line. Book your free consultation.",
+    title: "Tattoo Ideas, Designs & Styles | TattooWorlds",
+    description: "Explore tattoo ideas, tattoo designs, popular tattoo styles, inspiration, portfolios, and tattoo guides to find the perfect design for your next tattoo.",
     url: "https://www.tattooworlds.com",
     siteName: "TattooWorlds",
     locale: "en_US",
@@ -144,14 +144,14 @@ export const metadata: Metadata = {
         url: "https://www.tattooworlds.com/images/hero-bg.jpg",
         width: 1200,
         height: 630,
-        alt: "TattooWorlds Professional Tattoo Studio NYC",
+        alt: "TattooWorlds - Tattoo Ideas, Designs & Styles",
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TattooWorlds | Custom Tattoo Studio & Fine Art NYC (tattooworlds.com)",
-    description: "Premier custom tattoo studio in New York. Expert resident artists, clinical sterilization, and award-winning artwork.",
+    title: "Tattoo Ideas, Designs & Styles | TattooWorlds",
+    description: "Explore tattoo ideas, tattoo designs, popular tattoo styles, inspiration, portfolios, and tattoo guides to find the perfect design for your next tattoo.",
     images: ["https://www.tattooworlds.com/images/hero-bg.jpg"],
   },
   category: "Art & Design",

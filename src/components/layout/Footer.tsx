@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 sm:mb-16">
           {/* Brand */}
           <div className="space-y-6">
-            <Link href="#home" className="flex items-center gap-3 group">
+            <Link href="/#home" aria-label="TattooWorlds - Back to top" className="flex items-center gap-3 group">
               <TattooWorldsLogo className="w-10 h-10 group-hover:scale-105 transition-transform duration-300" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold tracking-wider text-white uppercase font-heading">
@@ -25,13 +25,13 @@ export function Footer() {
               "Your Story. Your Ink. Your Art."
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-accent-gold hover:text-black transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="TattooWorlds on Instagram" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-accent-gold hover:text-black transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-accent-gold hover:text-black transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="TattooWorlds on Facebook" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-accent-gold hover:text-black transition-colors">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-accent-gold hover:text-black transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="TattooWorlds on Twitter" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-accent-gold hover:text-black transition-colors">
                 <Twitter size={18} />
               </a>
             </div>

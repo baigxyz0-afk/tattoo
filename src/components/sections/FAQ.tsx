@@ -65,23 +65,23 @@ export function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         <div className="text-center mb-12 sm:mb-16">
-          <motion.h2 
+          <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-accent-gold text-xs sm:text-sm font-bold tracking-[0.3em] uppercase mb-3 sm:mb-4"
           >
             Got Questions?
-          </motion.h2>
-          <motion.h3 
+          </motion.p>
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-heading"
           >
-            Frequently Asked
-          </motion.h3>
+            Frequently Asked Questions
+          </motion.h2>
         </div>
 
         <div className="space-y-3 sm:space-y-4">

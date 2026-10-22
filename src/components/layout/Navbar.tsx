@@ -39,7 +39,7 @@ export function Navbar() {
       aria-label="Main Navigation"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-        <Link href="#home" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+        <Link href="/#home" aria-label="TattooWorlds - Home" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
           <TattooWorldsLogo className="w-8 h-8 sm:w-10 sm:h-10 group-hover:scale-105 transition-transform duration-300" />
           <div className="flex flex-col">
             <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-wider text-white uppercase flex items-center font-heading">

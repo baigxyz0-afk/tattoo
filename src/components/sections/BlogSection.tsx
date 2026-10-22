@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 import { blogPosts } from "@/data/blogPosts";
 import { Calendar, Clock, ArrowRight, BookOpen, Sparkles } from "lucide-react";
@@ -44,7 +44,11 @@ export function BlogSection() {
               key={post.slug}
               className="group flex flex-col bg-charcoal-light/40 border border-white/10 rounded-2xl overflow-hidden hover:border-accent-gold/40 hover:bg-charcoal-light/70 transition-all duration-300 shadow-xl hover:-translate-y-1.5"
             >
-              <Link href={`/blog/${post.slug}`} className="relative aspect-[16/10] w-full bg-black/40 overflow-hidden">
+              <Link 
+                href={`/blog/${post.slug}`} 
+                aria-label={`Read guide: ${post.title}`}
+                className="relative aspect-[16/10] w-full bg-black/40 overflow-hidden"
+              >
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -93,9 +97,10 @@ export function BlogSection() {
 
                   <Link
                     href={`/blog/${post.slug}`}
+                    aria-label={`Read full article: ${post.title}`}
                     className="text-xs font-semibold text-accent-gold flex items-center gap-1 hover:underline"
                   >
-                    <span>Read More</span>
+                    <span>Read Article</span>
                     <ArrowRight size={13} />
                   </Link>
                 </div>

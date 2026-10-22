@@ -262,10 +262,11 @@ export function TattooStyles() {
                 ) : (
                   <Link 
                     href={`#portfolio?filter=${style.id}`}
+                    aria-label={`Explore ${style.name} tattoo style portfolio`}
                     onClick={(e) => e.stopPropagation()}
                     className="inline-flex items-center text-accent-gold font-bold text-xs sm:text-sm tracking-wider uppercase hover:text-white transition-colors"
                   >
-                    Explore Style <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-2 transition-transform" />
+                    Explore {style.name} <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-2 transition-transform" />
                   </Link>
                 )}
               </div>

@@ -7,14 +7,14 @@ import { Footer } from "@/components/layout/Footer";
 import { Sparkles, Compass, ShieldCheck, ArrowRight, Heart, Flame } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `${tattooIdeas.length}+ Tattoo Ideas, Designs & Meanings (2026 Guide) | TattooWorlds`,
-  description: `Browse ${tattooIdeas.length}+ curated tattoo design ideas, symbolic meanings, pain ratings, and placement guides created by master artists at TattooWorlds.`,
+  title: "Tattoo Ideas | Creative Designs & Meanings",
+  description: `Explore ${tattooIdeas.length}+ tattoo design ideas with symbolic meanings, pain ratings, and placement guides curated by artists at TattooWorlds.`,
   alternates: {
     canonical: "https://www.tattooworlds.com/tattoo-ideas",
   },
   openGraph: {
-    title: `${tattooIdeas.length}+ Tattoo Ideas & Aesthetic Designs | TattooWorlds`,
-    description: `Find your next tattoo from our directory of ${tattooIdeas.length}+ curated design ideas, placement tips, and meanings.`,
+    title: "Tattoo Ideas | Creative Designs & Meanings | TattooWorlds",
+    description: `Explore ${tattooIdeas.length}+ tattoo design ideas with symbolic meanings, pain ratings, and placement guides.`,
     url: "https://www.tattooworlds.com/tattoo-ideas",
     siteName: "TattooWorlds",
     type: "website",
@@ -76,7 +76,11 @@ export default function TattooIdeasDirectory() {
                 key={item.slug}
                 className="group flex flex-col bg-charcoal-light/40 border border-white/10 rounded-xl overflow-hidden hover:border-accent-gold/40 hover:bg-charcoal-light/70 transition-all duration-300 shadow-md hover:-translate-y-1"
               >
-                <Link href={`/tattoo-ideas/${item.slug}`} className="relative aspect-[4/3] w-full overflow-hidden bg-black/40">
+                <Link 
+                  href={`/tattoo-ideas/${item.slug}`} 
+                  aria-label={`View ${item.title} ideas, meanings and placement guide`}
+                  className="relative aspect-[4/3] w-full overflow-hidden bg-black/40"
+                >
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -97,7 +101,7 @@ export default function TattooIdeasDirectory() {
                     </div>
 
                     <h3 className="text-base font-heading font-bold text-white group-hover:text-accent-gold transition-colors line-clamp-1">
-                      <Link href={`/tattoo-ideas/${item.slug}`}>
+                      <Link href={`/tattoo-ideas/${item.slug}`} aria-label={`Read guide for ${item.title}`}>
                         {item.title}
                       </Link>
                     </h3>
@@ -114,9 +118,10 @@ export default function TattooIdeasDirectory() {
 
                     <Link
                       href={`/tattoo-ideas/${item.slug}`}
+                      aria-label={`Explore ${item.title} tattoo guide`}
                       className="text-xs font-semibold text-accent-gold flex items-center gap-1 hover:underline"
                     >
-                      <span>Explore</span>
+                      <span>Explore {item.title}</span>
                       <ArrowRight size={13} />
                     </Link>
                   </div>
