@@ -43,7 +43,18 @@ const feminineShoulderTattooImages = Array.from({ length: 11 }).map(
   (_, i) => `/images/tattoo-styles/shoulder-tattoo-feminine/feminine-shoulder-tattoo-${i + 1}.jpg`
 );
 
+const pinterestTattooImages = Array.from({ length: 50 }).map(
+  (_, i) => `/images/tattoo-styles/pinterest-tattoos/pinterest-tattoo-${i + 1}.jpg`
+);
+
 const styles = [
+  {
+    id: "pinterest-tattoos",
+    name: "Pinterest Tattoo Ideas",
+    description: "50 tattoo design inspirations collected from Pinterest — snakes, florals, butterflies, mandalas, wolves, roses and more (50 Photos).",
+    image: "/images/tattoo-styles/pinterest-tattoos/pinterest-tattoo-1.jpg",
+    images: pinterestTattooImages,
+  },
   {
     id: "shoulder-tattoo-feminine",
     name: "Feminine Shoulder Tattoos",
