@@ -1,0 +1,55 @@
+# Pinterest Tattoo Ideas — image sources
+
+50 tattoo design inspiration photos collected from Pinterest (pinimg.com).
+These are design references for inspiration, not TattooWorlds studio work.
+
+- `pinterest-tattoo-1.jpg` — https://i.pinimg.com/originals/31/42/0e/31420e789571dc15e8d04d4510750b0f.jpg
+- `pinterest-tattoo-2.jpg` — https://i.pinimg.com/originals/35/a0/77/35a0770d24771e5cd1f4f92dc4951afe.jpg
+- `pinterest-tattoo-3.jpg` — https://i.pinimg.com/originals/45/78/43/45784328c1b257089ece95ecd6c872f3.jpg
+- `pinterest-tattoo-4.jpg` — https://i.pinimg.com/originals/62/d9/46/62d946b371e95ce7f3454e0fdcb1d481.jpg
+- `pinterest-tattoo-5.jpg` — https://i.pinimg.com/originals/aa/90/02/aa9002b183977f2c4c8e1c947e64cefc.jpg
+- `pinterest-tattoo-6.jpg` — https://i.pinimg.com/originals/f7/5f/27/f75f27ab3be0fbb3696bcede39a522ec.jpg
+- `pinterest-tattoo-7.jpg` — https://i.pinimg.com/736x/15/9c/d0/159cd08afff8a2e8b4635101abdef614.jpg
+- `pinterest-tattoo-8.jpg` — https://i.pinimg.com/736x/1c/b2/19/1cb21925c1e2a1b70ab7b2891fecbf9c.jpg
+- `pinterest-tattoo-9.jpg` — https://i.pinimg.com/736x/5c/eb/b8/5cebb8ab848fc3568ca6f07b7f49875f.jpg
+- `pinterest-tattoo-10.jpg` — https://i.pinimg.com/736x/73/b5/be/73b5be1a8ea22d6b93a9438db3d362bf.jpg
+- `pinterest-tattoo-11.jpg` — https://i.pinimg.com/736x/73/ce/2b/73ce2be8e3917900aa4daa79a7de40b5.jpg
+- `pinterest-tattoo-12.jpg` — https://i.pinimg.com/736x/75/22/c3/7522c32c5f472325539eaa9540a96299.jpg
+- `pinterest-tattoo-13.jpg` — https://i.pinimg.com/736x/96/a7/9a/96a79a3e846c269cbb5009fd83ef9368.jpg
+- `pinterest-tattoo-14.jpg` — https://i.pinimg.com/736x/ab/90/fb/ab90fb044da77089c0d431990bd2799e.jpg
+- `pinterest-tattoo-15.jpg` — https://i.pinimg.com/736x/c3/e2/a8/c3e2a8100cf63094172202757cd09800--dragon-tatto-dragon-phoenix.jpg
+- `pinterest-tattoo-16.jpg` — https://i.pinimg.com/736x/ca/7e/a4/ca7ea4d3a91af178d281bd438265b6ce.jpg
+- `pinterest-tattoo-17.jpg` — https://i.pinimg.com/736x/ce/17/37/ce1737f83c5af2bf910f6e07fffc680e.jpg
+- `pinterest-tattoo-18.jpg` — https://i.pinimg.com/736x/d4/43/00/d4430036e6303c1897d067720ae13170.jpg
+- `pinterest-tattoo-19.jpg` — https://i.pinimg.com/564x/81/12/9d/81129d1114c58e7253cac4e61e9ce8a9.jpg
+- `pinterest-tattoo-20.jpg` — https://i.pinimg.com/564x/f2/f4/4e/f2f44efaef776fddb3091b987a10ae32.jpg
+- `pinterest-tattoo-21.jpg` — https://i.pinimg.com/474x/13/aa/11/13aa11db20999485c14419323ee07b21.jpg
+- `pinterest-tattoo-22.jpg` — https://i.pinimg.com/474x/13/f6/27/13f627e1d84f5e9b95b490bd676d647e.jpg
+- `pinterest-tattoo-23.jpg` — https://i.pinimg.com/474x/1b/60/f7/1b60f7796f7d29d879ad2c2c05d92ae1.jpg
+- `pinterest-tattoo-24.jpg` — https://i.pinimg.com/474x/20/62/6f/20626f2e0584bf347d38b8ff04845070.jpg
+- `pinterest-tattoo-25.jpg` — https://i.pinimg.com/474x/20/8b/9f/208b9f13b186c825b5013381060f8978.jpg
+- `pinterest-tattoo-26.jpg` — https://i.pinimg.com/474x/20/9d/06/209d06ab16a028964ecb71fa9c888158.jpg
+- `pinterest-tattoo-27.jpg` — https://i.pinimg.com/474x/21/b2/f5/21b2f553c3b039ad44deabe51ba94d27.jpg
+- `pinterest-tattoo-28.jpg` — https://i.pinimg.com/474x/22/31/e0/2231e05d0220ce3b7a24e811b3f3588b.jpg
+- `pinterest-tattoo-29.jpg` — https://i.pinimg.com/474x/22/96/55/22965520ad11e17cc5bfe05de256577d.jpg
+- `pinterest-tattoo-30.jpg` — https://i.pinimg.com/474x/2e/7b/da/2e7bda72506f118364420b59c5039947.jpg
+- `pinterest-tattoo-31.jpg` — https://i.pinimg.com/474x/2f/14/90/2f149001e5c274e612b97b2e6d181988.jpg
+- `pinterest-tattoo-32.jpg` — https://i.pinimg.com/474x/2f/2a/96/2f2a961b5454b71cfacd9efb4e3d4087.jpg
+- `pinterest-tattoo-33.jpg` — https://i.pinimg.com/474x/30/11/2c/30112cf811a3f3922d5dc5470234653e.jpg
+- `pinterest-tattoo-34.jpg` — https://i.pinimg.com/474x/37/c7/d2/37c7d2ceab0082ff44124a451bb7bafa.jpg
+- `pinterest-tattoo-35.jpg` — https://i.pinimg.com/474x/38/10/4d/38104d09100c0e5a5b55acdc3badc07c.jpg
+- `pinterest-tattoo-36.jpg` — https://i.pinimg.com/474x/3f/b5/be/3fb5bec9e59df295929d1e500cab1784.jpg
+- `pinterest-tattoo-37.jpg` — https://i.pinimg.com/474x/46/b0/6f/46b06f98857f19f4f267ae6af523c252.jpg
+- `pinterest-tattoo-38.jpg` — https://i.pinimg.com/474x/47/89/8d/47898d57b14d9c8ba48d1c718868dbd9.jpg
+- `pinterest-tattoo-39.jpg` — https://i.pinimg.com/474x/4a/eb/c6/4aebc6caf157898158687989a475f8e8.jpg
+- `pinterest-tattoo-40.jpg` — https://i.pinimg.com/474x/4d/e2/9e/4de29edfc5063cd3c134ab90dcffc2ca.jpg
+- `pinterest-tattoo-41.jpg` — https://i.pinimg.com/474x/51/5b/a2/515ba237b37cb07c64a4da964827a8ca.jpg
+- `pinterest-tattoo-42.jpg` — https://i.pinimg.com/474x/56/7d/0d/567d0d29d5e1725bc8da2d7f61a2092a.jpg
+- `pinterest-tattoo-43.jpg` — https://i.pinimg.com/474x/57/57/e0/5757e0ff163a41814f0fcea02c2d0982.jpg
+- `pinterest-tattoo-44.jpg` — https://i.pinimg.com/474x/5a/93/6e/5a936e7f215562477f16c5bb2fa4cc88.jpg
+- `pinterest-tattoo-45.jpg` — https://i.pinimg.com/474x/62/26/33/622633bc3faa7dfeb961afbf34682144.jpg
+- `pinterest-tattoo-46.jpg` — https://i.pinimg.com/474x/66/84/51/668451e2d183cfb519c1e543f6923b71.jpg
+- `pinterest-tattoo-47.jpg` — https://i.pinimg.com/474x/67/84/d6/6784d61f4b094636c30135d937a63bf4.jpg
+- `pinterest-tattoo-48.jpg` — https://i.pinimg.com/474x/6b/fa/7a/6bfa7a0448f9c656ed77b7b112776856.jpg
+- `pinterest-tattoo-49.jpg` — https://i.pinimg.com/474x/70/bf/9b/70bf9b4cee8a8a84b0bd6df8d0f752f5.jpg
+- `pinterest-tattoo-50.jpg` — https://i.pinimg.com/474x/73/da/a5/73daa566d4cea8974e7e52504500fd81.jpg
