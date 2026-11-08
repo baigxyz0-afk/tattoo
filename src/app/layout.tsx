@@ -26,10 +26,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tattooworlds.com"),
   title: {
-    default: "Tattoo Ideas, Designs & Styles | TattooWorlds",
+    default: "Custom Tattoo Studio in NYC | Tattoo Ideas & Designs",
     template: "%s | TattooWorlds",
   },
-  description: "Explore tattoo ideas, tattoo designs, popular tattoo styles, inspiration, portfolios, and tattoo guides to find the perfect design for your next tattoo.",
+  description: "Custom tattoo studio in New York City. Explore tattoo ideas — fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
   keywords: [
     "tattooworlds.com",
     "TattooWorlds",
@@ -133,8 +133,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Tattoo Ideas, Designs & Styles | TattooWorlds",
-    description: "Explore tattoo ideas, tattoo designs, popular tattoo styles, inspiration, portfolios, and tattoo guides to find the perfect design for your next tattoo.",
+    title: "Custom Tattoo Studio in NYC | Tattoo Ideas & Designs",
+    description: "Custom tattoo studio in New York City. Explore tattoo ideas — fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
     url: "https://www.tattooworlds.com",
     siteName: "TattooWorlds",
     locale: "en_US",
@@ -150,8 +150,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tattoo Ideas, Designs & Styles | TattooWorlds",
-    description: "Explore tattoo ideas, tattoo designs, popular tattoo styles, inspiration, portfolios, and tattoo guides to find the perfect design for your next tattoo.",
+    title: "Custom Tattoo Studio in NYC | Tattoo Ideas & Designs",
+    description: "Custom tattoo studio in New York City. Explore tattoo ideas — fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
     images: ["https://www.tattooworlds.com/images/hero-bg.jpg"],
   },
   category: "Art & Design",
