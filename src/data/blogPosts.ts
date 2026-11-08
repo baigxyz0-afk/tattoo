@@ -17,6 +17,8 @@
     heading?: string;
     id?: string;
     text?: string;
+    image?: string;
+    imageAlt?: string;
     paragraphs?: string[];
     subsections?: { subHeading: string; text: string }[];
     callout?: { type: 'tip' | 'warning' | 'info'; title: string; content: string };
@@ -1997,6 +1999,149 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Can I bring my own font to the studio?",
         answer: "Yes. Bring the font or reference you like, and your artist will adjust spacing and line weight so it works properly as a tattoo."
+      }
+    ]
+  },
+  {
+    slug: "wrist-tattoo-ideas-guide",
+    title: "Wrist Tattoo Ideas: 15 Small Designs, Placement, Pain & Aftercare",
+    excerpt: "15 wrist tattoo ideas — fine-line florals, script, symbols and wraps — plus pain, sizing, healing and aftercare advice from our NYC artists.",
+    category: "Placement Guide",
+    readTime: "7 min read",
+    publishDate: "November 8, 2026",
+    author: {
+      name: "Sophia Williams",
+      role: "Fine Line & Minimalist Artist",
+      avatar: "/images/artists/sophia.jpg"
+    },
+    image: "/images/blog/wrist-tattoo-ideas-hero.jpg",
+    tags: ["Wrist Tattoo", "Small Tattoo Ideas", "Fine Line Tattoo", "Minimalist Tattoo", "Tattoo Placement"],
+    tableOfContents: [
+      { id: "intro", title: "Why the Wrist Is Such a Popular Spot" },
+      { id: "best-ideas", title: "15 Wrist Tattoo Ideas That Age Well" },
+      { id: "inner-vs-outer", title: "Inner Wrist vs. Outer Wrist" },
+      { id: "pain", title: "Do Wrist Tattoos Hurt?" },
+      { id: "sizing", title: "Sizing Small Wrist Tattoos So They Stay Readable" },
+      { id: "aftercare", title: "Wrist Tattoo Aftercare: What Is Different Here" },
+      { id: "mistakes", title: "Common Wrist Tattoo Mistakes to Avoid" }
+    ],
+    content: [
+      {
+        id: "intro",
+        heading: "Why the Wrist Is Such a Popular Spot",
+        paragraphs: [
+          "The wrist is one of the most requested placements in our New York studio, and it is easy to see why. It is a small, naturally framed canvas that you can see yourself every day, it suits delicate fine-line work beautifully, and it works just as well for a first tiny tattoo as for a meaningful piece you have been planning for years.",
+          "It is also one of the most honest placements to plan for. The wrist moves constantly, catches a lot of sun, and the skin there is thin with very little fat underneath. A design that looks perfect on a flat reference image can blur, fade, or distort if it is too small, too detailed, or placed across a crease. This guide covers the ideas that actually hold up on a wrist, how pain and healing really feel, and the sizing rules our artists use — so you can choose a design you will still love in ten years. The photos in this guide are illustrative design references to help you picture each style, not healed photos of client work."
+        ]
+      },
+      {
+        id: "best-ideas",
+        heading: "15 Wrist Tattoo Ideas That Age Well",
+        paragraphs: [
+          "The best wrist tattoos share three things: simple shapes, enough spacing between lines, and a size that respects how ink spreads over time. Below are the fifteen ideas we recommend most often, grouped by style so you can find the direction that fits you."
+        ],
+        subsections: [
+          {
+            subHeading: "1–3. Fine-Line Florals, Vines & Wrap-Around Botanicals",
+            text: "A single wildflower stem, a sprig of lavender, or a vine that wraps gently around the wrist are the most requested wrist designs we tattoo. They follow the natural curve of the arm, they look elegant at a small size, and they age better than dense floral clusters because the lines have room to breathe. A wrap-around vine works especially well on the outer wrist, where the design can circle the arm like a bracelet."
+          },
+          {
+            subHeading: "4–6. Script, Single Words & Dates",
+            text: "One meaningful word — breathe, hope, a name, a short mantra — in clean script is a classic wrist tattoo for a reason. Keep the lettering large enough to read at arm's length and ask your artist to hand-adjust the spacing, as our lettering guide explains. Roman numerals and small dates also work well here, especially on the inner wrist where the skin is flatter."
+          },
+          {
+            subHeading: "7–9. Tiny Symbols: Stars, Moons, Hearts & Arrows",
+            text: "A crescent moon, a tiny star cluster, a minimal heart, or a small arrow are perfect if you want something subtle. These are also the safest first tattoos: quick sessions, easy to cover with a watch or bracelet, and simple enough that they heal cleanly. Avoid packing several tiny symbols into one small area — they merge into a blur as the ink settles."
+          },
+          {
+            subHeading: "10–12. Bracelet, Chain & Ornamental Bands",
+            text: "A delicate chain, a beaded band, or a fine ornamental bracelet tattooed around the wrist gives the look of jewellery that never comes off. Keep the band thin and the pattern open; heavy solid-black bands on the wrist tend to feel bulky and show fading unevenly."
+          },
+          {
+            subHeading: "13–15. Matching, Nature & Minimalist Geometry",
+            text: "Matching wrist tattoos — the same small design on two people, or a design split across two wrists — are popular for couples, siblings, and close friends. Small nature motifs like a wave, a mountain line, or a bird in flight also suit the wrist well, as do minimalist geometric shapes: a tiny triangle, a circle, or a single continuous line."
+          }
+        ],
+        image: "/images/blog/wrist-tattoo-floral-wrap.jpg",
+        imageAlt: "Fine-line floral vine tattoo wrapping around a wrist"
+      },
+      {
+        id: "inner-vs-outer",
+        heading: "Inner Wrist vs. Outer Wrist",
+        paragraphs: [
+          "The inner wrist is flatter, so script and small detailed designs sit more cleanly there — but it is also more sensitive, creases when you bend your hand, and is harder to keep still while it heals. The outer wrist is slightly less painful and the skin moves less, which helps fine lines stay crisp, but it catches more sun, so fading is faster without sunscreen.",
+          "The side of the wrist is a good middle ground for vertical designs like a stem, a word running up the arm, or a small symbol stack. Whichever side you choose, avoid placing the main part of the design directly across the wrist crease: lines that cross a fold blur first and distort every time you move your hand."
+        ],
+        callout: {
+          type: "tip",
+          title: "Artist Placement Tip",
+          content: "Hold your wrist in a relaxed, natural position — not bent back — when you and your artist place the stencil. A design placed on a stretched wrist shifts and warps the moment your hand relaxes."
+        }
+      },
+      {
+        id: "pain",
+        heading: "Do Wrist Tattoos Hurt?",
+        paragraphs: [
+          "Honestly, yes — more than a forearm tattoo, less than ribs or feet. The wrist has thin skin over bone, tendons, and nerve endings, with almost no fat to cushion the needle. Most clients describe it as a sharp, scratchy sting rather than a deep ache, and because wrist pieces are usually small, the session is short — often 30 to 60 minutes for a fine-line design.",
+          "The inner wrist tends to hurt more than the outer wrist, and the area near the palm crease is the most sensitive part. Eating well beforehand, sleeping properly, staying hydrated, and keeping your hand relaxed during the session all help. Our first-tattoo pain chart compares the wrist with other placements if you want a fuller picture before you book."
+        ]
+      },
+      {
+        id: "sizing",
+        heading: "Sizing Small Wrist Tattoos So They Stay Readable",
+        paragraphs: [
+          "This is where most wrist tattoo regrets begin: a beautiful design tattooed too small. Ink spreads slightly under the skin over the years, so lines that start close together eventually merge. As a practical rule, fine-line lowercase letters should be at least 5 to 6 millimetres tall, and any design with fine detail needs enough scale that its thinnest lines are not hair-thin.",
+          "A good test is to print your design at the size you want and look at it from arm's length. If you have to squint to read it or tell the shapes apart, it is too small for a wrist. Your artist can simplify the design — fewer leaves, bolder stems, wider spacing — without losing what you love about it. That simplification is what keeps a wrist tattoo legible at ten years instead of only ten days."
+        ],
+        image: "/images/blog/wrist-tattoo-script-symbols.jpg",
+        imageAlt: "Small fine-line script wrist tattoo reading breathe with a tiny star"
+      },
+      {
+        id: "aftercare",
+        heading: "Wrist Tattoo Aftercare: What Is Different Here",
+        paragraphs: [
+          "Wrist aftercare follows the same rules as our full aftercare guide — keep the bandage on as directed, wash gently with fragrance-free antibacterial soap, pat dry, apply a thin layer of healing balm, and keep it out of sun and water for two to three weeks — but the wrist adds three extra challenges.",
+          "First, you wash your hands constantly, so the tattoo gets wet and soaped far more than a tattoo elsewhere. Wash around it gently, pat it dry immediately, and reapply balm. Second, watches, bracelets, and tight sleeves rub the healing skin, so leave them off until the tattoo has fully healed. Third, the wrist bends all day, which can crack scabs if the skin dries out — keep it lightly moisturised and do not pick or scratch flakes. Because the wrist is so exposed, daily SPF 50+ once healed is the single best thing you can do to slow fading."
+        ],
+        callout: {
+          type: "warning",
+          title: "Sun Is the Wrist's Biggest Enemy",
+          content: "The wrist is almost always uncovered, so UV fading hits it harder than most placements. Sunscreen every day after healing — not just in summer — makes a visible difference over five to ten years."
+        }
+      },
+      {
+        id: "mistakes",
+        heading: "Common Wrist Tattoo Mistakes to Avoid",
+        paragraphs: [
+          "The most common mistake is choosing a design with too much detail for the space — a full portrait, a long quote, or a dense mandala squeezed onto a wrist will blur. The second is placing it across the crease or on the palm side, where movement and friction fade it fastest. The third is skipping sunscreen once it heals, which is the fastest way to turn crisp fine lines grey and soft.",
+          "Finally, do not judge a wrist tattoo while it is still healing. Fine-line work looks patchy and light during the peeling stage, then settles and darkens slightly as the skin recovers. If a line does heal light, a single touch-up — usually after the tattoo has fully settled — is normal for this placement, not a sign something went wrong. Bring your idea to a consultation and let your artist adapt it to your wrist: that conversation is what turns a nice reference image into a tattoo that lasts."
+        ],
+        keyTakeaways: [
+          "Keep wrist designs simple, with generous spacing between lines",
+          "Fine-line letters should be at least 5-6 mm tall to stay readable",
+          "Avoid placing the design across the wrist crease",
+          "Inner wrist is flatter but more painful; outer wrist fades faster in sun",
+          "Leave watches and bracelets off until fully healed",
+          "Daily SPF 50+ after healing is the best defence against fading"
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Do wrist tattoos hurt more than forearm tattoos?",
+        answer: "Yes, usually. The wrist has thin skin over bone and tendons with very little fat, so it feels sharper than the forearm. The session is normally short though — 30 to 60 minutes for most small fine-line wrist designs."
+      },
+      {
+        question: "Do wrist tattoos fade faster?",
+        answer: "They can. The wrist moves constantly, is washed often, and is almost always exposed to sun. Keeping it moisturised while healing, avoiding friction from watches and bracelets, and using SPF 50+ daily once healed slows fading significantly. A touch-up after a few years is normal for this placement."
+      },
+      {
+        question: "How much does a small wrist tattoo cost?",
+        answer: "At TattooWorlds, small tattoos start at $80 in our Small Tattoo tier (up to 2x2 inches, simple linework, one session). The exact price depends on size, detail, and colour — your artist confirms it at a free consultation before any work begins."
+      },
+      {
+        question: "Can I cover a wrist tattoo for work?",
+        answer: "Yes. A watch, bracelet, long sleeves, or a skin-coloured bandage all cover a wrist tattoo easily. Keep in mind that tight watches and bracelets should stay off while the tattoo is healing."
       }
     ]
   }
