@@ -58,13 +58,46 @@ export function StructuredData() {
         ]
       },
 
+      // 2b. LocalBusiness (TattooParlor) Schema — address & hours as shown on the site
+      {
+        "@type": "TattooParlor",
+        "@id": "https://www.tattooworlds.com/#localbusiness",
+        "name": "TattooWorlds",
+        "url": "https://www.tattooworlds.com",
+        "image": "https://www.tattooworlds.com/images/hero-bg.jpg",
+        "email": "hello@tattooworlds.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Art Street, Downtown",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10001",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "10:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "12:00",
+            "closes": "18:00"
+          }
+        ]
+      },
+
       // 3. WebPage Schema for Homepage
       {
         "@type": "WebPage",
         "@id": "https://www.tattooworlds.com/#webpage",
         "url": "https://www.tattooworlds.com",
-        "name": "Tattoo Ideas, Designs & Styles | TattooWorlds",
-        "description": "Explore tattoo ideas, tattoo designs, popular tattoo styles, inspiration, portfolios, and tattoo guides to find the perfect design for your next tattoo.",
+        "name": "Custom Tattoo Studio in NYC | Tattoo Ideas & Designs",
+        "description": "Custom tattoo studio in New York City. Explore tattoo ideas — fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
         "isPartOf": {
           "@id": "https://www.tattooworlds.com/#website"
         },
