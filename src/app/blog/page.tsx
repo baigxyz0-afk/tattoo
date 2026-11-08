@@ -22,8 +22,11 @@ export const metadata: Metadata = {
 };
 
 export default function BlogListingPage() {
-  const featuredPost = blogPosts[0];
-  const remainingPosts = blogPosts.slice(1);
+  const sortedPosts = [...blogPosts].sort(
+    (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+  );
+  const featuredPost = sortedPosts[0];
+  const remainingPosts = sortedPosts.slice(1);
   const allCategories = Array.from(new Set(blogPosts.map((p) => p.category)));
 
   return (
