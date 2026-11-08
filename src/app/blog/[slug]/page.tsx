@@ -39,11 +39,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const cleanTitle = post.title.includes(":") 
-    ? post.title.split(":")[0].trim() 
-    : post.title;
-
-  const conciseTitle = cleanTitle.length > 45 ? `${cleanTitle.slice(0, 42)}...` : cleanTitle;
+  // Use the full title so its keywords stay in the <title> tag.
+  // Only trim very long titles, at a word boundary, to ~57 chars.
+  const fullTitle = post.title.trim();
+  const conciseTitle =
+    fullTitle.length > 57
+      ? `${fullTitle.slice(0, 57).replace(/\s+\S*$/, "")}...`
+      : fullTitle;
+  // Keep the brand suffix only when the title is short enough to fit it.
+  const displayTitle =
+    conciseTitle.length > 45 ? conciseTitle : `${conciseTitle} | TattooWorlds`;
 
   const conciseDesc = post.excerpt.length > 155 
     ? `${post.excerpt.slice(0, 152)}...` 
@@ -51,14 +56,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: {
-      absolute: `${conciseTitle} | TattooWorlds`,
+      absolute: displayTitle,
     },
     description: conciseDesc,
     alternates: {
       canonical: `https://www.tattooworlds.com/blog/${post.slug}`,
     },
     openGraph: {
-      title: `${conciseTitle} | TattooWorlds`,
+      title: displayTitle,
       description: conciseDesc,
       url: `https://www.tattooworlds.com/blog/${post.slug}`,
       siteName: "TattooWorlds",
@@ -76,7 +81,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${conciseTitle} | TattooWorlds`,
+      title: displayTitle,
       description: conciseDesc,
       images: [post.image],
     },
@@ -91,29 +96,56 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
-  const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const relatedPosts = blogPosts
+    .filter((p) => p.slug !== post.slug)
+    .sort((a, b) => {
+      const score = (p: (typeof blogPosts)[number]) =>
+        (p.category === post.category ? 2 : 0) +
+        p.tags.filter((t) => post.tags.includes(t)).length;
+      return score(b) - score(a);
+    })
+    .slice(0, 3);
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.excerpt,
-    "image": `https://www.tattooworlds.com${post.image}`,
-    "datePublished": post.publishDate,
-    "author": {
-      "@type": "Person",
-      "name": post.author.name,
-      "jobTitle": post.author.role,
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "TattooWorlds",
-      "url": "https://www.tattooworlds.com",
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://www.tattooworlds.com/blog/${post.slug}`,
-    },
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.excerpt,
+        "image": `https://www.tattooworlds.com${post.image}`,
+        "datePublished": post.publishDate,
+        "author": {
+          "@type": "Person",
+          "name": post.author.name,
+          "jobTitle": post.author.role,
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "TattooWorlds",
+          "url": "https://www.tattooworlds.com",
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://www.tattooworlds.com/blog/${post.slug}`,
+        },
+      },
+      ...(post.faqs && post.faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              "mainEntity": post.faqs.map((faq) => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.answer,
+                },
+              })),
+            },
+          ]
+        : []),
+    ],
   };
 
   return (
