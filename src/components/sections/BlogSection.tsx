@@ -4,7 +4,9 @@ import { blogPosts } from "@/data/blogPosts";
 import { Calendar, Clock, ArrowRight, BookOpen, Sparkles } from "lucide-react";
 
 export function BlogSection() {
-  const latestPosts = blogPosts.slice(0, 3);
+  const latestPosts = [...blogPosts]
+    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
+    .slice(0, 3);
 
   return (
     <section id="blog" className="py-20 sm:py-24 bg-charcoal border-t border-accent-gold/10 relative overflow-hidden">
