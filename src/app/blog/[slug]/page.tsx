@@ -243,6 +243,18 @@ export default async function BlogPostPage({ params }: Props) {
                   </p>
                 ))}
 
+                {sec.image && (
+                  <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden border border-white/10 bg-black/40">
+                    <Image
+                      src={sec.image}
+                      alt={sec.imageAlt || post.title}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 640px"
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+
                 {sec.subsections && sec.subsections.length > 0 && (
                   <div className="space-y-4 pt-2">
                     {sec.subsections.map((sub, sIdx) => (
