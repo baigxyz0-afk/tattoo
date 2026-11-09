@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { tattooIdeas } from "@/data/tattooIdeas";
@@ -80,7 +80,7 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
   const idea = tattooIdeas.find((item) => item.slug === slug);
 
   if (!idea) {
-    notFound();
+    permanentRedirect("/tattoo-ideas");
   }
 
   // Pick 4 related items from same category or adjacent IDs
