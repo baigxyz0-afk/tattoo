@@ -54,9 +54,10 @@ export function BlogSection() {
                 <Image
                   src={post.image}
                   alt={post.title}
-                  fill
+                  width={600}
+                  height={375}
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
                 <div className="absolute top-3 left-3 bg-charcoal/90 backdrop-blur-md text-accent-gold text-[11px] font-mono px-2.5 py-1 rounded-md border border-accent-gold/30">
                   {post.category}
@@ -90,8 +91,9 @@ export function BlogSection() {
                       <Image
                         src={post.author.avatar}
                         alt={post.author.name}
-                        fill
-                        className="object-cover"
+                        width={28}
+                        height={28}
+                        className="w-full h-full object-cover"
                       />
                     </div>
                     <span className="text-xs text-gray-300 font-medium">{post.author.name}</span>

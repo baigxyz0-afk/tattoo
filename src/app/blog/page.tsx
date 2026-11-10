@@ -71,10 +71,11 @@ export default function BlogListingPage() {
                   <Image
                     src={featuredPost.image}
                     alt={featuredPost.title}
-                    fill
+                    width={800}
+                    height={500}
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     priority
-                    className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute top-3 left-3 bg-accent-gold text-charcoal text-xs font-bold font-mono px-3 py-1 rounded-md shadow-md flex items-center gap-1.5">
                     <Flame size={14} />
@@ -112,8 +113,9 @@ export default function BlogListingPage() {
                         <Image
                           src={featuredPost.author.avatar}
                           alt={featuredPost.author.name}
-                          fill
-                          className="object-cover"
+                          width={36}
+                          height={36}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <div>
@@ -162,9 +164,10 @@ export default function BlogListingPage() {
                   <Image
                     src={post.image}
                     alt={post.title}
-                    fill
+                    width={600}
+                    height={375}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   />
                   <div className="absolute top-3 left-3 bg-charcoal/90 backdrop-blur-md text-accent-gold text-[11px] font-mono px-2.5 py-0.5 rounded border border-accent-gold/30">
                     {post.category}
@@ -199,8 +202,9 @@ export default function BlogListingPage() {
                         <Image
                           src={post.author.avatar}
                           alt={post.author.name}
-                          fill
-                          className="object-cover"
+                          width={28}
+                          height={28}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <span className="text-xs text-gray-300 font-medium">{post.author.name}</span>

@@ -43,8 +43,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Only trim very long titles, at a word boundary, to ~57 chars.
   const fullTitle = post.title.trim();
   const conciseTitle =
-    fullTitle.length > 45
-      ? `${fullTitle.slice(0, 45).replace(/\s+\S*$/, "")}...`
+    fullTitle.length > 40
+      ? `${fullTitle.slice(0, 38).replace(/\s+\S*$/, "")}...`
       : fullTitle;
   // Keep the brand suffix only when the title is short enough to fit it.
   const displayTitle =
@@ -207,8 +207,9 @@ export default async function BlogPostPage({ params }: Props) {
                 <Image
                   src={post.author.avatar}
                   alt={post.author.name}
-                  fill
-                  className="object-cover"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div>
@@ -229,10 +230,11 @@ export default async function BlogPostPage({ params }: Props) {
           <Image
             src={post.image}
             alt={post.title}
-            fill
+            width={1200}
+            height={675}
             priority
             sizes="(max-width: 1024px) 100vw, 900px"
-            className="object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
 
@@ -280,9 +282,10 @@ export default async function BlogPostPage({ params }: Props) {
                     <Image
                       src={sec.image}
                       alt={sec.imageAlt || post.title}
-                      fill
+                      width={800}
+                      height={500}
                       sizes="(max-width: 1024px) 100vw, 640px"
-                      className="object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 )}
@@ -428,8 +431,9 @@ export default async function BlogPostPage({ params }: Props) {
                     <Image
                       src={rel.image}
                       alt={rel.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={375}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="p-4 space-y-2">

@@ -177,10 +177,11 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
           <Image
             src={idea.image}
             alt={idea.title}
-            fill
+            width={1200}
+            height={675}
             priority
             sizes="(max-width: 1024px) 100vw, 900px"
-            className="object-cover"
+            className="w-full h-full object-cover"
           />
           <div className="absolute bottom-3 right-3 bg-charcoal/80 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-mono text-gray-300 border border-white/10">
             TattooWorlds Studio Design
@@ -340,9 +341,10 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
                   <Image
                     src={rel.image}
                     alt={rel.title}
-                    fill
+                    width={600}
+                    height={450}
                     sizes="(max-width: 640px) 100vw, 25vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-2 left-2 bg-charcoal/90 text-[10px] font-mono text-accent-gold px-2 py-0.5 rounded">
                     {rel.category}

@@ -84,9 +84,10 @@ export default function TattooIdeasDirectory() {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    fill
+                    width={600}
+                    height={450}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   />
                   <div className="absolute top-2.5 left-2.5 bg-charcoal/90 backdrop-blur-md text-accent-gold text-[10px] font-mono px-2 py-0.5 rounded border border-accent-gold/30">
                     {item.category}

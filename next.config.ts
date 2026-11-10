@@ -60,17 +60,38 @@ const deletedTattooSlugs = [
 
 const staticPageRedirects = [
   { source: "/about", destination: "/" },
+  { source: "/about/:path*", destination: "/" },
   { source: "/styles", destination: "/" },
-  { source: "/portfolio", destination: "/" },
+  { source: "/styles/:path*", destination: "/" },
+  { source: "/portfolio", destination: "/tattoo-ideas" },
+  { source: "/portfolio/:path*", destination: "/tattoo-ideas" },
   { source: "/artists", destination: "/" },
+  { source: "/artists/:path*", destination: "/" },
   { source: "/faq", destination: "/" },
+  { source: "/faq/:path*", destination: "/" },
   { source: "/contact", destination: "/" },
+  { source: "/contact/:path*", destination: "/" },
   { source: "/home", destination: "/" },
+  { source: "/home/:path*", destination: "/" },
   { source: "/services", destination: "/" },
-  { source: "/gallery", destination: "/" },
+  { source: "/services/:path*", destination: "/" },
+  { source: "/gallery", destination: "/tattoo-ideas" },
+  { source: "/gallery/:path*", destination: "/tattoo-ideas" },
   { source: "/tattoo-styles", destination: "/" },
+  { source: "/tattoo-styles/:path*", destination: "/" },
   { source: "/privacy-policy", destination: "/" },
+  { source: "/privacy-policy/:path*", destination: "/" },
   { source: "/terms-of-service", destination: "/" },
+  { source: "/terms-of-service/:path*", destination: "/" },
+  { source: "/tattoos", destination: "/tattoo-ideas" },
+  { source: "/tattoos/:path*", destination: "/tattoo-ideas" },
+  { source: "/ideas", destination: "/tattoo-ideas" },
+  { source: "/ideas/:path*", destination: "/tattoo-ideas" },
+  { source: "/tag/:path*", destination: "/blog" },
+  { source: "/category/:path*", destination: "/blog" },
+  { source: "/author/:path*", destination: "/blog" },
+  { source: "/feed", destination: "/blog" },
+  { source: "/feed/:path*", destination: "/blog" },
 ];
 
 const nextConfig: NextConfig = {
@@ -91,7 +112,7 @@ const nextConfig: NextConfig = {
     ];
   },
   images: {
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
