@@ -1,4 +1,4 @@
-﻿export interface BlogPost {
+export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
@@ -30,7 +30,7 @@
 export const blogPosts: BlogPost[] = [
   {
     slug: "top-10-tattoo-trends-2026",
-    title: "Top 10 Tattoo Trends Dominating 2026: From Micro-Realism to Cyber-Sigilism",
+    title: "Top 10 Tattoo Trends Dominating 2026: Modern Style Guide",
     excerpt: "Explore the most influential and viral tattoo styles in 2026. Discover why fine-line botanicals, neo-tribal chrome, and sacred geometry are taking over Pinterest and global studios.",
     category: "Trends & Styles",
     readTime: "8 min read",
@@ -314,7 +314,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "fine-line-vs-traditional-tattoos",
-    title: "Fine Line vs Traditional Tattoos: Longevity, Healing & Aesthetic Differences",
+    title: "Fine Line vs Traditional Tattoos: Longevity, Healing & Styles",
     excerpt: "Comparing delicate single-needle fine line tattoos with bold American and Neo-Traditional ink. Understand longevity, aging factors, skin types, and maintenance.",
     category: "Style Comparisons",
     readTime: "6 min read",

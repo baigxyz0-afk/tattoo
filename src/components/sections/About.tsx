@@ -60,6 +60,8 @@ export function About() {
             <img 
               src="/images/about-image.jpg"
               alt="Inside TattooWorlds Studio New York - Professional Tattoo Artists at Work"
+              width={800}
+              height={1000}
               loading="lazy"
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover"

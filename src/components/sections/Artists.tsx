@@ -79,6 +79,8 @@ export function Artists() {
                 <img 
                   src={artist.image} 
                   alt={`${artist.name} - ${artist.specialty} at TattooWorlds NYC`}
+                  width={600}
+                  height={800}
                   loading="lazy"
                   decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"

@@ -228,6 +228,8 @@ export function Portfolio() {
                 <img 
                   src={item.image} 
                   alt={`Custom ${item.style} tattoo design by ${item.artist} at TattooWorlds NYC`}
+                  width={800}
+                  height={1000}
                   loading="lazy"
                   decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -302,6 +304,8 @@ export function Portfolio() {
               <img 
                 src={selectedImage.image} 
                 alt={`Custom ${selectedImage.style} tattoo artwork by ${selectedImage.artist} at TattooWorlds NYC`} 
+                width={1200}
+                height={1500} 
                 className="max-h-[78vh] sm:max-h-[85vh] max-w-full object-contain rounded-sm border border-accent-gold/20 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
               />
               

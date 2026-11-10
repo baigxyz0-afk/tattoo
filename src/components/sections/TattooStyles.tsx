@@ -239,7 +239,9 @@ export function TattooStyles() {
             >
               <div className="relative h-56 sm:h-64 overflow-hidden shrink-0">
                 <img 
-                  src={style.image} 
+                  src={style.image}
+                  width={600}
+                  height={400} 
                   alt={`Custom ${style.name} Tattoo Style at TattooWorlds NYC`}
                   loading="lazy"
                   decoding="async"
@@ -341,7 +343,9 @@ export function TattooStyles() {
               onClick={(e) => e.stopPropagation()}
             >
               <img 
-                src={activeGallery.images[activeGallery.index]} 
+                src={activeGallery.images[activeGallery.index]}
+                width={1200}
+                height={1200} 
                 alt={`${activeGallery.name} design ${activeGallery.index + 1}`} 
                 className="max-h-[78vh] sm:max-h-[85vh] max-w-full object-contain rounded-sm border border-accent-gold/20 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
               />

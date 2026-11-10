@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     default: "Custom Tattoo Studio in NYC | Tattoo Ideas & Designs",
     template: "%s | TattooWorlds",
   },
-  description: "Custom tattoo studio in New York City. Explore tattoo ideas — fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
+  description: "Custom tattoo studio in NYC. Explore tattoo ideas, fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
   keywords: [
     "tattooworlds.com",
     "TattooWorlds",
@@ -106,6 +106,7 @@ export const metadata: Metadata = {
     canonical: "https://www.tattooworlds.com",
     languages: {
       "en-US": "https://www.tattooworlds.com",
+      "x-default": "https://www.tattooworlds.com",
     },
   },
   icons: {
@@ -134,7 +135,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Custom Tattoo Studio in NYC | Tattoo Ideas & Designs",
-    description: "Custom tattoo studio in New York City. Explore tattoo ideas — fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
+    description: "Custom tattoo studio in NYC. Explore tattoo ideas, fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
     url: "https://www.tattooworlds.com",
     siteName: "TattooWorlds",
     locale: "en_US",
@@ -151,7 +152,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Custom Tattoo Studio in NYC | Tattoo Ideas & Designs",
-    description: "Custom tattoo studio in New York City. Explore tattoo ideas — fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
+    description: "Custom tattoo studio in NYC. Explore tattoo ideas, fine-line, realism, black & grey, Japanese Irezumi and traditional designs. Free consultations.",
     images: ["https://www.tattooworlds.com/images/hero-bg.jpg"],
   },
   category: "Art & Design",

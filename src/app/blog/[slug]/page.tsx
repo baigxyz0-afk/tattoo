@@ -43,12 +43,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Only trim very long titles, at a word boundary, to ~57 chars.
   const fullTitle = post.title.trim();
   const conciseTitle =
-    fullTitle.length > 57
-      ? `${fullTitle.slice(0, 57).replace(/\s+\S*$/, "")}...`
+    fullTitle.length > 45
+      ? `${fullTitle.slice(0, 45).replace(/\s+\S*$/, "")}...`
       : fullTitle;
   // Keep the brand suffix only when the title is short enough to fit it.
   const displayTitle =
-    conciseTitle.length > 45 ? conciseTitle : `${conciseTitle} | TattooWorlds`;
+    `${conciseTitle} | TattooWorlds`;
 
   const conciseDesc = post.excerpt.length > 155 
     ? `${post.excerpt.slice(0, 152)}...` 
