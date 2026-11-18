@@ -234,6 +234,15 @@ export default async function TattooIdeaDetailPage({ params }: Props) {
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 {idea.meaning}
               </p>
+              {idea.meaningDetail && (
+                <div className="space-y-4">
+                  {idea.meaningDetail.split("\n\n").map((para, idx) => (
+                    <p key={idx} className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              )}
               <p className="text-gray-400 text-sm leading-relaxed">
                 Whether you select this design to honor a pivotal life milestone, celebrate personal perseverance, or simply embody its visual aesthetic, every custom line tells a personal narrative.
               </p>
