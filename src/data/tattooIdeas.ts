@@ -7,6 +7,7 @@ export interface TattooIdea {
   category: 'Motifs & Animals' | 'Body Placements' | 'Styles & Techniques' | 'Meanings & Memorials' | 'Trending & Modern';
   shortDescription: string;
   meaning: string;
+  meaningDetail?: string;
   bestPlacements: string[];
   painLevel: string;
   healingTime: string;
@@ -112,6 +113,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Rebirth, shedding the past, healing, and primal hidden wisdom.',
+    meaningDetail: `The snake's meaning starts with its skin. A snake sheds what no longer fits and walks away new, so the tattoo is the oldest symbol of rebirth — letting go of a past self, a bad season, or a version of you that stopped working. It is one of the most chosen designs for marking a fresh start after a hard ending.
+
+The snake also carries healing and hidden wisdom: in Greek myth it belongs to Asclepius, god of medicine, whose staff still marks pharmacies and hospitals. And it holds a warning too — beauty with teeth, knowledge with a price. That tension is why the design lasts: protection and danger, healing and harm, in one clean line.`,
     bestPlacements: ['Forearm Wrap', 'Collarbone', 'Ribs'],
     painLevel: 'Moderate (5/10)',
     healingTime: '2 to 3 weeks',
@@ -123,6 +127,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/pinterest_pins/4. Cyber Sigilism Neo Tribal Tattoo.jpg',
     faqs: [
+      {
+        question: "What does a snake tattoo mean?",
+        answer: "A snake tattoo most often means rebirth and transformation, because a snake sheds its skin and starts new. It is also linked to healing — the snake belongs to Asclepius, god of medicine — and to hidden wisdom. People choose it to mark a fresh start, or to carry both protection and danger in one design."
+      },
       {
         question: 'How much does a Snake & Serpent Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -547,6 +555,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Unrivaled intelligence, fluid camouflage, adaptability, and ocean mystery.',
+    meaningDetail: `The Kraken comes from Norse seafaring legend — a creature so vast sailors mistook it for an island, rising from depths no one could map. As a tattoo it means power you cannot fully see: depth, mystery, and the strength that lives below the surface.
+
+The octopus brings the other half of the meaning. It is one of the most intelligent animals in the sea — a problem-solver that changes color, shape, and texture to survive anywhere. Together, Kraken and octopus say the same thing two ways: adapt to anything, and never show all of your strength at once.`,
     bestPlacements: ['Sleeve Wrap', 'Shoulder Cap', 'Thigh'],
     painLevel: 'Moderate (4/10)',
     healingTime: '2 to 3 weeks',
@@ -558,6 +569,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/134.jpg',
     faqs: [
+      {
+        question: "What does a Kraken tattoo mean?",
+        answer: "The Kraken is the giant sea creature of Norse legend, so the tattoo means hidden power, depth, and mystery. The octopus adds intelligence and adaptability — an animal that solves problems and changes itself to survive anywhere. Together they suit people who are flexible, private, and stronger than they look."
+      },
       {
         question: 'How much does a Octopus & Kraken Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -837,6 +852,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Unshakable stamina, grounded physical force, fertility, and determination.',
+    meaningDetail: `The Minotaur is the bull-headed creature of Greek myth, kept at the center of the labyrinth on Crete. As a tattoo it carries raw, grounded power — the part of a person that is stubborn, physical, and impossible to move once it has decided. The labyrinth around him adds a second layer: finding your way through confusion and coming out the other side.
+
+The bull on its own has older roots still: strength, fertility, and determination, and in astrology it is the sign of Taurus — steady, patient, and loyal. Together, bull and Minotaur suit someone who is done apologizing for being intense, or who survived a maze of their own and wants the proof on their skin.`,
     bestPlacements: ['Chest', 'Shoulder', 'Thigh'],
     painLevel: 'Moderate (4/10)',
     healingTime: '2 to 3 weeks',
@@ -848,6 +866,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/69.jpg',
     faqs: [
+      {
+        question: "What does a Minotaur tattoo mean?",
+        answer: "The Minotaur, the bull-headed creature of the Cretan labyrinth, stands for raw strength, stubborn determination, and finding your way through confusion. The bull alone also means power, fertility, and the steady nature of Taurus. People choose it to mark resilience or an unapologetic, intense side of themselves."
+      },
       {
         question: 'How much does a Bull & Minotaur Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -1852,6 +1874,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Rare magical threshold, pivotal life turning point, and shadow harmony.',
+    meaningDetail: `An eclipse is a rare alignment: the moon briefly covers the sun, or the earth's shadow crosses the moon. That moment of light and dark sharing the same sky is why the design is read as balance — shadow and light, endings and beginnings, the conscious and the hidden parts of a person held together in one image.
+
+A solar eclipse is often chosen to mark a new chapter, a decision, or a fresh start after a hard time. A lunar eclipse leans more emotional: release, cycles, and letting go of what no longer fits. Combined in one piece, the two eclipses say that change and stillness belong together — the turning point itself is the point.`,
     bestPlacements: ['Spine', 'Forearm', 'Chest'],
     painLevel: 'Moderate (4/10)',
     healingTime: '2 to 3 weeks',
@@ -1863,6 +1888,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/44.jpg',
     faqs: [
+      {
+        question: "What does an eclipse tattoo mean?",
+        answer: "An eclipse tattoo usually means transformation and balance — light and dark in one image. A solar eclipse is linked to new beginnings, while a lunar eclipse is linked to release and emotional cycles. Many people get one to mark a turning point in their life."
+      },
       {
         question: 'How much does a Solar & Lunar Eclipse Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -2258,6 +2287,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Weighing light on the scale of truth, writing your own story, and freedom.',
+    meaningDetail: `A quill is the oldest writing tool, so the tattoo starts with a simple idea: you are writing your own story. It is chosen by writers, artists, and anyone who has decided to take the pen back after a chapter they did not choose — a mark of authorship over your own life.
+
+The feather carries its own older meaning. In Egyptian myth, the heart of the dead was weighed against the feather of Maat, goddess of truth — so a feather also means truth, lightness, and living honestly enough to weigh light. As a pair, quill and feather say: tell the truth, and tell it in your own words.`,
     bestPlacements: ['Collarbone', 'Forearm', 'Ribs'],
     painLevel: 'Moderate (3/10)',
     healingTime: '2 to 3 weeks',
@@ -2269,6 +2301,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/7.jpg',
     faqs: [
+      {
+        question: "What does a feather and quill tattoo mean?",
+        answer: "A quill means writing your own story — authorship over your life, and creativity. The feather adds truth and lightness: in Egyptian myth, the heart was weighed against the feather of Maat, goddess of truth. Together they suit writers, artists, and anyone starting a chapter on their own terms."
+      },
       {
         question: 'How much does a Feather & Quill Pen Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -3041,6 +3077,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Mystical shapeshifting intelligence, magical trickster wisdom, and guardian.',
+    meaningDetail: `In Japanese folklore, a kitsune is a fox spirit that grows wiser and more powerful with age, gaining a new tail with each century until it reaches nine. The nine-tailed kitsune is therefore a symbol of earned wisdom — intelligence that comes from living long enough to see every trick twice.
+
+Kitsune are both tricksters and guardians: they can deceive, but as messengers of the god Inari they also protect homes, harvests, and travelers. That double nature is the point of the design — cleverness with a moral compass, mischief with loyalty underneath. It suits people who are sharp, adaptable, and hard to pin down.`,
     bestPlacements: ['Thigh', 'Sleeve', 'Ribs'],
     painLevel: 'Moderate (4/10)',
     healingTime: '2 to 3 weeks',
@@ -3052,6 +3091,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/61.jpg',
     faqs: [
+      {
+        question: "What does a nine-tailed fox tattoo mean?",
+        answer: "In Japanese folklore, a kitsune is a fox spirit that gains a tail — and wisdom — with each century of life, up to nine tails. The tattoo means intelligence, adaptability, and earned wisdom, with a trickster edge: kitsune can deceive, but as messengers of the god Inari they also guard and protect."
+      },
       {
         question: 'How much does a Kitsune Nine-Tailed Fox Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -3244,6 +3287,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Meanings & Memorials',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Communing with the unknown spiritual veil, mystic curiosity, and gothic art.',
+    meaningDetail: `The planchette is the pointer from a talking board, the tool of Victorian-era spiritualism that promised a way to speak with the dead. As a tattoo it stands for curiosity about the unknown — the veil between worlds, the questions we cannot answer, and the pull of mystery itself.
+
+For most wearers it is gothic art first and belief second: a love of the occult aesthetic, horror, and the uncanny rather than a literal claim about spirits. It pairs naturally with moons, moths, candles, and vintage lettering, and it often marks someone who is comfortable sitting with unanswered questions.`,
     bestPlacements: ['Forearm', 'Thigh', 'Calf'],
     painLevel: 'Low to Moderate (3/10)',
     healingTime: '2 to 3 weeks',
@@ -3255,6 +3301,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/110.jpg',
     faqs: [
+      {
+        question: "What does a planchette tattoo mean?",
+        answer: "A planchette is the pointer from a Ouija talking board, so the tattoo usually means curiosity about the spirit world and the unknown. For most people it is a gothic or occult design chosen for its mystery and vintage style rather than a literal belief. It can also mark an interest in the afterlife or the unseen."
+      },
       {
         question: 'How much does a Planchette & Ouija Spirit Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -3331,6 +3381,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Molon Labe defiance, unyielding brotherhood, and warrior fearlessness.',
+    meaningDetail: `The Spartan helmet is shorthand for the warrior code of ancient Sparta — discipline, endurance, and standing your ground when the odds are against you. The phrase tied to it, Molon Labe — 'come and take them' — was Leonidas's answer at Thermopylae, and it still reads as defiance: you will have to come through me first.
+
+The shield matters as much as the helmet. A Spartan's shield protected the man beside him, so the design also means brotherhood and duty to the people you stand with — family, team, or unit. It is one of the most chosen designs for veterans, athletes, and anyone who has had to hold a line through a hard season.`,
     bestPlacements: ['Forearm', 'Chest', 'Shoulder'],
     painLevel: 'Moderate (4/10)',
     healingTime: '2 to 3 weeks',
@@ -3342,6 +3395,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/131.jpg',
     faqs: [
+      {
+        question: "What does a Spartan helmet tattoo mean?",
+        answer: "A Spartan helmet tattoo means courage, discipline, and defiance — summed up by the Spartan phrase Molon Labe, 'come and take them.' The shield adds brotherhood and protection, since a Spartan's shield guarded the soldier beside him. It is a popular choice for veterans, athletes, and people who have stood their ground through hardship."
+      },
       {
         question: 'How much does a Spartan Helmet & Shield Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -3389,6 +3446,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Guarding sacred emotional thresholds, ferocious boundary defense, and grit.',
+    meaningDetail: `In Greek myth, Cerberus is the three-headed hound who guards the gates of the Underworld, letting souls in and keeping the living out. Each head is often read as past, present, and future — or birth, life, and death — so the design works as a guard at the threshold between who you were and who you are becoming.
+
+People choose it for loyalty and protection as much as for darkness: Cerberus is ferocious to intruders but faithful to Hades, so the tattoo can mark someone who guards their family, their boundaries, or a hard-won new chapter. It also suits anyone drawn to mythology, the afterlife, or the idea of facing fear head-on instead of running from it.`,
     bestPlacements: ['Chest', 'Back', 'Thigh'],
     painLevel: 'Moderate (5/10)',
     healingTime: '2 to 3 weeks',
@@ -3400,6 +3460,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/10.jpg',
     faqs: [
+      {
+        question: "What does a Cerberus three-headed dog tattoo mean?",
+        answer: "Cerberus, the three-headed hound of Greek myth, guards the gates of the Underworld. The tattoo usually means protection, loyalty, and guarding a boundary — with the three heads often read as past, present, and future. It is a popular choice for people marking a turning point or honoring someone they protect fiercely."
+      },
       {
         question: 'How much does a Cerberus Three-Headed Dog Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -3882,6 +3946,9 @@ export const tattooIdeas: TattooIdea[] = [
     category: 'Body Placements',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Secret intimate poetry, breathing with your lungs, and testing endurance.',
+    meaningDetail: `Rib tattoos sit close to the lungs and the heart, so script placed there is almost always personal: words you breathe with, not words you show off. The placement itself is part of the meaning — a private line of poetry, a name, or a vow kept where only you and a few others will ever read it.
+
+Ribs are also one of the most painful places to get tattooed, so the design quietly means endurance: you sat through it because the words mattered. Florals soften the piece and add their own layer — growth, beauty, and the fact that something delicate can live on one of the body's hardest surfaces.`,
     bestPlacements: ['Ribs / Side Torso'],
     painLevel: 'High (7-8/10)',
     healingTime: '2 to 3 weeks',
@@ -3893,6 +3960,10 @@ export const tattooIdeas: TattooIdea[] = [
     ],
     image: '/images/portfolio/129.jpg',
     faqs: [
+      {
+        question: "What does a rib cage script tattoo mean?",
+        answer: "Script on the ribs is usually deeply personal — words placed close to the heart and lungs, meant to be lived with rather than shown off. The floral elements add growth and beauty, while the painful placement itself is often read as endurance: the words mattered enough to sit through it."
+      },
       {
         question: 'How much does a Rib Cage Script & Floral Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
