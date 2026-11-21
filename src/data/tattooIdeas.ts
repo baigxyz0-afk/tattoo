@@ -1178,6 +1178,9 @@ The bull on its own has older roots still: strength, fertility, and determinatio
     category: 'Motifs & Animals',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Classic seafaring good luck charm warding against shipwrecks and drowning.',
+    meaningDetail: `The rooster and the pig are one of the oldest good-luck charms in sailing. In the age of wooden ships, both animals were carried aboard in crates — and when a ship went down, the crates floated, so the animals often survived while men did not. Sailors tattooed a rooster on one foot and a pig on the other, believing the pair would keep them from drowning the same way: the rooster to crow them awake, the pig to keep them afloat.
+
+The design is still worn by sailors and navy veterans as protection against shipwreck, and by extension as a general charm for surviving hard times. The rooster adds its own layer — courage, vigilance, and a new dawn after a long night at sea — while the pig stands for prosperity and good fortune. Together they mark someone who has been through rough water and come home anyway.`,
     bestPlacements: ['Feet / Ankle Pair', 'Calf', 'Forearm'],
     painLevel: 'Moderate to High (6/10)',
     healingTime: '2 to 3 weeks',
@@ -1189,6 +1192,10 @@ The bull on its own has older roots still: strength, fertility, and determinatio
     ],
     image: '/images/portfolio/11.jpg',
     faqs: [
+      {
+        question: "What does a rooster and pig tattoo mean?",
+        answer: "A rooster and pig tattoo is a classic sailor's good-luck charm against drowning and shipwreck. Because both animals were carried aboard in floating crates that survived sinkings, sailors tattooed a rooster on one foot and a pig on the other, believing the pair would keep them afloat. Today it also stands for courage, good fortune, and surviving rough water."
+      },
       {
         question: 'How much does a Sailor Rooster & Pig Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -2555,6 +2562,9 @@ The feather carries its own older meaning. In Egyptian myth, the heart of the de
     category: 'Meanings & Memorials',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Eternal continuity of the soul, divine immortality, and balance.',
+    meaningDetail: `The ankh is the ancient Egyptian symbol for life itself — the 'key of life' carried by gods and pharaohs. Its loop is often read as the sun rising over the horizon, or as the womb and the breath of life, while the cross below stands for the earth and the path of a life lived. In temple art, gods hold the ankh to a pharaoh's lips to give him the breath of life, which is why the symbol is tied to divine power and immortality.
+
+As a tattoo the ankh usually means that life goes on — continuity of the soul, hope after loss, and the belief that death is a doorway rather than an end. It also carries balance: masculine and feminine, heaven and earth, spirit and body held in one shape. It is a common choice for memorials, for people marking a second chance at life, and for anyone drawn to Egyptian spirituality.`,
     bestPlacements: ['Forearm', 'Wrist', 'Back of Neck'],
     painLevel: 'Low to Moderate (3/10)',
     healingTime: '2 to 3 weeks',
@@ -2566,6 +2576,10 @@ The feather carries its own older meaning. In Egyptian myth, the heart of the de
     ],
     image: '/images/portfolio/70.jpg',
     faqs: [
+      {
+        question: "What does an ankh tattoo mean?",
+        answer: "The ankh is the Egyptian key of life, so the tattoo means eternal life and continuity of the soul. In Egyptian art, gods hold it to give the breath of life. Today people choose it for hope after loss, spiritual balance, and the belief that life continues beyond death."
+      },
       {
         question: 'How much does a Ankh Egyptian Key of Life Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -4011,6 +4025,9 @@ Ribs are also one of the most painful places to get tattooed, so the design quie
     category: 'Body Placements',
     shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
     meaning: 'Sensual body curves, hidden summer beach reveal, and organic flow.',
+    meaningDetail: `A botanical tattoo on the hip bone or pelvis is usually a private piece — one that is hidden most of the time and revealed only when chosen. The hip is one of the body's most sensual curves, so flowers and vines placed there carry a quiet message about femininity, beauty, and owning your own body on your own terms. It is art for yourself first, and for an audience second.
+
+The botanical part adds growth and renewal: flowers open, vines climb, and the design follows the natural curve of the bone the way a plant follows light. Because the hip is also a painful and intimate place to tattoo, the piece often marks endurance and a personal milestone — a body reclaimed after change, a season survived, or simply a reminder that something delicate can grow on a hard surface.`,
     bestPlacements: ['Hip / Pelvic Crest'],
     painLevel: 'Moderate to High (6/10)',
     healingTime: '2 to 3 weeks',
@@ -4022,6 +4039,10 @@ Ribs are also one of the most painful places to get tattooed, so the design quie
     ],
     image: '/images/portfolio/8.jpg',
     faqs: [
+      {
+        question: "What does a hip bone tattoo mean?",
+        answer: "A botanical tattoo on the hip bone is usually a private, personal piece about femininity, beauty, and owning your body on your own terms. The flowers add growth and renewal, following the curve of the bone. Because the placement is intimate and painful, it often marks endurance or a personal milestone."
+      },
       {
         question: 'How much does a Hip Bone & Pelvis Botanical Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
@@ -4285,6 +4306,186 @@ Ribs are also one of the most painful places to get tattooed, so the design quie
     faqs: [
       {
         question: 'How much does a Behind the Ear Micro Star Tattoo usually cost?',
+        answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
+      },
+      {
+        question: 'How do I care for a fresh ',
+        answer: 'Keep the protective tattoo film on for 24-48 hours. Wash gently with lukewarm water and fragrance-free antibacterial soap, pat dry with paper towels, and moisturize 2-3 times daily.'
+      }
+    ]
+  },
+  {
+    id: 146,
+    slug: 'back-of-neck-hairline-tattoo',
+    title: 'Back of Neck Hairline Tattoo',
+    keyword: 'back of neck hairline tattoo',
+    category: 'Body Placements',
+    shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
+    meaning: 'A quiet mark at the nape, hidden under hair and shown only when you choose.',
+    meaningDetail: `A tattoo at the back of the neck hairline is one of the most discreet placements there is. It hides completely under hair at work, at family gatherings, or anywhere you would rather keep it private — and it appears the moment you tie your hair up. That switch, hidden or shown, is the whole point: ink that is yours first, and only shared when you decide.
+
+It is also one of the most popular first tattoos, because it is small, easy to cover, and low-commitment — a tiny symbol, a date, or a single word that means something only to you. The nape is a sensitive spot, so even a small piece stings, but the session is short. Keep the design simple and the lines slightly bold, and it will stay readable for years despite the hairline's constant movement.`,
+    bestPlacements: ['Back of Neck', 'Hairline', 'Nape'],
+    painLevel: 'Moderate (5/10)',
+    healingTime: '2 to 3 weeks',
+    popularStyles: ['Fine Line', 'Black & Grey Realism', 'Neo-Traditional', 'Micro-Detail'],
+    designTips: [
+      'Consider how the curves flow with your muscle movement when walking or gesturing.',
+      'Allow adequate negative space between intricate lines so the design ages gracefully over decades.',
+      'Schedule a consultation with your artist to tailor custom elements to your personal story.'
+    ],
+    image: '/images/portfolio/136.jpg',
+    faqs: [
+      {
+        question: "What does a back of neck hairline tattoo mean?",
+        answer: "A tattoo at the back of the neck hairline is usually about discretion — ink that is hidden under hair and revealed only when you choose. It suits small, personal designs: a tiny symbol, a date, or a single word. It is also a popular first tattoo because it is easy to cover and low-commitment."
+      },
+      {
+        question: 'How much does a Back of Neck Hairline Tattoo usually cost?',
+        answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
+      },
+      {
+        question: 'How do I care for a fresh ',
+        answer: 'Keep the protective tattoo film on for 24-48 hours. Wash gently with lukewarm water and fragrance-free antibacterial soap, pat dry with paper towels, and moisturize 2-3 times daily.'
+      }
+    ]
+  },
+  {
+    id: 147,
+    slug: 'mirrored-wrist-handshake-tattoo',
+    title: 'Mirrored Wrist Handshake Tattoo',
+    keyword: 'handshake tattoo meaning',
+    category: 'Meanings & Memorials',
+    shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
+    meaning: 'Trust, agreement, and a bond sealed between two people.',
+    meaningDetail: `A handshake is the oldest gesture of agreement — two people meeting as equals and sealing a promise without a single word. Tattooed as a mirrored pair, one handshake on each wrist, the design means the bond goes both ways: trust given and trust returned, a deal kept on both sides. It is the handshake itself, frozen at the moment it was made.
+
+It is often a matching tattoo — friends, brothers, business partners, or a father and son carrying the same design on the same wrist. The mirrored placement means each person holds half of the same moment: a friendship that survived distance, a promise made at a turning point, or a partnership that built something real. Worn on the wrist, the design is visible every day, which is the point — a reminder you cannot avoid of someone you chose to trust.`,
+    bestPlacements: ['Wrist Pair', 'Inner Wrist', 'Forearm'],
+    painLevel: 'Low to Moderate (3/10)',
+    healingTime: '2 to 3 weeks',
+    popularStyles: ['Fine Line', 'Black & Grey Realism', 'Neo-Traditional', 'Micro-Detail'],
+    designTips: [
+      'Consider how the curves flow with your muscle movement when walking or gesturing.',
+      'Allow adequate negative space between intricate lines so the design ages gracefully over decades.',
+      'Schedule a consultation with your artist to tailor custom elements to your personal story.'
+    ],
+    image: '/images/portfolio/137.jpg',
+    faqs: [
+      {
+        question: "What does a handshake tattoo mean?",
+        answer: "A handshake tattoo means trust, agreement, and a bond between two people. Mirrored on both wrists, it shows the trust goes both ways. It is often a matching design for friends, brothers, or partners marking a promise or a friendship that survived distance."
+      },
+      {
+        question: 'How much does a Mirrored Wrist Handshake Tattoo usually cost?',
+        answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
+      },
+      {
+        question: 'How do I care for a fresh ',
+        answer: 'Keep the protective tattoo film on for 24-48 hours. Wash gently with lukewarm water and fragrance-free antibacterial soap, pat dry with paper towels, and moisturize 2-3 times daily.'
+      }
+    ]
+  },
+  {
+    id: 148,
+    slug: 'semicolon-mental-health-tattoo',
+    title: 'Semicolon Mental Health Tattoo',
+    keyword: 'semicolon tattoo meaning',
+    category: 'Meanings & Memorials',
+    shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
+    meaning: 'A sentence that could have ended but continued — hope, survival, and mental health awareness.',
+    meaningDetail: `The semicolon tattoo comes from Project Semicolon, founded in 2013 to support people living with mental illness. In writing, a semicolon marks a place where a sentence could have ended, but the author chose to continue it. As a tattoo it means the same thing for a life — a moment when someone could have given up and did not. It is worn by people who have lived with depression, anxiety, or self-harm, and by the people who love them.
+
+It is deliberately small and simple, so it can sit anywhere — wrist, ankle, behind the ear — and be read only by those who know what it means. It is also a quiet signal to others who are struggling: you are not alone, and your story is not over. Many people get it after therapy, after recovery, or after surviving a crisis, as a mark of the chapter that continued.`,
+    bestPlacements: ['Wrist', 'Inner Forearm', 'Behind Ear'],
+    painLevel: 'Low (2/10)',
+    healingTime: '2 to 3 weeks',
+    popularStyles: ['Fine Line', 'Black & Grey Realism', 'Neo-Traditional', 'Micro-Detail'],
+    designTips: [
+      'Consider how the curves flow with your muscle movement when walking or gesturing.',
+      'Allow adequate negative space between intricate lines so the design ages gracefully over decades.',
+      'Schedule a consultation with your artist to tailor custom elements to your personal story.'
+    ],
+    image: '/images/portfolio/138.jpg',
+    faqs: [
+      {
+        question: "What does a semicolon tattoo mean?",
+        answer: "A semicolon tattoo means hope and survival. From Project Semicolon: a semicolon is where a sentence could have ended but the author chose to continue it — so the tattoo marks a life that continued through depression, anxiety, or loss. It is also a quiet signal of support to others who are struggling."
+      },
+      {
+        question: 'How much does a Semicolon Mental Health Tattoo usually cost?',
+        answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
+      },
+      {
+        question: 'How do I care for a fresh ',
+        answer: 'Keep the protective tattoo film on for 24-48 hours. Wash gently with lukewarm water and fragrance-free antibacterial soap, pat dry with paper towels, and moisturize 2-3 times daily.'
+      }
+    ]
+  },
+  {
+    id: 149,
+    slug: 'solid-black-armband-memorial-tattoo',
+    title: 'Solid Black Armband Memorial Tattoo',
+    keyword: 'black armband tattoo meaning',
+    category: 'Meanings & Memorials',
+    shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
+    meaning: 'Mourning, remembrance, and strength carried in a single bold band.',
+    meaningDetail: `The black armband has been a sign of mourning for centuries — worn to mark a death and to show the world that someone is grieving. As a tattoo, the solid black band makes that mourning permanent: a parent, a sibling, a friend, or a fallen comrade remembered in a single unbroken line. The band has no beginning and no end, which is the point — the memory does not end either.
+
+Beyond mourning, the solid band also means strength and endurance. Laying down solid black takes long sessions and many passes, so the tattoo itself is a test of patience — you earn it slowly, the way you earn anything that lasts. It suits athletes, soldiers, and anyone who wants a design that is bold, simple, and impossible to misread: grief, loyalty, and a life carried forward.`,
+    bestPlacements: ['Upper Arm', 'Forearm', 'Bicep'],
+    painLevel: 'Moderate (4/10)',
+    healingTime: '2 to 3 weeks',
+    popularStyles: ['Fine Line', 'Black & Grey Realism', 'Neo-Traditional', 'Micro-Detail'],
+    designTips: [
+      'Consider how the curves flow with your muscle movement when walking or gesturing.',
+      'Allow adequate negative space between intricate lines so the design ages gracefully over decades.',
+      'Schedule a consultation with your artist to tailor custom elements to your personal story.'
+    ],
+    image: '/images/portfolio/139.jpg',
+    faqs: [
+      {
+        question: "What does a black armband tattoo mean?",
+        answer: "A solid black armband tattoo most often means mourning and remembrance — a permanent version of the mourning armband, worn for someone who has died. The unbroken band means the memory does not end. It can also stand for strength and endurance, since laying down solid black takes long, patient sessions."
+      },
+      {
+        question: 'How much does a Solid Black Armband Memorial Tattoo usually cost?',
+        answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
+      },
+      {
+        question: 'How do I care for a fresh ',
+        answer: 'Keep the protective tattoo film on for 24-48 hours. Wash gently with lukewarm water and fragrance-free antibacterial soap, pat dry with paper towels, and moisturize 2-3 times daily.'
+      }
+    ]
+  },
+  {
+    id: 150,
+    slug: 'geographic-gps-coordinates-tattoo',
+    title: 'Geographic GPS Coordinates Tattoo',
+    keyword: 'coordinates tattoo meaning',
+    category: 'Meanings & Memorials',
+    shortDescription: 'Discover expert  inspirations, symbolic meanings, pain ratings, and artist styling recommendations at TattooWorlds.',
+    meaning: 'A place that changed your life, pinned forever in numbers.',
+    meaningDetail: `Coordinates are the most exact way to say 'here.' A GPS tattoo marks the latitude and longitude of a place that matters — where you were born, where you met someone, where you got married, or where a loved one is buried. It is precise where words are vague, and usually only the wearer knows what the numbers point to.
+
+The design is also about home and direction: a reminder of where you come from when you are far away, or a compass point for where you are going. Some people tattoo the coordinates of a summit they climbed, a beach they scattered ashes on, or the hospital where a child was born — a map with only one destination that matters, written in numbers instead of names. It is a private map, and that privacy is the appeal.`,
+    bestPlacements: ['Forearm', 'Inner Arm', 'Ribcage'],
+    painLevel: 'Low to Moderate (3/10)',
+    healingTime: '2 to 3 weeks',
+    popularStyles: ['Fine Line', 'Black & Grey Realism', 'Neo-Traditional', 'Micro-Detail'],
+    designTips: [
+      'Consider how the curves flow with your muscle movement when walking or gesturing.',
+      'Allow adequate negative space between intricate lines so the design ages gracefully over decades.',
+      'Schedule a consultation with your artist to tailor custom elements to your personal story.'
+    ],
+    image: '/images/portfolio/140.jpg',
+    faqs: [
+      {
+        question: "What does a coordinates tattoo mean?",
+        answer: "A coordinates tattoo marks the exact latitude and longitude of a place that matters — a birthplace, a wedding spot, a hometown, or where a loved one rests. It is a private map: usually only the wearer knows what the numbers point to. It can also mean home, direction, or a journey that changed your life."
+      },
+      {
+        question: 'How much does a Geographic GPS Coordinates Tattoo usually cost?',
         answer: 'Pricing depends on the artist experience, scale, and detail level. Small minimalist designs start from $100-$200, while medium to large custom pieces range from $350-$1,000+.'
       },
       {
