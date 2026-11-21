@@ -2378,5 +2378,158 @@ export const blogPosts: BlogPost[] = [
         answer: "Yes. A watch, bracelet, long sleeves, or a skin-coloured bandage all cover a wrist tattoo easily. Keep in mind that tight watches and bracelets should stay off while the tattoo is healing."
       }
     ]
+  },
+  {
+    slug: "cerberus-three-headed-dog-tattoo-meaning",
+    title: "Cerberus Tattoo Meaning: The Three-Headed Dog Explained",
+    excerpt: "Cerberus is the most-searched dog tattoo meaning for a reason — here is what the three-headed hound of Greek myth really stands for, where to place it, and how to design one that means something to you.",
+    category: "Symbolism & Art",
+    readTime: "8 min read",
+    publishDate: "November 19, 2026",
+    author: {
+      name: "Daniel Chen",
+      role: "Master Japanese & Traditional Artist",
+      avatar: "/images/artists/daniel.jpg"
+    },
+    image: "/images/portfolio/10.jpg",
+    tags: [
+      "Cerberus Tattoo",
+      "Three-Headed Dog Tattoo",
+      "Tattoo Meaning",
+      "Greek Mythology Tattoo",
+      "Dog Tattoo"
+    ],
+    tableOfContents: [
+      {
+        id: "who-is-cerberus",
+        title: "Who Is Cerberus? The Hound of the Underworld"
+      },
+      {
+        id: "cerberus-tattoo-meaning",
+        title: "What Does a Cerberus Tattoo Mean?"
+      },
+      {
+        id: "three-heads",
+        title: "The Three Heads: Past, Present, and Future"
+      },
+      {
+        id: "cerberus-styles",
+        title: "Popular Cerberus Tattoo Styles"
+      },
+      {
+        id: "cerberus-placement",
+        title: "Best Placements and Pain Levels"
+      },
+      {
+        id: "cerberus-vs-hellhound",
+        title: "Cerberus vs. Hellhound: What's the Difference?"
+      },
+      {
+        id: "designing-your-cerberus",
+        title: "How to Design a Cerberus Tattoo That Means Something to You"
+      },
+      {
+        id: "faqs",
+        title: "Frequently Asked Questions About Cerberus Tattoos"
+      }
+    ],
+    content: [
+      {
+        id: "who-is-cerberus",
+        heading: "Who Is Cerberus? The Hound of the Underworld",
+        paragraphs: [
+          "In Greek myth, Cerberus is the monstrous three-headed dog who guards the gates of the Underworld, the land of the dead ruled by Hades. He is the son of the monsters Echidna and Typhon, and the brother of the Hydra and the Nemean Lion — a family of creatures that exist to be feared. His job is simple and absolute: let the dead in, and keep the living out.",
+          "Almost no one gets past him. The heroes who did are the exceptions that prove the rule. Heracles, as the twelfth of his labours, wrestled Cerberus bare-handed with Hades' permission and dragged him to the surface. Orpheus charmed him to sleep with his music on the way to rescue Eurydice. Aeneas, guided by the Sibyl, threw him a honey cake laced with poppies. And Hermes, as the guide of souls, could pass him freely. Everyone else stays outside the gates.",
+          "Descriptions of Cerberus vary between sources. Some give him a serpent for a tail and snakes writhing in his mane; others make him larger than any natural dog, with eyes that glow in the dark. Centuries later, Dante placed him in the third circle of the Inferno, guarding the gluttons. But the important thing is that Cerberus is not a villain. He is a guard doing his job — and he does it faithfully, which is exactly why people tattoo him."
+        ]
+      },
+      {
+        id: "cerberus-tattoo-meaning",
+        heading: "What Does a Cerberus Tattoo Mean?",
+        paragraphs: [
+          "Protection comes first. A Cerberus tattoo marks something the wearer guards: family, boundaries, a hard-won new chapter of life. The hound stands at a threshold — the line between the living and the dead, between who you were and who you are becoming — and he does not let anything through unchallenged. People who have rebuilt their lives after a hard ending often choose him for exactly that reason.",
+          "Loyalty is the second layer. Cerberus is ferocious to intruders but faithful to his master, Hades. He is not wild or random; he serves something. That makes the tattoo a mark of devotion as much as of darkness — loyalty to the people you protect, and to the promises you keep even when no one is watching.",
+          "The third layer is facing fear. Cerberus is the thing at the gate that everyone is afraid of, and getting his image tattooed is a way of saying you walked up to it anyway. It suits people who have survived grief, addiction, illness, or a loss that changed them — and came out the other side with something to guard."
+        ],
+        callout: {
+          type: "tip",
+          title: "Protection, Not Menace",
+          content: "Cerberus reads as a guardian, not a monster. If you want the design to feel protective rather than threatening, ask your artist for calm, watchful eyes and a closed mouth — a guard on duty, not a beast mid-attack."
+        }
+      },
+      {
+        id: "three-heads",
+        heading: "The Three Heads: Past, Present, and Future",
+        paragraphs: [
+          "The most common reading of the three heads is time itself: past, present, and future held in a single body. It is a design about the whole of a life at once — what happened, what is happening, and what is still to come — and about guarding all three of them.",
+          "Another old reading is birth, life, and death: the three stages every person passes through, with Cerberus standing watch over the last gate. That is why the design is so often chosen as a memorial, or after a loss — it is a way of keeping all three stages in view instead of turning away from the last one.",
+          "Most wearers, though, assign their own three. Three people they protect. Three battles they survived. Three chapters of a life that almost ended and did not. That is the real strength of the design: the number three is built in, and the meaning is yours to fill. Decide what your three heads stand for before the design session, and the piece becomes personal instead of generic."
+        ]
+      },
+      {
+        id: "cerberus-styles",
+        heading: "Popular Cerberus Tattoo Styles",
+        paragraphs: [
+          "Black and grey realism is the most common choice, and for good reason. Three heads mean three times the detail — fur, teeth, eyes, muscle — and realism gives your artist room to make each head distinct: one snarling, one watchful, one at rest. It suits large chest and back pieces best, where the design has room to breathe.",
+          "Neo-traditional is the second most popular style: bold outlines, deep blacks, and restrained colour — usually red, gold, or a cold blue — with decorative framing like gates, chains, or laurel. It reads as a classic tattoo rather than a portrait, and it ages well because the lines are strong.",
+          "For smaller pieces, fine line and American traditional both work. Fine line suits a single head or a small three-head study on the forearm or calf. American traditional suits a bold, simplified Cerberus with heavy black and limited colour — a flash-style piece that is readable from across the room. Japanese-inspired work pairs him with waves, peonies, or temple gates for a full sleeve or back piece."
+        ]
+      },
+      {
+        id: "cerberus-placement",
+        heading: "Best Placements and Pain Levels",
+        paragraphs: [
+          "The chest is the most popular placement for a large Cerberus piece, because the design is naturally symmetrical — the middle head sits at the centre of the chest with one head over each pectoral. It is a long session and a moderately painful spot, usually rated 6 out of 10, but it gives the design the presence it deserves.",
+          "The back is the biggest canvas and the best choice for a full scene: Cerberus at the gates, with chains, keys, or the river Styx below. Pain is moderate, around 5 out of 10, and the flat surface lets your artist compose the whole image without wrapping it around a curve. The thigh is the best middle ground — large enough for detail, less painful at 4 out of 10, and easy to cover.",
+          "The forearm and upper arm suit smaller designs: a single head, or all three heads compressed into a vertical composition. A detailed Cerberus is a multi-session project at any size, and healing takes 2 to 3 weeks. Your artist will confirm the exact price at a free consultation — at TattooWorlds, small tattoos start at $80, and large custom pieces are priced by size and detail."
+        ]
+      },
+      {
+        id: "cerberus-vs-hellhound",
+        heading: "Cerberus vs. Hellhound: What's the Difference?",
+        paragraphs: [
+          "A hellhound is a general creature of folklore — the black dogs that appear as omens of death in British and European stories, from the church grim to the hounds of the Wild Hunt. A hellhound tattoo is usually about darkness, horror, or a warning: something bad is coming, or something bad has already happened.",
+          "Cerberus is different because he is one specific dog with a name, a family, and a job. He is not a random monster and he is not an omen — he is a guardian with a duty, placed at a gate by the god of the dead. That is why the two designs feel different on skin: a hellhound says 'beware,' while Cerberus says 'I am guarding this.' If your meaning is loyalty and protection, Cerberus is the right dog. If your meaning is dread and darkness, a hellhound may fit better."
+        ]
+      },
+      {
+        id: "designing-your-cerberus",
+        heading: "How to Design a Cerberus Tattoo That Means Something to You",
+        paragraphs: [
+          "Start with the three heads. Before you book, decide what each one stands for — three people, three chapters, three things you protect — and tell your artist. A Cerberus with a meaning behind each head is a personal piece; without it, the design is just a cool image, and it will feel generic within a year.",
+          "Then add one element that makes it yours. The gates of the Underworld, a key, pomegranates — the fruit of Persephone, queen of the dead — snakes, chains, or a name and date woven into the frame. Our Cerberus tattoo idea page covers placements, pain ratings, and style options in detail if you want to compare designs before your consultation, and your artist can adapt any of them to your story."
+        ],
+        keyTakeaways: [
+          "Cerberus guards the gates of the Underworld — the tattoo means protection, loyalty, and guarding a boundary",
+          "The three heads are most often read as past, present, and future, or birth, life, and death",
+          "Black and grey realism suits large pieces; neo-traditional and fine line suit smaller ones",
+          "Chest and back are the best large placements; thigh is the best middle ground",
+          "Cerberus is a guardian with a duty, not a hellhound — loyalty and protection, not menace",
+          "Decide what your three heads stand for before the design session"
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "What does a three-headed dog tattoo mean?",
+        answer: "A three-headed dog tattoo usually means Cerberus, the hound of Greek myth who guards the gates of the Underworld. It stands for protection, loyalty, and guarding a boundary — with the three heads often read as past, present, and future. People choose it to mark something they protect, or a turning point they survived."
+      },
+      {
+        question: "Is a Cerberus tattoo bad luck?",
+        answer: "No. In Greek myth Cerberus is a guardian doing his job, not a curse or an omen. Some people worry because he is tied to death, but the design is almost always read as protection and loyalty — a guard at the gate, not a threat."
+      },
+      {
+        question: "What do the three heads of Cerberus represent?",
+        answer: "The most common readings are past, present, and future, or birth, life, and death. Many wearers assign their own three meanings instead — three people they protect, three battles they survived, or three chapters of their life."
+      },
+      {
+        question: "Where is the best placement for a Cerberus tattoo?",
+        answer: "The chest is the most popular large placement because the design is naturally symmetrical. The back suits a full scene with the gates of the Underworld. The thigh is a good middle ground — large enough for detail and less painful — while the forearm suits smaller single-head or three-head designs."
+      },
+      {
+        question: "How much does a Cerberus tattoo cost?",
+        answer: "It depends on size and detail. At TattooWorlds, small tattoos start at $80 in the Small Tattoo tier, while medium to large custom pieces range higher. A detailed Cerberus chest or back piece is a multi-session project — your artist confirms the exact price at a free consultation before any work begins."
+      }
+    ]
   }
 ];
